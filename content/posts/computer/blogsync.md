@@ -43,12 +43,12 @@ $ brew install Songmu/tap/blogsync
 #### Ubuntu / WSL
 
 ``` bash
-## go が使えない場合
+# go が使えない場合
 $ sudo snap install --classic go
 $ echo "export GOPATH=$HOME/.go" >> ~/.bashrc
 $ echo "export PATH=$PATH:$GOPATH/bin" >> ~./bashrc
 
-## blogsync のインストール
+# blogsync のインストール
 $ go get github.com/motemen/blogsync
 ```
 前半の`go`のインストールで悩んだ．`$GOPATH`の設定がなければいけないよう．`go`のインストールについては[Go言語のインストール - golang.jp](http://golang.jp/install#freebsd_linux)なども参照してください．
