@@ -6,9 +6,6 @@ tags : [
   "camera",
 ]
 date : "2018-03-30T08:12:19+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1aBOVKAhDbkVmxHVhs72d2un43R_14SvZ",
-]
 ---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1aBOVKAhDbkVmxHVhs72d2un43R_14SvZ" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}

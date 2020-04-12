@@ -5,9 +5,6 @@ tags : [
   "pic18f14k50",
 ]
 date : "2019-02-09T20:00:58+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1Or0Uy25rdT5_p3GfRcFZt5zxEkAeG0rG",
-]
 ---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1Or0Uy25rdT5_p3GfRcFZt5zxEkAeG0rG" title="" >}}

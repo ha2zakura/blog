@@ -5,9 +5,6 @@ tags : [
   "pic18f14k50",
 ]
 date : "2018-04-03T16:50:22+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=16yEESR8hHXxYDbfQ-l1eOzfB8PZTl6Cc",
-]
 toc : true
 ---
 

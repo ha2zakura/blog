@@ -5,9 +5,6 @@ tags : [
   "esp8266",
 ]
 date : "2020-03-17T16:08:03+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1ApCeVvLoa1uOxGvjM2AD3cKt7ykEZxmE",
-]
 toc : true
 ---
 

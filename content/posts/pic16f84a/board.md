@@ -5,9 +5,6 @@ tags : [
   "pic16f84a",
 ]
 date : "2018-01-11T16:11:35+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1I37Dcx6BprN2RcdODvEzx2_oJOS65iqu",
-]
 toc : true
 ---
 

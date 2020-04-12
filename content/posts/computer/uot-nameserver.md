@@ -6,9 +6,6 @@ tags : [
   "android",
 ]
 date : "2019-07-21T15:08:23+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
-]
 toc : true
 ---
 

@@ -6,9 +6,6 @@ tags : [
   "camera",
 ]
 date : "2018-03-11T14:38:14+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1qYAg5ZenH19SsKFSK0DKofpo523wAnxb",
-]
 ---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1BCHnCdHkSoMpxMCqWZG_FaQu4sAVyHVg" title="" >}}

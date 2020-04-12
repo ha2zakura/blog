@@ -5,9 +5,6 @@ tags : [
   "ymz294",
 ]
 date : "2018-12-31T09:08:01+09:00"
-images : [
-  "//drive.google.com/uc?export=view&id=1fcSoUZYeYQ9_9hFnOS2FGHZs8yUjy_7w",
-]
 toc : true
 ---
 
