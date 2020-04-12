@@ -32,6 +32,10 @@ canonifyurls = true
   bgImg = "/img/posts/camera/summer-fes-3.jpg"
   gitUrl = "https://github.com/ha2zakura/ha2zakura.github.io/commits/"
 
+  justifyContent = false
+  relatedPosts = false
+  code_copy_button = false
+
   [[params.social]]
     name = "twitter"
     url = "https://twitter.com/TsL_26"
