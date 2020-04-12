@@ -9,6 +9,7 @@ date : "2019-08-25T18:34:19+09:00"
 images : [
   "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
 ]
+toc : true
 ---
 
 [UoT]({{< ref "/content/posts/computer/uot.md" >}})を使ってて，
