@@ -8,8 +8,6 @@ date : "2020-03-17T16:08:03+09:00"
 toc : true
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=18QzjpuyO9j0fnHWh477QUEuQdLJ9R2sJ" title="" >}}
-
 Wi-Fiが使えるマイコンで, 
 一度はやってみたかった**無線書き込み**.  
 気になって調べてみたら, 
