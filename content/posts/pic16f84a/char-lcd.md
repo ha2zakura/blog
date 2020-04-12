@@ -8,8 +8,6 @@ date : "2018-03-13T16:50:59+09:00"
 toc : true
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=1VP6--ylIB7DEv21WeiYNGbEZxfRyAqRZ" title="" >}}
-
 勉強中のPIC16F84Aを使って, キャラクタLCDを使ってみた.   
 使ったキャラクタLCDはSD1602H. 
 <!--more-->
@@ -20,6 +18,8 @@ toc : true
 バックライトは故障した（させた）ため色は不明...   
 制御は典型的なキャラクタLCDの制御方式とたぶん同じため,   
 YMZ294の時よりは簡単に使えた.   
+
+{{< figure src="/img/posts/pic16f84a/char-lcd-1.jpg" title="" >}}
 
 ### 配線
 
@@ -37,6 +37,6 @@ YMZ294の時よりは簡単に使えた.
 ### ソースコード  
 [16F84A+SD1602H](https://gist.github.com/ha2zakura/8ed5ebd4295027b7969c8a1ca49f7cfc)
 
-{{< figure src="//drive.google.com/uc?export=view&id=1zlqE4iVtKJPAOPmWzrqLvLOeQJSQutH2" title="Hello, world!" >}}
+{{< figure src="/img/posts/pic16f84a/char-lcd-2.jpg" title="Hello, world!" >}}
 
 

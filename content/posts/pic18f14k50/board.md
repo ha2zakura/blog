@@ -17,7 +17,7 @@ toc : true
 
 ## なぜPIC18F14K50か?
 
-{{< figure src="//drive.google.com/uc?export=view&id=1n1B0Q_McX-Yj5_zDt_EIr0VeRoj4Y0wG" title="PIC18F14K50" >}}
+{{< figure src="/img/posts/pic18f14k50/board-1.jpg" title="PIC18F14K50" >}}
 
 まぁ, 理由なんて「USBを使えるようになったい」の一言に尽きますが, 無理して他の理由も絞り出してみます.   
 
@@ -67,7 +67,7 @@ toc : true
 いちいちブレッドボードで回路を組むのは嫌いなので, 
 例の如くまたマイコンボードを作った. この文章, 何回目?
 
-{{< figure src="//drive.google.com/uc?export=view&id=1OAGOJy5SzNpEekMVq8jRZaRwGCk0irfF" title="マイコンボード" >}}
+{{< figure src="/img/posts/pic18f14k50/board-2.jpg" title="マイコンボード" >}}
 
 前回のマトリクスLEDボードの時はUEWを使いたが, 
 今回はそれほどでもなかったので, 普通に配線した. 
@@ -84,4 +84,4 @@ USB近くのジャンパピンはD+, D-をPICから切り離すためにある.
 使えたとしても, 
 [当方は責任を負いません]({{< ref "/content/about.md" >}}).   
 
-{{< figure src="//drive.google.com/uc?export=view&id=1rhBJ57O42X9qtLdLCUQ6A22GJbAet9jC" title="回路図" >}}
+{{< figure src="/img/posts/pic18f14k50/board-3.png" title="回路図" >}}

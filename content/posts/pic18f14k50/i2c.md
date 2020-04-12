@@ -7,7 +7,7 @@ tags : [
 date : "2019-02-09T20:00:58+09:00"
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=1Or0Uy25rdT5_p3GfRcFZt5zxEkAeG0rG" title="" >}}
+{{< figure src="/img/posts/pic18f14k50/i2c-1.jpg" title="" >}}
 
 PIC18F14K50でI2Cを使ってみた. 
 が, 解説を書こうかな...とか思っているうちに10か月経ったので, 

@@ -17,7 +17,7 @@ toc : true
 
 [TODOO - https://ha2zakura.github.io/todoo/](https://ha2zakura.github.io/todoo/)
 
-{{< figure src="//drive.google.com/uc?export=view&id=19PiBuhNiEbyYO-29bua7pYo4Mi30o4dH" title="スクリーンショット" >}}
+{{< figure src="/img/posts/computer/todoo-1.png" title="スクリーンショット" >}}
 
 リポジトリ : [ha2zakura/todoo](https://github.com/ha2zakura/todoo)
 

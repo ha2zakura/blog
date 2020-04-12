@@ -9,7 +9,7 @@ date : "2020-02-24T09:40:15+09:00"
 toc : true
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=1xPRQD-mEyHocV0i-6arRRjSwP5B69b9H" title="" >}}
+{{< figure src="/img/posts/esp8266/bin-clock-1.jpg" title="" >}}
 
 ESP-WROOM-02でのハードの制御の練習に, 
 二進数時計を作ってみた. 

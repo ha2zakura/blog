@@ -8,7 +8,7 @@ date : "2018-12-31T09:08:01+09:00"
 toc : true
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=1dncsx3lp7OhynGFnx0cRKJZtXjJ6nOZb" title="" >}}
+{{< figure src="/img/posts/electronics/ymz294-spi-1.jpg" title="" >}}
 
 前に使った[YMZ294]({{< ref "/content/posts/electronics/ymz294-spi.md" >}})が, 
 また使おうとするとあの配線をやり直す必要があった. 
@@ -17,7 +17,7 @@ toc : true
 
 ## 変換アダプタもどき
 
-{{< figure src="//drive.google.com/uc?export=view&id=1MHIMI546LFAj0alpA-9Du0WltGZ9Xn8R" title="変換アダプタ" >}}
+{{< figure src="/img/posts/electronics/ymz294-spi-2.jpg" title="変換アダプタ" >}}
 
 SPI化には, [シフトレジスタ(74HC595)](http://akizukidenshi.com/catalog/g/gI-08605/)を用いた. 
 理由は, [前に使ったことがあるから]({{< ref "/content/posts/pic16f84a/matrix.md" >}})かね. 
@@ -28,7 +28,7 @@ SPI化には, [シフトレジスタ(74HC595)](http://akizukidenshi.com/catalog/
 PIC12F683の[ソースコード](https://gist.github.com/ha2zakura/943d75f813021092b6f4207b43e41da1). 
 A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御できれば楽だったんけどね...  
 
-{{< figure src="//drive.google.com/uc?export=view&id=1mGEYMFKunaKNbyg64KEvP7A7_eAi6SmN" title="回路図" >}}
+{{< figure src="/img/posts/electronics/ymz294-spi-3.png" title="回路図" >}}
 
 [裏面の写真](https://drive.google.com/uc?export=view&id=1FQ-ZkQqab4ziOb6fYMW-gDd6vvcevCin)
 
@@ -41,7 +41,7 @@ A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御�
 
 ま, ピアノできないんでネットで拾ってきたMIDI譜面を流し込むだけなんけどね.   
 
-{{< figure src="//drive.google.com/uc?export=view&id=1fcSoUZYeYQ9_9hFnOS2FGHZs8yUjy_7w" title="Arduinoと接続" >}}
+{{< figure src="/img/posts/electronics/ymz294-spi-4.jpg" title="Arduinoと接続" >}}
 
 
 マスタはArduinoを使う. 理由はゴニョゴニョ...

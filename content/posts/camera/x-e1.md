@@ -8,11 +8,12 @@ tags : [
 date : "2018-03-11T14:38:14+09:00"
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=1BCHnCdHkSoMpxMCqWZG_FaQu4sAVyHVg" title="" >}}
-
 今使っているコンデジが不調なので, 思い切ってカメラを買い換えた.   
 買ったカメラはフジフィルムのミラーレス「X-E1」.   
 <!--more-->
+
+{{< figure src="/img/posts/camera/x-e1-1.jpg" title="" >}}
+
 中古で本体が約2万円だった. 安い ! 
 
 同価格帯のソニーの「NEX-7」もすごく悩んだ.   
@@ -27,6 +28,6 @@ date : "2018-03-11T14:38:14+09:00"
 武蔵浦和駅で電車を待っているときに撮った.   
 E6系かっこいい. 
 
-{{< figure src="//drive.google.com/uc?export=view&id=1qYAg5ZenH19SsKFSK0DKofpo523wAnxb" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
+{{< figure src="/img/posts/camera/x-e1-2.jpg" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 
 慣れるまでに何年かかるかな...?

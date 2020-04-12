@@ -21,7 +21,7 @@ PICマイコン面白いな, と興味を持ち,
 
 ### PIC16F84A本体
 
-{{< figure src="//drive.google.com/uc?export=view&id=1HYyKyndfH4UsuWwsGniKpwEzhzXqZKx2" title="PIC16F84A" >}}
+{{< figure src="/img/posts/pic16f84a/board-1.jpg" title="PIC16F84A" >}}
 
 有名なPICマイコンである, 16F84Aを選んた.   
 
@@ -46,13 +46,13 @@ PICマイコンを書き込むには特別な書き込み機が必要.
 
 ### マイコンボード
 
-{{< figure src="//drive.google.com/uc?export=view&id=1RunTi11haITlIbllXSWVQlh1sIOPpXxC" title="PIC16F84Aマイコンボード" >}}
+{{< figure src="/img/posts/pic16f84a/board-2.jpg" title="PIC16F84Aマイコンボード" >}}
 
 去年の3月に発売されたちっちゃいユニバーサル基板にまとめてみた. 
 
 [小型ユニバーサル基板　４５×４５ｍｍ: パーツ一般 秋月電子通商 電子部品 ネット通販](http://akizukidenshi.com/catalog/g/gP-11735/)
 
-{{< figure src="//drive.google.com/uc?export=view&id=1OGAJ5BBuJ2t0_ST8ivYQhIeEzt2f00vz" title="" >}}
+{{< figure src="/img/posts/pic16f84a/board-3.png" title="" >}}
 
 左のピンヘッダはPICkit3との接続用.   
 
@@ -64,15 +64,15 @@ USBコネクタの左のLEDは電源確認用.
 
 上のセラミック発振子は4MHZにした.  
 
-{{< figure src="//drive.google.com/uc?export=view&id=1oY7kIcccdXT2_L28yJETrAAsxEC7MGrt" title="裏面" >}}
+{{< figure src="/img/posts/pic16f84a/board-4.jpg" title="裏面" >}}
 
  1度配線を間違えたせいでヤニだらけ.   
 今度からちゃんと確認しよ...
 
-{{< figure src="//drive.google.com/uc?export=view&id=1qxV5qL3h9bHIh0dZmOa99UcDPt3P9nKD" title="回路図" >}}
+{{< figure src="/img/posts/pic16f84a/board-5.png" title="回路図" >}}
 
 ※クリックすると拡大表示されます. 
 
 PICkit3はCN1のピン1を三角形と合うように接続する. 
 
-{{< figure src="//drive.google.com/uc?export=view&id=1QqG5BiB5zPXbX_jazKwk1HvTi4Et8ezh" title="PICkit3との接続" >}}
+{{< figure src="/img/posts/pic16f84a/board-6.jpg" title="PICkit3との接続" >}}

@@ -39,7 +39,7 @@ Wi-Fiモジュールなのに,
 
 ## マイコンボードを作る
 
-{{< figure src="//drive.google.com/uc?export=view&id=1c8VAfonqvFziXQ5-RmE6eKLIzhYxzoC9" title="マイコンボード" >}}
+{{< figure src="/img/posts/esp8266/blink-1.jpg" title="マイコンボード" >}}
 
 いつも通り[45基板](http://akizukidenshi.com/catalog/g/gP-11735/)にまとめてみた. 
 シリアル変換は[AE-CH340E-TYPEC](http://akizukidenshi.com/catalog/g/gK-14745/)という

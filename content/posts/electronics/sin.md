@@ -7,7 +7,7 @@ date : "2018-07-15T12:58:06+09:00"
 toc : true
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=1BERmFymhBwYzqRWsPGiup2I_roWoEfCk" title="" >}}
+{{< figure src="/img/posts/electronics/sin-1.jpg" title="" >}}
 
 私の電子工学への理解が薄い気がするので, これからしばらくはアナログ回路の勉強をすることにした. 
 で, 私はとにかく形から入るタイプなので, とりあえず簡易的な正弦波ジェネレータを作ってみた.   
@@ -20,7 +20,7 @@ toc : true
 
 ## 回路図
 
-{{< figure src="//drive.google.com/uc?export=view&id=10VlFD4dqKGhQivYCufCalt8ESySbJp8X" title="回路図 (パスコンなどは省略)" >}}
+{{< figure src="/img/posts/electronics/sin-2.png" title="回路図 (パスコンなどは省略)" >}}
 
 ネットでサーフィンしてたら見つけた[ウィーン・ブリッジ回路](https://www.weblio.jp/content/%E3%82%A6%E3%82%A3%E3%83%BC%E3%83%B3%E3%83%BB%E3%83%96%E3%83%AA%E3%83%83%E3%82%B8%E7%99%BA%E6%8C%AF%E5%9B%9E%E8%B7%AF)<!-- Wikiに頁が無かった !  -->を使用する. 
 周波数を決めるフィルタのR1・R2, 増幅率を決めるR4には半固定抵抗器を直列して, 
@@ -32,6 +32,6 @@ toc : true
 
 ## 完成したもの
 
-{{< figure src="//drive.google.com/uc?export=view&id=1OFaRNDNIYbSrm5SpCEGRu9dYwSIbmLMU" title="オシロスコープでみてみる" >}}
+{{< figure src="/img/posts/electronics/sin-3.jpg" title="オシロスコープでみてみる" >}}
 
 下の[45基板](http://akizukidenshi.com/catalog/g/gP-11735/)が製作した簡易正弦波ジェネレータ. 結構きれいな正弦波出てるでしょ?（下部のクリップは半固定抵抗器をぐりぐり回すともっとマシになった. ）完全な正弦波ではないが, 趣味のレベルならこの程度で良いと思っている. そもそも測定するための[オシロ](http://akizukidenshi.com/catalog/g/gK-09710/)が(ry

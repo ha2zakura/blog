@@ -8,13 +8,13 @@ tags : [
 date : "2019-07-16T20:46:32+09:00"
 ---
 
-{{< figure src="//drive.google.com/uc?export=view&id=171hkQpeGeGUoN-lubkSZRSBG0QAjOu-z" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
+{{< figure src="/img/posts/camera/summer-fes-1.jpg" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 
 東京校外の夏祭りに行って, 屋台を撮影してきた. 
 <!--more-->
-といっても, 人の顔が写っている写真が多く, ここに載せたのは3枚だけ...
+といっても, 人の顔が写っている写真が多く, ここに載せられるのは3枚だけ...
 
-{{< figure src="//drive.google.com/uc?export=view&id=1n89Hf4aUlkgEeHCmb4MyRMhuWt7ktlXq" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
+{{< figure src="/img/posts/camera/summer-fes-2.jpg" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 
 ※最初の写真も同じ構成
 
@@ -23,7 +23,7 @@ date : "2019-07-16T20:46:32+09:00"
 まだ東京は梅雨が明けていないので, 夕方は雨が降っていた. けれど, 暗くなるころには雨が止み, 辺りは[琥珀色の宇宙](https://dic.nicovideo.jp/a/%E6%B8%A9%E6%95%85%E7%9F%A5%E6%96%B0%E3%81%A7%E3%81%84%E3%81%93%E3%81%A3%21)になった. 
 一足先に夏を満喫することができた気分. 
 
-{{< figure src="//drive.google.com/uc?export=view&id=1MooWsiFa-cmJIMgi_UIpVB3JjKSY8snp" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
+{{< figure src="/img/posts/camera/summer-fes-3.jpg" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 
 オールドレンズならではの7角形. この構成でもう1年が過ぎた.   
 この構成で気になったことは, 思った以上に構えた時の威圧感がある. レンズ径が大きいからだとは思うが, やっぱりフジのカメラと古いレンズの組み合わせは悪い意味で「渋い」.   
