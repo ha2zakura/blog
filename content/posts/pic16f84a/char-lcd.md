@@ -10,16 +10,16 @@ toc : true
 
 {{< figure src="//drive.google.com/uc?export=view&id=1VP6--ylIB7DEv21WeiYNGbEZxfRyAqRZ" title="" >}}
 
-勉強中のPIC16F84Aを使って，キャラクタLCDを使ってみた．  
-使ったキャラクタLCDはSD1602H．
+勉強中のPIC16F84Aを使って, キャラクタLCDを使ってみた.   
+使ったキャラクタLCDはSD1602H. 
 <!--more-->
 
 [超小型ＬＣＤキャラクタディスプレイモジュール（１６×２行バックライト緑）: ディスプレイ･表示器 秋月電子通商-電子部品・ネット通販](http://akizukidenshi.com/catalog/g/gP-01675/)
 
-手元にあった[Arduino用のシールド](https://www.amazon.co.jp/exec/obidos/ASIN/B009AQ2FAI/nandemotukuty-22/ref=nosim/)から剥ぎ取ってきた．  
+手元にあった[Arduino用のシールド](https://www.amazon.co.jp/exec/obidos/ASIN/B009AQ2FAI/nandemotukuty-22/ref=nosim/)から剥ぎ取ってきた.   
 バックライトは故障した（させた）ため色は不明...   
-制御は典型的なキャラクタLCDの制御方式とたぶん同じため，  
-YMZ294の時よりは簡単に使えた．  
+制御は典型的なキャラクタLCDの制御方式とたぶん同じため,   
+YMZ294の時よりは簡単に使えた.   
 
 ### 配線
 
@@ -32,7 +32,7 @@ YMZ294の時よりは簡単に使えた．
 | RA1 | 18 |  | 5 | R/W |
 | RA2 | 1 |  | 6 | E |
 
-※可変抵抗はコントラスト調整用．  
+※可変抵抗はコントラスト調整用.   
 
 ### ソースコード  
 [16F84A+SD1602H](https://gist.github.com/ha2zakura/8ed5ebd4295027b7969c8a1ca49f7cfc)

@@ -1,5 +1,5 @@
 ---
-title : "ESP8266 : マイコンなのにHello，world!"
+title : "ESP8266 : マイコンなのにHello, world!"
 tags : [
   "electronics",
   "esp8266",
@@ -9,16 +9,16 @@ date : "2020-02-23T06:12:45+09:00"
 toc : true
 ---
 
-[LチカをしたESP-WROOM-02]({{< ref "/content/posts/esp8266/blink.md" >}})が，
-やっぱりESP8266の威力を体験するためにはWi-Fi関連を使わねばなりません．
-そこで，(マイコンでは珍しく)`Hello，world!`をする．
+[LチカをしたESP-WROOM-02]({{< ref "/content/posts/esp8266/blink.md" >}})が, 
+やっぱりESP8266の威力を体験するためにはWi-Fi関連を使わねばなりません. 
+そこで, (マイコンでは珍しく)`Hello, world!`をする. 
 
 <!--more-->
 
 ## Web Server
 
-Web Serverで`Hello，world!`する．
-またArduino IDEでお茶を濁する．
+Web Serverで`Hello, world!`する. 
+またArduino IDEでお茶を濁する. 
 
 ```c
 #include <ESP8266WiFi.h>
@@ -55,26 +55,26 @@ void loop() {
 }
 ```
 
-`WiFi.localIP()`でIPアドレスを取得できるので，そこに接続すると以下のように表示されます．
+`WiFi.localIP()`でIPアドレスを取得できるので, そこに接続すると以下のように表示されます. 
 
 
 {{< figure src="//drive.google.com/uc?export=view&id=17JApgSzSGyybFMqR18M6iRYWEQljRMh9" title="Hello, world!" >}}
 
-`ESP8266WebServer`関係は色々書き方があるみたい．
+`ESP8266WebServer`関係は色々書き方があるみたい. 
 ここで使っているラムダ式は
 [ここ](https://iot.keicode.com/esp8266/esp8266-webserver.php)を参考にした.
 `FS.h`を使って外部ファイル・画像を表示させることもできるらしい([参考](https://qiita.com/cyclon2joker/items/f293b613d866e046b062)).
 
 ## POST
 
-将来的にWeb APIを叩くことを見据え，POSTでも`Hello，world!`してみる．
-POSTの説明はWikipediaに任せようと思ったのに，
-意外なことに日本語版が無かった．
+将来的にWeb APIを叩くことを見据え, POSTでも`Hello, world!`してみる. 
+POSTの説明はWikipediaに任せようと思ったのに, 
+意外なことに日本語版が無かった. 
 
 [https://en.wikipedia.org/wiki/POST_(HTTP)]
 
-私は現代っ子なので，今回は[LINE Notify](https://notify-bot.line.me/ja/)を叩いてみる．
-またもやArduino IDE．
+私は現代っ子なので, 今回は[LINE Notify](https://notify-bot.line.me/ja/)を叩いてみる. 
+またもやArduino IDE. 
 
 ```c
 #include <ESP8266WiFi.h>
@@ -134,26 +134,26 @@ void loop() {
 }
 ```
 
-LINE Notifyのトークン取得や叩き方については，[ここ](https://qiita.com/iitenkida7/items/576a8226ba6584864d95)を参考にした．
+LINE Notifyのトークン取得や叩き方については, [ここ](https://qiita.com/iitenkida7/items/576a8226ba6584864d95)を参考にした. 
 
-同じようにLINE Notifyを叩いている例があった([参考](https://next.rikunabi.com/journal/20170719_t12_iq/))が，
-これはどうも動かなかった．
-2017年の記事だから，仕組みが変わったのか？
-色々調べていて，
+同じようにLINE Notifyを叩いている例があった([参考](https://next.rikunabi.com/journal/20170719_t12_iq/))が, 
+これはどうも動かなかった. 
+2017年の記事だから, 仕組みが変わったのか？
+色々調べていて, 
 [このサイト](https://www.ioxhop.com/article/47/esp8266-esp8285-%E0%B8%81%E0%B8%B1%E0%B8%9A%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%81%E0%B8%88%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%95%E0%B8%B7%E0%B8%AD%E0%B8%99%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2-line)を参考に
-`WiFiClientSecureAxTLS.h`を指定してみると動いた．
-一応断わっておくが，私もタイ語は読めない．
-[AxTLS](http://axtls.sourceforge.net/)は組み込み用のSSLライブラリらしいが，
-具体的にそれがなんなのか，
-どうしてライブラリに付属していたのかはわからない．
-SSL関係の仕組みについて勉強する必要がありそう．
+`WiFiClientSecureAxTLS.h`を指定してみると動いた. 
+一応断わっておくが, 私もタイ語は読めない. 
+[AxTLS](http://axtls.sourceforge.net/)は組み込み用のSSLライブラリらしいが, 
+具体的にそれがなんなのか, 
+どうしてライブラリに付属していたのかはわからない. 
+SSL関係の仕組みについて勉強する必要がありそう. 
 
-ちなみに，リセットボタンを連打するとこうなる．
+ちなみに, リセットボタンを連打するとこうなる. 
 
 {{< tweet 1231543563902537729 >}}
 
-LINE Notifyは送信専用なので，
+LINE Notifyは送信専用なので, 
 ユーザからのメッセージに対してイベントをしたいなら
-[Messageing API](https://developers.line.biz/ja/services/messaging-api/)になる．
-ただ，ESP8266でどれだけできるかは知らない．
+[Messageing API](https://developers.line.biz/ja/services/messaging-api/)になる. 
+ただ, ESP8266でどれだけできるかは知らない. 
 
