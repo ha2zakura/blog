@@ -12,6 +12,7 @@ hasCJKLanguage = true  # If Chinese/Japanese/Korean is your main content languag
 enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 # googleAnalytics = "UA-123-45"
 # disqusShortname = "yourdiscussshortname"
+canonifyurls = true
 
 [author]
   name = "ha2zakura"
