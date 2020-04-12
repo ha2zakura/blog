@@ -24,7 +24,7 @@ toc : true
 制御は典型的なキャラクタLCDの制御方式とたぶん同じため，  
 YMZ294の時よりは簡単に使えた．  
 
-## 配線
+### 配線
 
 | PIC16F84A | Pin |  | Pin | SD1602H |
 | :-: | :-: | :-: | :-: | :-: |
@@ -37,7 +37,7 @@ YMZ294の時よりは簡単に使えた．
 
 ※可変抵抗はコントラスト調整用．  
 
-## ソースコード  
+### ソースコード  
 [16F84A+SD1602H](https://gist.github.com/ha2zakura/8ed5ebd4295027b7969c8a1ca49f7cfc)
 
 {{< figure src="//drive.google.com/uc?export=view&id=1zlqE4iVtKJPAOPmWzrqLvLOeQJSQutH2" title="Hello, world!" >}}

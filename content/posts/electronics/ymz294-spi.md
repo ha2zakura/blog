@@ -18,7 +18,7 @@ toc : true
 そこで，思い切って[SPI](https://ja.wikipedia.org/wiki/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%83%BB%E3%83%9A%E3%83%AA%E3%83%95%E3%82%A7%E3%83%A9%E3%83%AB%E3%83%BB%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%95%E3%82%A7%E3%83%BC%E3%82%B9)化することで配線の手間を減らし使いやすくしようと思い，やってみた．  
 <!--more-->
 
-# 変換アダプタもどき
+## 変換アダプタもどき
 
 {{< figure src="//drive.google.com/uc?export=view&id=1MHIMI546LFAj0alpA-9Du0WltGZ9Xn8R" title="変換アダプタ" >}}
 
@@ -35,7 +35,7 @@ A0はマスタ側で直接制御する．ホントはPIC12F683で一緒に制御
 
 [裏面の写真](https://drive.google.com/uc?export=view&id=1FQ-ZkQqab4ziOb6fYMW-gDd6vvcevCin)
 
-# 演奏してみた
+## 演奏してみた
 
 割とMIDIでYMZ294を制御している方は多い．
 中には私と同じようにピン数圧縮してる方もいらっしゃいた

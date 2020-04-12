@@ -20,38 +20,38 @@ toc : true
 
 
 
-# SSHサーバーの起動
+## SSHサーバーの起動
 
 Termux上で実行する場合. なので，UoTを構築している場合はいったん``exit``で終了.
 
 ```sh
-# クライアント (WSLなど)
+## クライアント (WSLなど)
 $ ssh-keygen -f ~/.ssh/id_termux # 鍵の作成. (Enterを連打)
 $ cat ~/.ssh/id_termux.pub
-# 公開鍵をコピー→LINEなどでスマホに送信
+## 公開鍵をコピー→LINEなどでスマホに送信
 $ echo "alias ssh-termux='ssh -p 8022 -i ~/.ssh/id_termux'" >> ~/.bashrc # コマンド短縮ｙ
 ```
 
 ```sh
-# サーバー (Termux)
+## サーバー (Termux)
 $ pkg install -y openssh # SSHのインストール
 $ vi ~/.ssh/authorized_keys
-# 公開鍵をペースト
+## 公開鍵をペースト
 $ chmod 600 ~/.ssh/authorized_keys
 $ chmod 700 ~/.ssh
 $ ip -4 a
-# IPアドレスをメモ
+## IPアドレスをメモ
 $ sshd # SSHサーバー起動
 ```
 
 ```sh
-# クライアント (WSLなど)
+## クライアント (WSLなど)
 $ ssh-termux xxx.xxx.xx.xxx #メモしたIPアドレス
 ```
 
 UoT上でSSHサーバーを起動する場合は，``ubuntu ssh サーバー``で調べたらたぶんすぐでてくる.
 
-# ストレージの同期
+## ストレージの同期
 
 ```sh
 $ termux-setup-storage # 権限の認証をするので，本体でやった方がよさげ
@@ -63,7 +63,7 @@ $ termux-setup-storage # 権限の認証をするので，本体でやった方�
 
 UoT構築時は``ubuntu.sh``とかを書き換えて色々できるようだが，面倒なのでそもそもストレージを同期していない. どうせやることなんて屋外で``git pull``して試しに動かしたり程度なので..
 
-# フォントの変更
+## フォントの変更
 
 ``/data/data/com.termux/files/home/.termux/font.ttf``を書き換えて，Termuxを再起動する. 書き換え方法は，上のストレージを用いてコピーするか，``wget``や``git clone``でダウンロードするなど.
 

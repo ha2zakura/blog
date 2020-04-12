@@ -9,7 +9,7 @@ toc : true
 
 また，1ヶ月以上更新しないことがほとんど．なので，長い目で暖かく見守って欲しい．
 
-## 免責事項
+### 免責事項
 
 できる限り正確な情報を発信できるように努めておりますが，それらの情報が古くなっていることもありますので，当サイトに掲載されているコンテンツはすべて無保証とさせていただきます．  
 また，それらの正確性や適切性に問題がある場合，告知無しに情報を変更・削除する事がございます．
@@ -17,7 +17,7 @@ toc : true
 当サイトの情報を用いて行う一切の行為，被った損害・損失に対しては，一切の責任を負いかねます．ご了承ください．
 
 
-# About this blog
+## About this blog
 
 Hey, I'm [ha2zakura(@TsL_26)](https://twitter.com/TsL_26).  
 This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of ha2zakura. 
@@ -26,7 +26,7 @@ Since it is written as a memorandum for myself, there are many difficult-to-unde
 Since I'm writing in Japanese, Google Translate should help read entries. 
 However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/TsL_26).
 
-## Disclaimer
+### Disclaimer
 
 I strive to provide as accurate information as possible, but I may not be able to guarantee all of the content on this site, as such information may be out of date.
 Also, if there is a problem with their accuracy or suitability, I may change or delete the information without notice.

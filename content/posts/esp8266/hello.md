@@ -18,7 +18,7 @@ toc : true
 
 <!--more-->
 
-# Web Server
+## Web Server
 
 Web Serverで`Hello，world!`する．
 またArduino IDEでお茶を濁する．
@@ -68,7 +68,7 @@ void loop() {
 [ここ](https://iot.keicode.com/esp8266/esp8266-webserver.php)を参考にした.
 `FS.h`を使って外部ファイル・画像を表示させることもできるらしい([参考](https://qiita.com/cyclon2joker/items/f293b613d866e046b062)).
 
-# POST
+## POST
 
 将来的にWeb APIを叩くことを見据え，POSTでも`Hello，world!`してみる．
 POSTの説明はWikipediaに任せようと思ったのに，

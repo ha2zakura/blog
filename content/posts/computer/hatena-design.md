@@ -21,7 +21,7 @@ toc : true
 新デザインを思った以上に気に入っているので，
 これができるまでの過程とか苦労をまとめておきます．
 
-# 構想
+## 構想
 
 前回のデザインもそこそこ気に入っていた．
 あのシンプルさと見易さははてなブログにしては
@@ -36,7 +36,7 @@ toc : true
 機能面での改良もしたいと考えた．
 そこで，今回始めて**モックアップ**を作ってみた．
 
-## モックアップ
+### モックアップ
 
 {{< figure src="//drive.google.com/uc?export=view&id=1QvEJgNgQ3yezVJws4DaQdBOh9ViKL7kA" title="スクリーンショット" >}}
 
@@ -60,12 +60,12 @@ CSSを意識したパラメータなのに直感的に扱い易く
 前者は海外ニュースサイトのタイトル下記者紹介，
 後者は[Qiita](https://qiita.com)など技術系ナレッジ共有サイトをイメージしてます．
 
-# 製作
+## 製作
 
 今回はデザインを一新するということで，
 コードも0から全て書き直した．
 
-## Boilerplateは使わない
+### Boilerplateは使わない
 
 [hatena/Hatena-Blog-Theme-Boilerplate](https://github.com/hatena/Hatena-Blog-Theme-Boilerplate)
 
@@ -77,14 +77,14 @@ CSSを意識したパラメータなのに直感的に扱い易く
 しかし，今回は0から秩序的に構築するために，
 Boilerplateは環境のみ使わせて頂きた．
 
-## 設計(粒度分類)
+### 設計(粒度分類)
 
 [脱・Atomic Design - HTML+CSSコーディングの粒度分類法（HTML Parts）](https://qiita.com/croco_works/items/e34d1b0c0e50b37031d7)
 
 たまたまこの記事を読んだばかりであったので，
 今回は**粒度分類**をある程度踏まえてコード設計をした．
 
-### Block
+#### Block
 
 まず，上のモックアップよりBlockを分けます．
 
@@ -100,7 +100,7 @@ Boilerplateは環境のみ使わせて頂きた．
 このBlockごとにSassファイルを分け，
 `scss/parts/` フォルダにまとめた．
 
-### Module・Component
+#### Module・Component
 
 次にModule．
 と言っても，Moduleになるのは記事Block程度なので，
@@ -125,12 +125,12 @@ BEMっぽい命名にする(初挑戦)．
 特に後者は元々記事本体Component内にあるものを外に出す必要があるので，
 `window.onload`におけるDOMで2つのComponentを追加する．
 
-## HTML・JS実装
+### HTML・JS実装
 
 独自HTMLの「ヘッダ下メニュー」と「フッタ下メニュー」は
 普通に実装した．
 
-### 記事筆者
+#### 記事筆者
 
 まず，以下の記事筆者のHTMLを，
 
@@ -173,7 +173,7 @@ const entry_header = entry[i].getElementsByClassName("entry-header");
 entry_header[0].insertAdjacentHTML("afterend", author_html);
 ```
 
-### 記事目次
+#### 記事目次
 
 記事筆者Componentと同じように，記事ごとに処理させます．
 
@@ -205,7 +205,7 @@ entry_index.appendChild(table_of_contents[0]);
 entry_header[0].insertAdjacentElement("afterend", entry_index);
 ```
 
-#### 現在位置を目次に表示する
+##### 現在位置を目次に表示する
 
 せっかく記事目次を外に出したので，
 Qiitaのように「自分が今どのあたりを読んでいるのか」を表示する．
@@ -272,12 +272,12 @@ const index_focus = () => {
 以外と情報が少なかったので0から実装した．
 ここの情報が少しでも参考になれば...
 
-## CSS装飾
+### CSS装飾
 
 もっとSassらしい構成にするべきだったのでしょうが，
 前述のファイル分割以外はいつもの癖で`.css`っぽい書き方になった．
 
-### タイトル
+#### タイトル
 
 そういえばブログタイトルを変えた．
 旧タイトル**のんびり努力中**は小学校時代のブログ開設時から
@@ -321,7 +321,7 @@ const index_focus = () => {
 `content` も変えなければならないところ．
 まあ，もうしばらくは変えないでしょう，きっと．
 
-### レイアウト
+#### レイアウト
 
 前述の通り，全体としては1カラムなので単純に並べられます．
 しかし，記事Moduleは
@@ -364,7 +364,7 @@ const index_focus = () => {
 それぞれのカラムの幅も `grid-template-columns` で設定するだけ．
 世の中は便利になっていくもんね...
 
-#### 記事目次を画面にくっつける
+##### 記事目次を画面にくっつける
 
 なんのことはない，
 
@@ -377,7 +377,7 @@ const index_focus = () => {
 
 これで一発．
 
-### 読み込み画面
+#### 読み込み画面
 
 JSを増やしすぎたせいで，
 読み込みがとても遅くなった．
@@ -430,7 +430,7 @@ const loader_remove = () =>
 読み込み画面を作るだけで体感的には読み込みが早くなった．
 しかし，なんの解決にもなっていない...
 
-# ソースコード
+## ソースコード
 
 [ha2zakura/Hatena-Blog-Theme-Shimakaze](https://github.com/ha2zakura/Hatena-Blog-Theme-Shimakaze)
 

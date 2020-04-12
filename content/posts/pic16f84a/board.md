@@ -17,12 +17,12 @@ PICマイコン面白いな，と興味を持ち，
 <!--more-->
 なのでPICを始めるべく色々揃えた．
 
-# マイコンボードを作る
+## マイコンボードを作る
 
 いちいちブレッドボードで回路を組むのは嫌いなので，  
 例の如くまたマイコンボードを作った．  
 
-## PIC16F84A本体
+### PIC16F84A本体
 
 {{< figure src="//drive.google.com/uc?export=view&id=1HYyKyndfH4UsuWwsGniKpwEzhzXqZKx2" title="PIC16F84A" >}}
 
@@ -34,7 +34,7 @@ PICはDIPの選択肢がいっぱいあっていい．
 メモリ増量版である[16F88](http://akizukidenshi.com/catalog/g/gI-00567/)もあるが，  
 まずは16F84Aから勉強していきたいと思う．
 
-## PICkit3
+### PICkit3
 
 PICマイコンを書き込むには特別な書き込み機が必要．  
 知識があれば自分でも作れるそうだが，  
@@ -47,7 +47,7 @@ PICマイコンを書き込むには特別な書き込み機が必要．
 
 約6,000円．この値段で知識と安心を得られるのなら安い，はず．
 
-## マイコンボード
+### マイコンボード
 
 {{< figure src="//drive.google.com/uc?export=view&id=1RunTi11haITlIbllXSWVQlh1sIOPpXxC" title="PIC16F84Aマイコンボード" >}}
 

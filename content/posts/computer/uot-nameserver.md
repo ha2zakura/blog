@@ -23,14 +23,14 @@ toc : true
 
 いろいろと試した結果，以下の方法を用いることで国内サーバに切り替えることができた．
 
-# 国内サーバへの切り替え
+## 国内サーバへの切り替え
 
 切り替えるサーバはUNIVERSITY OF TOYAMA with Ubuntu Japanese LoCoの[http://jp.archive.ubuntu.com/]．[Ubuntu Japanese Local Community Team](https://lists.ubuntu.com/mailman/listinfo/ubuntu-jp)の[このメーリングリストのアーカイブ](https://lists.ubuntu.com/archives/ubuntu-jp/2009-August/002059.html)を参考に，``/etc/apt/sources.list``を書き直した．
 
 ```sh
 $ sudo vim /etc/apt/sources.list
 
-# http://ports.ubuntu.com/ubuntu-ports/を指定してあった部分を以下に書き換え
+## http://ports.ubuntu.com/ubuntu-ports/を指定してあった部分を以下に書き換え
 deb http://jp.archive.ubuntu.com/ports/ bionic main restricted universe multiverse
 deb-src http://jp.archive.ubuntu.com/ubuntu/ bionic main restricted universe multiverse
 ```

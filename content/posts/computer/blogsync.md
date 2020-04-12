@@ -16,7 +16,7 @@ toc : true
 で，色々調べてたら `blogsync` なるものを見付けたので，導入してみた．
 <!--more-->
 
-# blogsyncとは
+## blogsyncとは
 
 これ．[x-motemen/blogsync: Push and pull blog entries from/to local filesystem](https://github.com/motemen/blogsync)
 
@@ -25,13 +25,13 @@ Go言語で書かれた，「はてなBlog用のCLIクライアント」．こ�
 これを用いることで，ローカル上で記事の作成，投稿ができる．  
 なにがいいって，VSCodeで記事が編集できる!
 
-# 導入
+## 導入
 
 導入方法は[README](https://github.com/motemen/blogsync/blob/master/README.md)に書かれている．これを基に，少し気になったことなど．
 
-## インストール
+### インストール
 
-### macOS
+#### macOS
 
 ```bash
 $ brew install Songmu/tap/blogsync
@@ -40,20 +40,20 @@ $ brew install Songmu/tap/blogsync
 [Homebrew](https://brew.sh/)を使う場合．学校でも `brew` を使いたい．
 愚痴はさておき，私の環境はmacOSではないので，次へ．
 
-### Ubuntu / WSL
+#### Ubuntu / WSL
 
 ``` bash
-# go が使えない場合
+## go が使えない場合
 $ sudo snap install --classic go
 $ echo "export GOPATH=$HOME/.go" >> ~/.bashrc
 $ echo "export PATH=$PATH:$GOPATH/bin" >> ~./bashrc
 
-# blogsync のインストール
+## blogsync のインストール
 $ go get github.com/motemen/blogsync
 ```
 前半の`go`のインストールで悩んだ．`$GOPATH`の設定がなければいけないよう．`go`のインストールについては[Go言語のインストール - golang.jp](http://golang.jp/install#freebsd_linux)なども参照してください．
 
-## 設定ファイル
+### 設定ファイル
 
 `blogsync` を使うための設定ファイルを `~/.config/blogsync/config.yaml` に作成する．
 
@@ -100,9 +100,9 @@ default:
 
 となる．
 
-# 使う
+## 使う
 
-## エントリのダウンロード
+### エントリのダウンロード
 
 ```
 $ blogsync pull <キー>
@@ -110,7 +110,7 @@ $ blogsync pull <キー>
 
 で，エントリを `local_root` にダウンロードできる．フォルダ構成は記事URLの設定によって異なる．
 
-## エントリの形式
+### エントリの形式
 
 エントリは[YAML Frontmatter](https://assemble.io/docs/YAML-front-matter.html)になっていて，拡張子は `.md`．たとえば，この記事の下書き時点での冒頭部分は，
 
@@ -131,7 +131,7 @@ toc : true
 
 となる．各項目の内容は雰囲気でわかる．
 
-## エントリの更新
+### エントリの更新
 
 ```bash
 $ blogsync push <エントリのパス>
@@ -139,7 +139,7 @@ $ blogsync push <エントリのパス>
 
 `blogsync push` で下書きや既に投稿した記事を更新できる．
 
-## エントリの投稿
+### エントリの投稿
 
 ```bash
 $ blogsync post <キー> [--draft] [--title=<タイトル>] < <エントリの内容(.txtとか)>
@@ -152,7 +152,7 @@ $ blogsync post <キー> [--draft] [--title=<タイトル>] < <エントリの�
 - `--draft`: 下書き記事として投稿する．
 - `--title=<タイトル>`: 記事のタイトルを指定する．
 
-## エントリの作成
+### エントリの作成
 
 `blogsync` にはエントリ作成にあたるコマンドは無いが，`blogsync post`を応用して記事を作成できる．
 
@@ -162,7 +162,7 @@ $ echo '' | blogsync post <キー> [--draft] [--title=<タイトル>]
 
 これによって `local_root` に新しいエントリが追加されるので，これを編集して `blogsync push <パス>` する．
 
-# 思ったこと
+## 思ったこと
 
 VSCodeで記事を編集し，GitHubでバージョン管理．  
 これで書く抵抗もなくなって...

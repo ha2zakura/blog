@@ -21,7 +21,7 @@ Wi-Fiが使えるマイコンで，
 <!--more-->
 
 
-# ArduinoOTAとは
+## ArduinoOTAとは
 
 ArduinoOTAは
 [Arduino IDE](https://www.arduino.cc/en/main/software)に
@@ -38,7 +38,7 @@ OTAは**O**ver **t**he **A**irの略だそう．
 ここでは説明を省きます．
 
 
-# BasicOTAの書き込み
+## BasicOTAの書き込み
 
 標準ライブラリなのでサンプルスケッチがある．
 
@@ -103,7 +103,7 @@ void loop() {
 またPCとケーブルで接続しなきゃいけないので，
 注意が必要．
 
-# PlatformIOで使う
+## PlatformIOで使う
 
 [公式のドキュメント](https://docs.platformio.org/en/latest/platforms/espressif8266.html#over-the-air-ota-update)
 にあるように，
@@ -127,7 +127,7 @@ upload_port = 192.168.x.xx
 ArduinoOTA経由で書き込んでくれます．
 便利な世の中．
 
-## PlatformIOとは
+### PlatformIOとは
 
 そういえば，脈略もなく[PlatformIO](https://platformio.org/)を登場させていた．
 PlatformIOは組み込み系のための強力な拡張機能．

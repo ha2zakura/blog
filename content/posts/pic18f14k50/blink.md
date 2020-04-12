@@ -42,6 +42,6 @@ void delay(int num)
 
 ソースコード全体は[こちら](https://gist.github.com/ha2zakura/76f57229bf9200c05c2cab816442247f)．
 
-## ついでに
+### ついでに
 
 予定ではTimer0,1,2を使ったLチカも書くつもりだったのが，[ソースコード](https://gist.github.com/ha2zakura/d74930f41ea1c25548fe041289cab217)だけGistに置いておく．参考にどうぞ．  

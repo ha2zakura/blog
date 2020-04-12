@@ -17,11 +17,11 @@ toc : true
 <!--more-->
 ファンクションジェネレータって高い...
 
-# とても大雑把な仕様
+## とても大雑把な仕様
 
 電源は±9V（006P型など），出力は正弦波(1kHz前後)のみとする．出力インピーダンスはよくわからないので出たとこ勝負とする．
 
-# 回路図
+## 回路図
 
 {{< figure src="//drive.google.com/uc?export=view&id=10VlFD4dqKGhQivYCufCalt8ESySbJp8X" title="回路図 (パスコンなどは省略)" >}}
 
@@ -33,7 +33,7 @@ toc : true
 オペアンプは家にあったものを使った．NJM1458Dである理由は特にない．
 （昔，某公立高専の体験授業でいただいた代物．**タダほど高いものはない．**）
 
-# 完成したもの
+## 完成したもの
 
 {{< figure src="//drive.google.com/uc?export=view&id=1OFaRNDNIYbSrm5SpCEGRu9dYwSIbmLMU" title="オシロスコープでみてみる" >}}
 
