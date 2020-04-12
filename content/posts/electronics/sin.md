@@ -1,13 +1,13 @@
-+++
-title = "簡易正弦波ジェネレータ"
-tags = [
+---
+title : "簡易正弦波ジェネレータ"
+tags : [
   "electronics",
 ]
-date = "2018-07-15T12:58:06+09:00"
-images = [
+date : "2018-07-15T12:58:06+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1OFaRNDNIYbSrm5SpCEGRu9dYwSIbmLMU",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1BERmFymhBwYzqRWsPGiup2I_roWoEfCk" title="" >}}
 

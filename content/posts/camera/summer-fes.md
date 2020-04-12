@@ -1,15 +1,15 @@
-+++
-title = "一足先の夏祭り"
-tags = [
+---
+title : "一足先の夏祭り"
+tags : [
   "diary",
   "x-e1",
   "camera",
 ]
-date = "2019-07-16T20:46:32+09:00"
-images = [
+date : "2019-07-16T20:46:32+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1MooWsiFa-cmJIMgi_UIpVB3JjKSY8snp",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=171hkQpeGeGUoN-lubkSZRSBG0QAjOu-z" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 

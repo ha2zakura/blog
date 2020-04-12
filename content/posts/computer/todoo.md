@@ -1,15 +1,15 @@
-+++
-title = "量で見るTODOリスト"
-tags = [
+---
+title : "量で見るTODOリスト"
+tags : [
   "computer",
   "nodejs",
   "vuejs",
 ]
-date = "2020-01-02T17:20:40+09:00"
-images = [
+date : "2020-01-02T17:20:40+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
 ]
-+++
+---
 
 最近，やる事が多くなってきたので，管理のためにTODOリストを作った．
 <!--more-->

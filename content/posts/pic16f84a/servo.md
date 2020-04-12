@@ -1,14 +1,14 @@
-+++
-title = "PIC16F84A : サーボモータを使う"
-tags = [
+---
+title : "PIC16F84A : サーボモータを使う"
+tags : [
   "electronics",
   "pic16f84a",
 ]
-date = "2018-03-20T16:26:07+09:00"
-images = [
+date : "2018-03-20T16:26:07+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1AGNdfBCHoitsCB0iixzLPH57Yclv-nVp",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1AGNdfBCHoitsCB0iixzLPH57Yclv-nVp" title="" >}}
 

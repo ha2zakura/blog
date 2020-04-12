@@ -1,14 +1,14 @@
-+++
-title = "はてなブログのデザインを一新する"
-tags = [
+---
+title : "はてなブログのデザインを一新する"
+tags : [
   "computer",
   "hatena",
 ]
-date = "2020-03-04T17:41:58+09:00"
-images = [
+date : "2020-03-04T17:41:58+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
 ]
-+++
+---
 
 久々にはてなブログのデザインを更新した．
 <!--more-->

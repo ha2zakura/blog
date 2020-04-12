@@ -1,14 +1,14 @@
-+++
-title = "記事管理にblogsyncを導入した"
-tags = [
+---
+title : "記事管理にblogsyncを導入した"
+tags : [
   "computer",
   "hatena",
 ]
-date = "2020-01-02T15:06:53+09:00"
-images = [
+date : "2020-01-02T15:06:53+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
 ]
-+++
+---
 
 はてなブログを更新する時の1番の障壁って，ずばり，ブラウザエディタよね．書き辛いのなんの．
 

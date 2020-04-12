@@ -1,15 +1,15 @@
-+++
-title = "ESP8266 : いまさらLチカをする"
-tags = [
+---
+title : "ESP8266 : いまさらLチカをする"
+tags : [
   "electronics",
   "esp8266",
   "blink-helloworld",
 ]
-date = "2020-02-22T18:26:18+09:00"
-images = [
+date : "2020-02-22T18:26:18+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1ApCeVvLoa1uOxGvjM2AD3cKt7ykEZxmE",
 ]
-+++
+---
 
 先日，秋月の税込250円の
 [ESP-WROOM-02](http://akizukidenshi.com/catalog/g/gM-09607/)を買ったので，

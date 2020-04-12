@@ -1,14 +1,14 @@
-+++
-title = "ESP8266 : ArduinoOTAで無線書き込み"
-tags = [
+---
+title : "ESP8266 : ArduinoOTAで無線書き込み"
+tags : [
   "electronics",
   "esp8266",
 ]
-date = "2020-03-17T16:08:03+09:00"
-images = [
+date : "2020-03-17T16:08:03+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1ApCeVvLoa1uOxGvjM2AD3cKt7ykEZxmE",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=18QzjpuyO9j0fnHWh477QUEuQdLJ9R2sJ" title="" >}}
 

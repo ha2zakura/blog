@@ -1,15 +1,15 @@
-+++
-title = "Androidにまともなターミナル環境(Ubuntu on Termux)を作った話"
-tags = [
+---
+title : "Androidにまともなターミナル環境(Ubuntu on Termux)を作った話"
+tags : [
   "computer",
   "termux",
   "android",
 ]
-date = "2019-07-18T08:51:36+09:00"
-images = [
+date : "2019-07-18T08:51:36+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
 ]
-+++
+---
 
 前々から試行錯誤してたAndroidのターミナル環境作りが一段落したので，
 そのメモ．ようやく，まともに使える&使いやすい環境を作ることができた．

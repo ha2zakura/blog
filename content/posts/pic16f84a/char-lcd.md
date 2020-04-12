@@ -1,14 +1,14 @@
-+++
-title = "PIC16F84A : キャラクタLCDを使う"
-tags = [
+---
+title : "PIC16F84A : キャラクタLCDを使う"
+tags : [
   "electronics",
   "pic16f84a",
 ]
-date = "2018-03-13T16:50:59+09:00"
-images = [
+date : "2018-03-13T16:50:59+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1zlqE4iVtKJPAOPmWzrqLvLOeQJSQutH2",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1VP6--ylIB7DEv21WeiYNGbEZxfRyAqRZ" title="" >}}
 

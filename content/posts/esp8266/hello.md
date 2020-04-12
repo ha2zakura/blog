@@ -1,15 +1,15 @@
-+++
-title = "ESP8266 : マイコンなのにHello，world!"
-tags = [
+---
+title : "ESP8266 : マイコンなのにHello，world!"
+tags : [
   "electronics",
   "esp8266",
   "blink-helloworld",
 ]
-date = "2020-02-23T06:12:45+09:00"
-images = [
+date : "2020-02-23T06:12:45+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1ApCeVvLoa1uOxGvjM2AD3cKt7ykEZxmE",
 ]
-+++
+---
 
 [LチカをしたESP-WROOM-02]({{< ref "/content/posts/esp8266/blink.md" >}})が，
 やっぱりESP8266の威力を体験するためにはWi-Fi関連を使わねばなりません．

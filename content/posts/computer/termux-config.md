@@ -1,15 +1,15 @@
-+++
-title = "Termuxの諸設定 (SSH，ストレージ，フォント，etc...)"
-tags = [
+---
+title : "Termuxの諸設定 (SSH，ストレージ，フォント，etc...)"
+tags : [
   "computer",
   "termux",
   "android",
 ]
-date = "2019-08-25T18:34:19+09:00"
-images = [
+date : "2019-08-25T18:34:19+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1WoS5J11xSG46pN655e5FTiN5ifDdzcm7",
 ]
-+++
+---
 
 [UoT]({{< ref "/content/posts/computer/uot.md" >}})を使ってて，
 少々Termux側の設定で気になったことがあったのでそのメモ. 

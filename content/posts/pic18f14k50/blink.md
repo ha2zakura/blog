@@ -1,15 +1,15 @@
-+++
-title = "PIC18F14K50 : Lチカ"
-tags = [
+---
+title : "PIC18F14K50 : Lチカ"
+tags : [
   "electronics",
   "pic18f14k50",
   "blink-helloworld",
 ]
-date = "2018-04-30T08:35:33+09:00"
-images = [
+date : "2018-04-30T08:35:33+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=16yEESR8hHXxYDbfQ-l1eOzfB8PZTl6Cc",
 ]
-+++
+---
 
 始めたばかりのPIC18F14K50で定番のLチカしてみる．  
 

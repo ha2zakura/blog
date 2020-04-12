@@ -1,14 +1,14 @@
-+++
-title = "PIC18F14K50 : マイコンボード作り"
-tags = [
+---
+title : "PIC18F14K50 : マイコンボード作り"
+tags : [
   "electronics",
   "pic18f14k50",
 ]
-date = "2018-04-03T16:50:22+09:00"
-images = [
+date : "2018-04-03T16:50:22+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=16yEESR8hHXxYDbfQ-l1eOzfB8PZTl6Cc",
 ]
-+++
+---
 
 最近，アセンブリを書くことに疲れてきたので，
 しばらくはC言語で開発していきたいと思う．

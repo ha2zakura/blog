@@ -1,15 +1,15 @@
-+++
-title = "PIC16F84A : マトリクスLEDを使う(74HC595使用)"
-tags = [
+---
+title : "PIC16F84A : マトリクスLEDを使う(74HC595使用)"
+tags : [
   "electronics",
   "pic16f84a",
   "matrix-led",
 ]
-date = "2018-03-21T15:05:29+09:00"
-images = [
+date : "2018-03-21T15:05:29+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1YBAnrs6-ieucxhs5MH_BmX3g3O3_XYYm",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1OZ717qgsLiGgC7Hg0I3m4zOHflwNxvVR" title="" >}}
 

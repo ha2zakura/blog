@@ -1,14 +1,14 @@
-+++
-title = "PIC16F84A : マイコンボード作リ"
-tags = [
+---
+title : "PIC16F84A : マイコンボード作リ"
+tags : [
   "electronics",
   "pic16f84a",
 ]
-date = "2018-01-11T16:11:35+09:00"
-images = [
+date : "2018-01-11T16:11:35+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1I37Dcx6BprN2RcdODvEzx2_oJOS65iqu",
 ]
-+++
+---
 
 去年の夏に諸事情でPICマイコンを触る機会があって，  
 PICマイコン面白いな，と興味を持ち，  

@@ -1,15 +1,15 @@
-+++
-title = "東京ディズニーシーの夏"
-tags = [
+---
+title : "東京ディズニーシーの夏"
+tags : [
   "diary",
   "x-e1",
   "camera",
 ]
-date = "2019-07-25T13:20:46+09:00"
-images = [
+date : "2019-07-25T13:20:46+09:00"
+images : [
   "//drive.google.com/uc?export=view&id=1NJdk8KrUJ1x9Srq07pLXXjnGHjQcflpY",
 ]
-+++
+---
 
 {{< figure src="//drive.google.com/uc?export=view&id=1nMNZraB21rE9LemYvojdZ9GI_oJpTJ4q" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 
