@@ -37,7 +37,7 @@ OTAは**O**ver **t**he **A**irの略だそう.
 
 標準ライブラリなのでサンプルスケッチがある. 
 
-[File]>[Examples]>[ArduinoOTA]>[BasicOTA]
+**File** > **Examples** > **ArduinoOTA** > **BasicOTA**
 
 これを書き込めば次回のスケッチは
 ネット経由で書き込むことができるようになるの. が, 
