@@ -82,7 +82,7 @@ void loop() {
 ```
 
 これを書き込むと, 
-[Tools]>[Port: ~]に
+**Tools** > **Port: ~**に
 `ESP8266-xxxxxx at 192.168.x.xx`
 のようにIPアドレス付きのPortが出現する. 
 これを選択することで, 
