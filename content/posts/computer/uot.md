@@ -17,7 +17,7 @@ toc : true
 
 ## 何をしたか, なぜしたのか
 
-アプリ「[Termux](https://termux.com/)」上に, [Ubuntu](https://ubuntu.com/)の仮想環境を作ります. root化はしてません.   
+アプリ「[Termux](https://termux.com/)」上に, [Ubuntu](https://ubuntu.com/)の仮想環境を作る. root化はしてません.   
 
 Android上でUbuntuが動くので, 出かけ先にPCを持っていく必要があまりなくなる. 電車の中で, ``git commit``できる.   
 
@@ -25,7 +25,7 @@ Android上でUbuntuが動くので, 出かけ先にPCを持っていく必要が
 
 Termux - https://termux.com/
 
-まず, 大元となる端末は[Termux](https://termux.com/)を用います. [端末エミュレータ](https://play.google.com/store/apps/details?id=jackpal.androidterm&hl=ja)でない理由は, Termuxは``pkg``が使えるから. 
+まず, 大元となる端末は[Termux](https://termux.com/)を用いる. [端末エミュレータ](https://play.google.com/store/apps/details?id=jackpal.androidterm&hl=ja)でない理由は, Termuxは``pkg``が使えるから. 
 Termuxは[Google Play](https://play.google.com/store/apps/details?id=com.termux)や[F-Droid](https://f-droid.org/packages/com.termux/)よりインストールできる. (ここでF-Doridも挙げるのはHUAWEIユーザーだから...?)
 
 特に特別なことをすることなく, インストールできる. ちなみに私の環境ではErrorでGoogle Playからインストールできなかったので, F-Droidよりインストールした. 
@@ -59,7 +59,7 @@ VERSION="18.04 LTS (Bionic Beaver)"
 
 [Ubuntu 18.04 LTS (Bionic Beaver)](http://releases.ubuntu.com/18.04/). しっかりUbuntu(何度目
 
-これでUbuntuが導入できた. ひと段落. が, まだ色々と気になるところがあったので, 整えていきます. 
+これでUbuntuが導入できた. ひと段落. が, まだ色々と気になるところがあったので, 整えていく. 
 
 ## 諸々の設定
 
@@ -71,11 +71,11 @@ Ubuntuの起動は``start-ubuntu.sh``を実行する必要がある. が, 起動
 $ echo "./start-ubuntu.sh" >> ~/.bashrc
 ```
 
-これで, Termux起動のたびにすぐにUbuntuが実行する. ちなみに, Termux bashに戻ったいときは, ``exit``で戻れます. 
+これで, Termux起動のたびにすぐにUbuntuが実行する. ちなみに, Termux bashに戻ったいときは, ``exit``で戻れる. 
 
 ### 一般ユーザーの追加
 
-Ubuntuを起動すると, rootとしてログインされます. しかし, 無条件でrootになるのは少し怖いので, 一般ユーザーを追加する. 
+Ubuntuを起動すると, rootとしてログインされる. しかし, 無条件でrootになるのは少し怖いので, 一般ユーザーを追加する. 
 
 ```sh
 ~# apt update
@@ -124,7 +124,7 @@ $ fish
 
 参考 : [自宅のubuntu-16.04マシンのシェルをfishに変更した - takapiのブログ](http://takapi86.hatenablog.com/entry/2017/05/28/124642)
 
-``fish``のインストールには数分かかります. Shellの変更は通常``chsh -s /usr/bin/fish``なのが, なぜかエラーが出た. なので, ``~/.bashrc``に追加して間接的に起動をする. 
+``fish``のインストールには数分かかる. Shellの変更は通常``chsh -s /usr/bin/fish``なのが, なぜかエラーが出た. なので, ``~/.bashrc``に追加して間接的に起動をする. 
 
 ### gitのインストール・設定
 
@@ -135,13 +135,13 @@ $ fish
 > ssh-keygen #Password設定あり
 > cat ~/.ssh/id_rsa.pub
 ```
-表示された公開キーをコピペし, Github等のサイトのSSH keys設定に貼り付けます. 
+表示された公開キーをコピペし, Github等のサイトのSSH keys設定に貼り付ける. 
 
 参考 : [GitHubの初期設定（SSH接続からリポジトリへのpushまで） - Qiita](https://qiita.com/drapon/items/441e18452b25060d61f1)
 
 Androidからサイト開いて貼り付けるのがやりにくいので, 私はLINEで一人グループを作り, それで送信してPCで貼り付け作業を行いた. スマホならではの使い方?
 
-設定次第ではGUIも動かせるっぽい. ~~けど, ここまでで既にストレージを圧迫し始めているのでやめておきます. ~~スマホ買い換えたい
+設定次第ではGUIも動かせるっぽい. ~~けど, ここまでで既にストレージを圧迫し始めているのでやめておく. ~~スマホ買い換えたい
 
 （追記 : 2019/7/21）
 

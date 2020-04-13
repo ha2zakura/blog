@@ -55,7 +55,7 @@ void loop() {
 }
 ```
 
-`WiFi.localIP()`でIPアドレスを取得できるので, そこに接続すると以下のように表示されます. 
+`WiFi.localIP()`でIPアドレスを取得できるので, そこに接続すると以下のように表示される. 
 
 
 {{< figure src="/img/posts/esp8266/hello-1.png" title="Hello, world!" >}}

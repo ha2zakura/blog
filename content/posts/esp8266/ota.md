@@ -30,7 +30,7 @@ OTAは**O**ver **t**he **A**irの略だそう.
 [Python 2.7](https://www.python.org/)が必要だそう. 
 `python2`が使えないときは
 `pyenv install 2.7.17`とかしましょう. 
-ここでは説明を省きます. 
+ここでは説明を省く. 
 
 
 ## BasicOTAの書き込み
@@ -89,11 +89,11 @@ void loop() {
 次回はネット経由で書き込みすることができるようになる訳. 
 
 なお, 書き込みが終了してから
-実行されるまでに, 10秒くらい時間がかかります. 
+実行されるまでに, 10秒くらい時間がかかる. 
 ドキドキしながら待ちましょう. 
 
 これを毎回スケッチに潜ませれば, 
-スケッチをOver the Airし続けられます. 
+スケッチをOver the Airし続けられる. 
 潜ませるのを忘れると, 
 またPCとケーブルで接続しなきゃいけないので, 
 注意が必要. 
@@ -103,10 +103,10 @@ void loop() {
 [公式のドキュメント](https://docs.platformio.org/en/latest/platforms/espressif8266.html#over-the-air-ota-update)
 にあるように, 
 PlatformIOでの書き込みでも
-AruduinoOTA経由で書き込めます. 
+AruduinoOTA経由で書き込める. 
 ただし, **こちらはIPアドレスの確認が必須**. 
 ArduinoIDEのPortに表示されるIPアドレスを
-メモしておきます. 
+メモしておく. 
 
 あとは簡単, 
 PratformIOのプロジェクトフォルダにある
@@ -119,7 +119,7 @@ upload_port = 192.168.x.xx
 ```
 
 これで書き込めば, 自動的に
-ArduinoOTA経由で書き込んでくれます. 
+ArduinoOTA経由で書き込んでくれる. 
 便利な世の中. 
 
 ### PlatformIOとは
@@ -128,13 +128,10 @@ ArduinoOTA経由で書き込んでくれます.
 PlatformIOは組み込み系のための強力な拡張機能. 
 てか, もはや統合開発環境. 
 Arduino IDEとかいう軟弱なエディタではなく, 
-[VSCode](https://code.visualstudio.com/)とかで開発ができちゃいます. 
+[VSCode](https://code.visualstudio.com/)とかで開発ができる. 
 しかも, Arduino言語でも使える. 
 Arduinoを使いたくない理由の半分をこいつが解決してくれた. 
 
-インストールは普通の拡張機能と同じなので説明は省きます. 
-以下のQiita記事を参考にしましょう. 
-そして, LGTMしましょう.   
+インストールは普通の拡張機能と同じなので説明は省く. 
+以下のQiita記事を参考にされたい. 
 [マイコン開発するならPlatformIOがめちゃくちゃいいぞ - Qiita](https://qiita.com/JotaroS/items/1930f156aab953194c9a)  
-このブログにもLGTMを導入しようかな...w
-

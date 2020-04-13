@@ -56,7 +56,7 @@ MIDIの再生は[Domino](http://takabosoft.com/domino)で, MIDIデータの送�
 かわりに[The Hairless MIDI<->Serial Bridge](http://projectgus.github.io/hairless-midiserial/)を使う. 
 先人に感謝 ! こちらはシリアル通信でMIDIが使えるため, 互換機でも使える. 
 
-で, 以下が演奏してみたもの. 譜面は[かきむき様のもの](http://kakimuki.blog91.fc2.com/blog-entry-6.html)を使わせていただいてます. 
+で, 以下が演奏してみたもの. 譜面は[かきむき様のもの](http://kakimuki.blog91.fc2.com/blog-entry-6.html)を使わせていただいてる. 
 
 [千本桜.mp3](https://www.dropbox.com/s/ingke1lf3zb9ivt/%E5%8D%83%E6%9C%AC%E6%A1%9C.mp3?dl=0)
 

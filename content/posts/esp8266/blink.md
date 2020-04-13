@@ -74,7 +74,7 @@ UEWを使って直付けした.
 で, `AT`を送信すると正常なら`OK`と返ってくるはずなのが, 
 ここで`ERROR`ばっかし返ってきて苦労した. 
 
-結論を言いますと, 
+結論を言うと, 
 シリアルコンソールの改行コードの設定を
 受信**CR**, 送信**CR+LF**にする必要があった. 
 
@@ -95,13 +95,13 @@ CH340EにはDTRが無い! ので結局実装はしませんだった.
 
 ## Lチカする
 
-さて主題のLチカが, [Arduino IDE](https://www.arduino.cc/en/main/software)を使って爆速で終わらせます. 
+さて主題のLチカが, [Arduino IDE](https://www.arduino.cc/en/main/software)を使って爆速で終わらせる. 
 
 1. 「ファイル」>「環境設定」の「追加のボードマネージャ」に`http://arduino.esp8266.com/stable/package_esp8266com_index.json`を追加
 1. 「ツールメニュー」>「ボード」>「ボードマネージャ」で**ESP8266 Community**を検索, 追加. 
 1. 「ツールメニュー」>「ボード」で**Generic ESP8226 Module**を選択. 
 
-で, 以下のよくみるコードを入力し, モジュールに書き込みます. 
+で, 以下のよくみるコードを入力し, モジュールに書き込む. 
 
 ```c
 void setup() {

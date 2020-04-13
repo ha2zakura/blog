@@ -71,8 +71,6 @@ USBコネクタの左のLEDは電源確認用.
 
 {{< figure src="/img/posts/pic16f84a/board-5.png" title="回路図" >}}
 
-※クリックすると拡大表示されます. 
-
 PICkit3はCN1のピン1を三角形と合うように接続する. 
 
 {{< figure src="/img/posts/pic16f84a/board-6.jpg" title="PICkit3との接続" >}}
