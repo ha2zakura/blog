@@ -58,7 +58,7 @@ void loop() {
 `WiFi.localIP()`でIPアドレスを取得できるので, そこに接続すると以下のように表示されます. 
 
 
-{{< figure src="/img/posts/esp8266/hello.png" title="Hello, world!" >}}
+{{< figure src="/img/posts/esp8266/hello-1.png" title="Hello, world!" >}}
 
 `ESP8266WebServer`関係は色々書き方があるみたい. 
 ここで使っているラムダ式は
