@@ -6,6 +6,9 @@
 		<style>.bg-img {background-image: url('{{. | absURL}}');}</style>
 		{{- end -}}
 	{{- end -}}
+	{{ if or .Params.math .Site.Params.math }}
+		{{ partial "math.html" . }}
+	{{ end }}
 {{ end }}
 
 {{ define "header" }}
