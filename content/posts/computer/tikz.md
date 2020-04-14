@@ -134,6 +134,19 @@ BaKoMaフォントというものらしい.
 
 [A simple cycle | TikZ example](http://www.texample.net/tikz/examples/cycle/)
 
+{{< tikz title="A simple cycle" scale="1.5" >}}
+\def \n {5}
+\def \radius {3cm}
+\def \margin {8} % margin in angles, depends on the radius
+
+\foreach \s in {1,...,\n}
+{
+  \node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
+  \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
+    arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
+}
+{{< /tikz >}}
+
 ```tex
 {{</* tikz title="A simple cycle" scale="1.5" */>}}
 \def \n {5}
@@ -149,42 +162,9 @@ BaKoMaフォントというものらしい.
 {{</* /tikz */>}}
 ```
 
-{{< tikz title="A simple cycle" scale="1.5" >}}
-\def \n {5}
-\def \radius {3cm}
-\def \margin {8} % margin in angles, depends on the radius
-
-\foreach \s in {1,...,\n}
-{
-  \node[draw, circle] at ({360/\n * (\s - 1)}:\radius) {$\s$};
-  \draw[->, >=latex] ({360/\n * (\s - 1)+\margin}:\radius) 
-    arc ({360/\n * (\s - 1)+\margin}:{360/\n * (\s)-\margin}:\radius);
-}
-{{< /tikz >}}
-
 ### Intersecting lines
 
 [Intersecting lines | TikZ example](http://www.texample.net/tikz/examples/intersecting-lines/)
-
-```tex
-{{</* tikz title="Intersecting lines" scale="2.5" */>}}
-% Draw axes
-\draw [<->,thick] (0,2) node (yaxis) [above] {$y$}
-    |- (3,0) node (xaxis) [right] {$x$};
-% Draw two intersecting lines
-\draw (0,0) coordinate (a_1) -- (2,1.8) coordinate (a_2);
-\draw (0,1.5) coordinate (b_1) -- (2.5,0) coordinate (b_2);
-% Calculate the intersection of the lines a_1 -- a_2 and b_1 -- b_2
-% and store the coordinate in c.
-\coordinate (c) at (intersection of a_1--a_2 and b_1--b_2);
-% Draw lines indicating intersection with y and x axis. Here we use
-% the perpendicular coordinate system
-\draw[dashed] (yaxis |- c) node[left] {$y'$}
-    -| (xaxis -| c) node[below] {$x'$};
-% Draw a dot to indicate intersection point
-\fill[red] (c) circle (2pt);
-{{</* /tikz */>}}
-```
 
 {{< tikz title="Intersecting lines" scale="2.5" >}}
 % Draw axes
@@ -206,3 +186,23 @@ BaKoMaフォントというものらしい.
 
 テーマと合わせるために`filter: invert()`で色を反転させているので,
 丸が水色になっている.
+
+```tex
+{{</* tikz title="Intersecting lines" scale="2.5" */>}}
+% Draw axes
+\draw [<->,thick] (0,2) node (yaxis) [above] {$y$}
+    |- (3,0) node (xaxis) [right] {$x$};
+% Draw two intersecting lines
+\draw (0,0) coordinate (a_1) -- (2,1.8) coordinate (a_2);
+\draw (0,1.5) coordinate (b_1) -- (2.5,0) coordinate (b_2);
+% Calculate the intersection of the lines a_1 -- a_2 and b_1 -- b_2
+% and store the coordinate in c.
+\coordinate (c) at (intersection of a_1--a_2 and b_1--b_2);
+% Draw lines indicating intersection with y and x axis. Here we use
+% the perpendicular coordinate system
+\draw[dashed] (yaxis |- c) node[left] {$y'$}
+    -| (xaxis -| c) node[below] {$x'$};
+% Draw a dot to indicate intersection point
+\fill[red] (c) circle (2pt);
+{{</* /tikz */>}}
+```
