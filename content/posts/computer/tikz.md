@@ -5,7 +5,6 @@ tags : [
   "tikz",
 ]
 date: 2020-04-14T18:10:05+09:00
-# draft: true
 toc : true
 math: true
 tikz: true
