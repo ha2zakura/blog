@@ -1,0 +1,12 @@
+<figure>
+  <script type="text/tikz">
+    \begin{tikzpicture}[{{ with .Get "scale" }}scale={{ . }}, transform shape{{ end }},{{ with .Get "domein" }}domain={{ . }}{{ end }}]
+      {{ .Inner }}
+    \end{tikzpicture}
+  </script>
+  {{ with .Get "title" }}
+  <figcaption>
+    <h4>{{ . }}</h4>
+  </figcaption>
+  {{ end }}
+</figure>

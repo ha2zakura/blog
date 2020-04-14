@@ -2,6 +2,7 @@
 title: "Hugo + GitHub Pagesに乗り換えた"
 tags : [
   "computer",
+  "hugo",
 ]
 date: 2020-04-13T05:48:26+09:00
 toc : true

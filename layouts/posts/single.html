@@ -9,6 +9,9 @@
 	{{ if or .Params.math .Site.Params.math }}
 		{{ partial "math.html" . }}
 	{{ end }}
+	{{ if or .Params.tikz .Site.Params.tikz }}
+		{{ partial "tikzjax.html" . }}
+	{{ end }}
 {{ end }}
 
 {{ define "header" }}

@@ -7,5 +7,6 @@ tags : [
 date: {{ .Date }}
 draft: true
 toc : true
-math: true
+math: false
+tikz: false
 ---
