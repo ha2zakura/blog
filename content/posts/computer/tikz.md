@@ -5,7 +5,7 @@ tags : [
   "tikz",
 ]
 date: 2020-04-14T18:10:05+09:00
-draft: true
+# draft: true
 toc : true
 math: true
 tikz: true
@@ -53,7 +53,7 @@ WebAssemblyにコンパイルしているらしい.
 
 [README.md](https://github.com/kisonecat/tikzjax/blob/master/README.md)の通りにやればできると思ったが,
 途中でWebAssemblyをfetchする時に[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)で引っ掛かる.
-なので, スクリプトを手元に落とすことにする.
+なので, あまり上品ではないが, スクリプトとWebAssemblyを手元に落とすことにする.
 
 まず問題のスクリプトを引っ張ってくる.
 
@@ -61,10 +61,20 @@ WebAssemblyにコンパイルしているらしい.
 wget -O static/script/tikzjax.js http://tikzjax.com/v1/tikzjax.js
 ```
 
-そしてこのスクリプトの**21858行目**を以下のように変更.
+このスクリプトの**21864~21866行目**を以下のように変更.
 
 ```js
-var urlRoot = 'http://tikzjax.com';
+let tex = await fetch(urlRoot + '/wasm/tikzjax.wasm');
+code = await tex.arrayBuffer();
+let response = await fetch_readablestream__WEBPACK_IMPORTED_MODULE_5___default()(urlRoot + '/gzip/tikzjax.gz');
+```
+
+そしてWebAssembly達を引っ張ってくる.
+セキュリティが心配な場合は`git clone`して手元でビルドする.
+
+```bash
+wget -O static/wasm/tikzjax.wasm http://tikzjax.com/ef253ef29e2f057334f77ead7f06ed8f22607d38.wasm
+wget -O static/gzip/tikzjax.gz http://tikzjax.com/7620f557a41f2bf40820e76ba1fd4d89a484859d.gz
 ```
 
 そして`layouts/partials/tikzjax.html`を作成.
