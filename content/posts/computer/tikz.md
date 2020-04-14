@@ -48,6 +48,10 @@ TikZをブラウザ上で描画してしまうという恐しいツール.
 WebAssemblyにコンパイルしているらしい.
 更に恐しい. 使ってみたい.
 
+ただし`\usetikzlibrary`には対応していない
+(元コードに追加すればいける?)
+ので注意が必要.
+
 ## Hugoで使う
 
 [README.md](https://github.com/kisonecat/tikzjax/blob/master/README.md)の通りにやればできると思ったが,
