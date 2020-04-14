@@ -21890,6 +21890,9 @@ function copy(src) {
 }
 
 async function tex(input) {
+  input = '\\usetikzlibrary{arrows}\n' + input;
+  input = '\\usetikzlibrary{positioning}\n' + input;
+  input = '\\usetikzlibrary{calc}\n' + input;
   if (input.match('\\\\begin *{document}') === null) {
     input = '\\begin{document}\n' + input;
   }

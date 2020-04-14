@@ -17,7 +17,7 @@ TikZによる作図もできると便利だなと思って調べてみたら
 これのショートコードを作成した.
 <!--more-->
 
-{{< tikz title="TikZによるドーナツ(Torus)" scale="2">}}
+{{< tikz title="TikZによるドーナツ(Torus)" scale="2" option="every node/.style={minimum size=1cm}">}}
 \draw (-1,0) to[bend left] (1,0);
 \draw (-1.2,.1) to[bend right] (1.2,.1);
 \draw[rotate=0] (0,0) ellipse (100pt and 50pt);
@@ -112,7 +112,7 @@ BaKoMaフォントというものらしい.
 ```html
 <figure>
   <script type="text/tikz">
-    \begin{tikzpicture}[{{ with .Get "scale" }}scale={{ . }}, transform shape{{ end }},{{ with .Get "domein" }}domain={{ . }}{{ end }}]
+    \begin{tikzpicture}[{{ with .Get "scale" }}scale={{ . }},transform shape,{{ end }}{{ with .Get "option" }}{{ . }},{{ end }}]
       {{ .Inner }}
     \end{tikzpicture}
   </script>
@@ -125,6 +125,20 @@ BaKoMaフォントというものらしい.
 ```
 
 これ以外に`<style>`~`</style>`でテーマに合うようにデザインを調整している.
+
+### ライブラリを使う
+
+使っているうちに`\usetikzlibrary`を使いたくなる.
+そういうときは無理矢理`static/script/tikzjax.js`の
+**21892行目**の`tex()`に以下のように追加する.
+
+```js
+async function tex(input) {
+  input = '\\usetikzlibrary{arrows}\n' + input;
+  input = '\\usetikzlibrary{positioning}\n' + input;
+  input = '\\usetikzlibrary{calc}\n' + input;
+  // ...
+```
 
 ## サンプル
 
@@ -204,5 +218,209 @@ BaKoMaフォントというものらしい.
     -| (xaxis -| c) node[below] {$x'$};
 % Draw a dot to indicate intersection point
 \fill[red] (c) circle (2pt);
+{{</* /tikz */>}}
+```
+
+### SWAN wave model
+[SWAN wave model | TikZ example](http://www.texample.net/tikz/examples/swan-wave-model/)
+
+{{< tikz title="SWAN wave model" scale="1" option="scale=.9,every node/.style={minimum size=1cm}" >}}
+%slanting: production of a set of n 'laminae' to be piled up. N=number of grids.
+\begin{scope}[
+        yshift=-83,every node/.append style={
+        yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+        ]
+    % opacity to prevent graphical interference
+    \fill[white,fill opacity=0.9] (0,0) rectangle (5,5);
+    \draw[step=4mm, black] (0,0) grid (5,5); %defining grids
+    \draw[step=1mm, red!50,thin] (3,1) grid (4,2);  %Nested Grid
+    \draw[black,very thick] (0,0) rectangle (5,5);%marking borders
+    \fill[red] (0.05,0.05) rectangle (0.35,0.35);
+    %Idem as above, for the n-th grid:
+\end{scope}
+  
+\begin{scope}[
+  yshift=0,every node/.append style={
+      yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+                ]
+    \fill[white,fill opacity=.9] (0,0) rectangle (5,5);
+    \draw[black,very thick] (0,0) rectangle (5,5);
+    \draw[step=5mm, black] (0,0) grid (5,5);
+\end{scope}
+  
+\begin{scope}[
+  yshift=90,every node/.append style={
+  yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+                ]
+  \fill[white,fill opacity=.9] (0,0) rectangle (5,5);
+  \draw[step=10mm, black] (1,1) grid (4,4);
+  \draw[black,very thick] (1,1) rectangle (4,4);
+  \draw[black,dashed] (0,0) rectangle (5,5);
+\end{scope}
+  
+\begin{scope}[
+  yshift=170,every node/.append style={
+      yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+    ]
+    \fill[white,fill opacity=0.6] (0,0) rectangle (5,5);
+    \draw[step=10mm, black] (2,2) grid (5,5);
+    \draw[step=2mm, green] (2,2) grid (3,3);
+    \draw[black,very thick] (2,2) rectangle (5,5);
+    \draw[black,dashed] (0,0) rectangle (5,5);
+\end{scope}
+  
+\begin{scope}[
+    yshift=-170,every node/.append style={
+    yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+              ]
+    %marking border
+    \draw[black,very thick] (0,0) rectangle (5,5);
+
+    %drawing corners (P1,P2, P3): only 3 points needed to define a plane.
+    \draw [fill=lime](0,0) circle (.1) ;
+    \draw [fill=lime](0,5) circle (.1);
+    \draw [fill=lime](5,0) circle (.1);
+    \draw [fill=lime](5,5) circle (.1);
+
+    %drawing bathymetric hypotetic countours on the bottom grid:    	
+    \draw [ultra thick](0,1) parabola bend (2,2) (5,1)  ;
+    \draw [dashed] (0,1.5) parabola bend (2.5,2.5) (5,1.5) ;
+    \draw [dashed] (0,2) parabola bend (2.7,2.7) (5,2)  ;
+    \draw [dashed] (0,2.5) parabola bend (3.5,3.5) (5,2.5)  ;
+    \draw [dashed] (0,3.5)  parabola bend (2.75,4.5) (5,3.5);
+    \draw [dashed] (0,4)  parabola bend (2.75,4.8) (5,4);
+    \draw [dashed] (0,3)  parabola bend (2.75,3.8) (5,3);
+    \draw[-latex,thick](2.8,1)node[right]{$\mathsf{Shoreline}$}
+              to[out=180,in=270] (2,1.99);
+\end{scope} %end of drawing grids
+
+%putting arrows and labels:
+\draw[-latex,thick] (6.2,2) node[right]{$\mathsf{Bathymetry}$}
+      to[out=180,in=90] (4,2);
+
+\draw[-latex,thick](5.8,-.3)node[right]{$\mathsf{Comp.\ G.}$}
+    to[out=180,in=90] (3.9,-1);
+
+\draw[-latex,thick](5.9,5)node[right]{$\mathsf{Wind\ G.}$}
+    to[out=180,in=90] (3.6,5);
+
+\draw[-latex,thick](5.9,8.4)node[right]{$\mathsf{Friction\ G.}$}
+    to[out=180,in=90] (3.2,8);
+
+\draw[-latex,thick,red](5.3,-4.2)node[right]{$\mathsf{G. Cell}$}
+    to[out=180,in=90] (0,-2.5);
+
+\draw[-latex,thick,red](4.3,-1.9)node[right]{$\mathsf{Nested\ G.}$}
+    to[out=180,in=90] (2,-.5);
+
+\draw[-latex,thick](4,-6)node[right]{$\mathsf{Batymetry}$}
+    to[out=180,in=90] (2,-5);	
+%drawing points on grid's conrners.
+\fill[black,font=\footnotesize]
+    (-5,-4.3) node [above] {$P_{1}$}
+    (-.3,-5.6) node [below] {$P_{2}$}
+    (5.5,-4) node [above] {$P_{3}$};
+{{< /tikz >}}
+
+`positioning`ライブラリが必要.
+反転して色が変だが, すごい.
+
+```tex
+{{</* tikz title="SWAN wave model" scale="1" option="scale=.9,every node/.style={minimum size=1cm}" */>}}
+%slanting: production of a set of n 'laminae' to be piled up. N=number of grids.
+\begin{scope}[
+        yshift=-83,every node/.append style={
+        yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+        ]
+    % opacity to prevent graphical interference
+    \fill[white,fill opacity=0.9] (0,0) rectangle (5,5);
+    \draw[step=4mm, black] (0,0) grid (5,5); %defining grids
+    \draw[step=1mm, red!50,thin] (3,1) grid (4,2);  %Nested Grid
+    \draw[black,very thick] (0,0) rectangle (5,5);%marking borders
+    \fill[red] (0.05,0.05) rectangle (0.35,0.35);
+    %Idem as above, for the n-th grid:
+\end{scope}
+  
+\begin{scope}[
+  yshift=0,every node/.append style={
+      yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+                ]
+    \fill[white,fill opacity=.9] (0,0) rectangle (5,5);
+    \draw[black,very thick] (0,0) rectangle (5,5);
+    \draw[step=5mm, black] (0,0) grid (5,5);
+\end{scope}
+  
+\begin{scope}[
+  yshift=90,every node/.append style={
+  yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+                ]
+  \fill[white,fill opacity=.9] (0,0) rectangle (5,5);
+  \draw[step=10mm, black] (1,1) grid (4,4);
+  \draw[black,very thick] (1,1) rectangle (4,4);
+  \draw[black,dashed] (0,0) rectangle (5,5);
+\end{scope}
+  
+\begin{scope}[
+  yshift=170,every node/.append style={
+      yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+    ]
+    \fill[white,fill opacity=0.6] (0,0) rectangle (5,5);
+    \draw[step=10mm, black] (2,2) grid (5,5);
+    \draw[step=2mm, green] (2,2) grid (3,3);
+    \draw[black,very thick] (2,2) rectangle (5,5);
+    \draw[black,dashed] (0,0) rectangle (5,5);
+\end{scope}
+  
+\begin{scope}[
+    yshift=-170,every node/.append style={
+    yslant=0.5,xslant=-1},yslant=0.5,xslant=-1
+              ]
+    %marking border
+    \draw[black,very thick] (0,0) rectangle (5,5);
+
+    %drawing corners (P1,P2, P3): only 3 points needed to define a plane.
+    \draw [fill=lime](0,0) circle (.1) ;
+    \draw [fill=lime](0,5) circle (.1);
+    \draw [fill=lime](5,0) circle (.1);
+    \draw [fill=lime](5,5) circle (.1);
+
+    %drawing bathymetric hypotetic countours on the bottom grid:    	
+    \draw [ultra thick](0,1) parabola bend (2,2) (5,1)  ;
+    \draw [dashed] (0,1.5) parabola bend (2.5,2.5) (5,1.5) ;
+    \draw [dashed] (0,2) parabola bend (2.7,2.7) (5,2)  ;
+    \draw [dashed] (0,2.5) parabola bend (3.5,3.5) (5,2.5)  ;
+    \draw [dashed] (0,3.5)  parabola bend (2.75,4.5) (5,3.5);
+    \draw [dashed] (0,4)  parabola bend (2.75,4.8) (5,4);
+    \draw [dashed] (0,3)  parabola bend (2.75,3.8) (5,3);
+    \draw[-latex,thick](2.8,1)node[right]{$\mathsf{Shoreline}$}
+              to[out=180,in=270] (2,1.99);
+\end{scope} %end of drawing grids
+
+%putting arrows and labels:
+\draw[-latex,thick] (6.2,2) node[right]{$\mathsf{Bathymetry}$}
+      to[out=180,in=90] (4,2);
+
+\draw[-latex,thick](5.8,-.3)node[right]{$\mathsf{Comp.\ G.}$}
+    to[out=180,in=90] (3.9,-1);
+
+\draw[-latex,thick](5.9,5)node[right]{$\mathsf{Wind\ G.}$}
+    to[out=180,in=90] (3.6,5);
+
+\draw[-latex,thick](5.9,8.4)node[right]{$\mathsf{Friction\ G.}$}
+    to[out=180,in=90] (3.2,8);
+
+\draw[-latex,thick,red](5.3,-4.2)node[right]{$\mathsf{G. Cell}$}
+    to[out=180,in=90] (0,-2.5);
+
+\draw[-latex,thick,red](4.3,-1.9)node[right]{$\mathsf{Nested\ G.}$}
+    to[out=180,in=90] (2,-.5);
+
+\draw[-latex,thick](4,-6)node[right]{$\mathsf{Batymetry}$}
+    to[out=180,in=90] (2,-5);	
+%drawing points on grid's conrners.
+\fill[black,font=\footnotesize]
+    (-5,-4.3) node [above] {$P_{1}$}
+    (-.3,-5.6) node [below] {$P_{2}$}
+    (5.5,-4) node [above] {$P_{3}$};
 {{</* /tikz */>}}
 ```
