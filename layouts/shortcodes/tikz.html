@@ -1,8 +1,6 @@
 <figure>
   <script type="text/tikz">
-    \begin{tikzpicture}[{{ with .Get "scale" }}scale={{ . }},transform shape,{{ end }}{{ with .Get "option" }}{{ . }},{{ end }}]
-      {{ .Inner }}
-    \end{tikzpicture}
+    {{ .Inner }}
   </script>
   {{ with .Get "title" }}
   <figcaption>
