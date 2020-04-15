@@ -1,8 +1,8 @@
 ---
 title: "HugoでTikZを使う"
 tags : [
+  "computer",
   "hugo",
-  "tikz",
 ]
 date: 2020-04-14T18:10:05+09:00
 toc : true
@@ -10,7 +10,7 @@ math: true
 tikz: true
 ---
 
-Hugoは$\KaTeX{}$で数学表記できるように[設定できる](https://katex.org/docs/autorender.html).
+Hugoは$\KaTeX{}$で数式表記できるように[設定できる](https://katex.org/docs/autorender.html).
 それで遊んでいたときに,
 TikZによる作図もできると便利だなと思って調べてみたら
 [TikZJax](http://tikzjax.com/)なるものを見つけたので,
@@ -57,7 +57,7 @@ WebAssemblyにコンパイルしているらしい.
 ## Hugoで使う
 
 [README.md](https://github.com/kisonecat/tikzjax/blob/master/README.md)の通りにやればできると思ったが,
-途中でWebAssemblyをfetchする時に[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)で引っ掛かる.
+途中のWebAssemblyをfetchする時に[CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)で引っ掛かる.
 なので, あまり上品ではないが, スクリプトとWebAssemblyを手元に落とすことにする.
 
 まず問題のスクリプトを引っ張ってくる.
