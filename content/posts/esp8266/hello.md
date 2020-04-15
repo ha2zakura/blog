@@ -9,8 +9,8 @@ date : "2020-02-23T06:12:45+09:00"
 toc : true
 ---
 
-[LチカをしたESP-WROOM-02]({{< ref "/content/posts/esp8266/blink.md" >}})が, 
-やっぱりESP8266の威力を体験するためにはWi-Fi関連を使わねばなりません. 
+[LチカをしたESP-WROOM-02]({{< ref "/content/posts/esp8266/blink.md" >}})だが, 
+やっぱりESP8266の威力を体験するためにはWi-Fi関連を使わねばならない. 
 そこで, (マイコンでは珍しく)`Hello, world!`をする. 
 
 <!--more-->
