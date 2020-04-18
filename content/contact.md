@@ -6,5 +6,6 @@ toc : true
 
 - Twitter: [@TsL_26](https://twitter.com/TsL_26)
 - Instagram: [@ha2zakura](https://instagram.com/ha2zakura)
-- Mustodon: [@ha_tsl@qoto.org](https://qoto.org/@ha_tsl)
+- Mastodon: [@ha_tsl@imastodon.net](https://imastodon.net/@ha_tsl) 
+(Japanese)
 - GitHub: [ha2zakura](https://github.com/ha2zakura)
