@@ -8,7 +8,7 @@ tag: [
 toc : true
 ---
 
-[海月玲二氏のSKK for Android](http://localhost:1313/posts/computer/android-skk/) を,
+[海月玲二氏のSKK for Android](http://ray-mizuki.la.coocan.jp/software/skk_jp.html) を,
 多言語で入力できるように改変した.
 
 GitHub - [ha2zakura/android-skk](https://github.com/ha2zakura/android-skk)
