@@ -1,6 +1,10 @@
 ---
 title: "多言語改変版 SKK for Android"
 date: 2020-04-22T15:18:43+09:00
+tag: [
+  "computer",
+  "android",
+]
 toc : true
 ---
 
