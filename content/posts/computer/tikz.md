@@ -27,7 +27,7 @@ TikZによる作図もできると便利だなと思って調べてみたら
 
 ## TikZとは
 
->**TikZ and PGF are TeX packages for creating graphics programmatically.**
+>TikZ and PGF are TeX packages for creating graphics programmatically.
 
 [TikZ and PGF | TeXample.net](http://www.texample.net/tikz/)
 

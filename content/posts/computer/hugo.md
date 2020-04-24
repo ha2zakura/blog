@@ -19,7 +19,7 @@ Hugoが5代目になった.
 
 ## Hugoとは
 
->**Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.**  
+> Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.  
 
 [The world’s fastest framework for building websites | Hugo](https://gohugo.io/)
 
@@ -107,7 +107,7 @@ hugo server
 
 ## GitHub Pagesとは
 
->**Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.**
+> Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.
 
 [GitHub Pages](https://pages.github.com/)
 
