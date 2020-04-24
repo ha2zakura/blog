@@ -20,8 +20,8 @@ Hugoが5代目になった.
 ## Hugoとは
 
 >**Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.**  
->
->[The world’s fastest framework for building websites | Hugo](https://gohugo.io/)
+
+[The world’s fastest framework for building websites | Hugo](https://gohugo.io/)
 
 Hugoは静的サイトジェネレータの一つ. 
 Go言語でできているので, 
@@ -108,8 +108,8 @@ hugo server
 ## GitHub Pagesとは
 
 >**Websites for you and your projects, hosted directly from your GitHub repository. Just edit, push, and your changes are live.**
->
->[GitHub Pages](https://pages.github.com/)
+
+[GitHub Pages](https://pages.github.com/)
 
 Hugoで生成したサイトのホスティングにはGitHub Pagesを利用している. 
 [タスク管理ツール]({{< ref "/content/posts/computer/todoo.md" >}})を作ったときにも使ったが,

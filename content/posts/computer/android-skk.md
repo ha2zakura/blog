@@ -1,7 +1,7 @@
 ---
 title: "多言語改変版 SKK for Android"
 date: 2020-04-22T15:18:43+09:00
-tag: [
+tags: [
   "computer",
   "android",
 ]
@@ -15,9 +15,9 @@ GitHub - [ha2zakura/android-skk](https://github.com/ha2zakura/android-skk)
 
 ## SKKとは
 
-> **SKK（エスケイケイ、Simple Kana to Kanji conversion program）とは、オープンソースで開発されている日本語入力システム（日本語入力メソッド）である。**
->
-> [SKKとは - ニコニコ大百科](https://dic.nicovideo.jp/a/skk)
+> SKK（エスケイケイ、Simple Kana to Kanji conversion program）とは、オープンソースで開発されている日本語入力システム（日本語入力メソッド）である。
+
+[SKKとは - ニコニコ大百科](https://dic.nicovideo.jp/a/skk)
 
 IMEの一つ.
 普通の日本語IMEだと入力した語を逐一変換する必要があるが,
@@ -188,8 +188,8 @@ GeoGebraなどでは元々ギリシア文字キーボードが用意されてお
 ついでに, ギリシア語から派生したコプト文字のキーボードとしても機能する.
 
 > コプト語（英語: Coptic, コプト語: Ⲙⲉⲧⲣⲉⲙ̀ⲛⲭⲏⲙⲓ met rem en kīmi）もしくはコプト・エジプト語 (Coptic Egyptian) は、4世紀以降のエジプト語をさす用語である。
->
-> [コプト語 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%97%E3%83%88%E8%AA%9E)
+
+[コプト語 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B3%E3%83%97%E3%83%88%E8%AA%9E)
 
 キーを長押しすると,
 画像のようにポップアップが出てきてコプト文字を入力することができる.
@@ -206,8 +206,8 @@ GeoGebraなどでは元々ギリシア文字キーボードが用意されてお
 エスペラントの説明はいまさら面倒臭いのでWikipediaより引用.
 
 > エスペラント (Esperanto) とは、ルドヴィコ・ザメンホフとその弟子（協力者）が考案・整備した人工言語。母語の異なる人々の間での意思伝達を目的とする、国際補助語としては最も世界的に認知され、普及の成果を収めた言語となっている[要出典][1]。
->
-> [エスペラント - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%A9%E3%83%B3%E3%83%88)
+
+[エスペラント - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%A8%E3%82%B9%E3%83%9A%E3%83%A9%E3%83%B3%E3%83%88)
 
 そしてこのザメンホフの母国語がポーランド語である.
 装飾付きの文字が比較的多いポーランド語であるが,
@@ -234,8 +234,8 @@ GeoGebraなどでは元々ギリシア文字キーボードが用意されてお
 
 > ラテン語では、語中の区切りに使われていた。  
 > 例) DONA·NOBIS·REQVIEM
->
-> [中黒 - Wikipedia](https://ja.wikipedia.org/wiki/%E4%B8%AD%E9%BB%92#%E3%83%A9%E3%83%86%E3%83%B3%E6%96%87%E5%AD%97)
+
+[中黒 - Wikipedia](https://ja.wikipedia.org/wiki/%E4%B8%AD%E9%BB%92#%E3%83%A9%E3%83%86%E3%83%B3%E6%96%87%E5%AD%97)
 
 是非, 活用したい.
 けどラテン語は無活用がいいな.
@@ -259,8 +259,8 @@ Termux等で使い易くすることも考えて,
 あと, ルーン文字も追加した.
 
 > ルーン文字（ルーンもじ）は、ゲルマン人がゲルマン諸語の表記に用いた古い文字体系であり、音素文字の一種である。
->
-> [ルーン文字 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%83%B3%E6%96%87%E5%AD%97)
+
+[ルーン文字 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%83%AB%E3%83%BC%E3%83%B3%E6%96%87%E5%AD%97)
 
 アナ雪かなんかで話題になったらしいので,
 十分需要はあるだろう.
@@ -277,8 +277,8 @@ Termux等で使い易くすることも考えて,
 なので, より需要がありそうなグラゴル文字を追加した.
 
 > グラゴル文字（グラゴルもじ、ロシア語: Глаголица、グラゴーリツァ）は、主にスラヴ系言語を記述するために作られたアルファベットで、スラヴ圏最古の文字である。
->
-> [グラゴル文字 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%82%B4%E3%83%AB%E6%96%87%E5%AD%97)
+
+[グラゴル文字 - Wikipedia](https://ja.wikipedia.org/wiki/%E3%82%B0%E3%83%A9%E3%82%B4%E3%83%AB%E6%96%87%E5%AD%97)
 
 また, グラゴル文字に対応させるために
 一部の初期キリル文字を追加している.

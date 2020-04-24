@@ -28,8 +28,8 @@ TikZによる作図もできると便利だなと思って調べてみたら
 ## TikZとは
 
 >**TikZ and PGF are TeX packages for creating graphics programmatically.**
->
->[TikZ and PGF | TeXample.net](http://www.texample.net/tikz/)
+
+[TikZ and PGF | TeXample.net](http://www.texample.net/tikz/)
 
 画像を$\TeX{}$で書ける便利なツール.
 ここでは文法などの説明は割愛するので,
