@@ -35,17 +35,17 @@ canonifyurls = true
   relatedPosts = false
   code_copy_button = false
 
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/TsL_26"
+  # [[params.social]]
+  #   name = "twitter"
+  #   url = "https://twitter.com/TsL_26"
 
-  [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/ha2zakura"
+  # [[params.social]]
+  #   name = "instagram"
+  #   url = "https://instagram.com/ha2zakura"
 
-  [[params.social]]
-    name = "github"
-    url = "https://github.com/ha2zakura"
+  # [[params.social]]
+  #   name = "github"
+  #   url = "https://github.com/ha2zakura"
 
 [menu]
 
@@ -61,5 +61,5 @@ canonifyurls = true
 
   [[menu.main]]
     name = "Contact"
-    url = "contact/"
+    url = "https://delfeno.herokuapp.com/@ha2zakura"
     weight = 30
