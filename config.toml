@@ -61,5 +61,5 @@ canonifyurls = true
 
   [[menu.main]]
     name = "Contact"
-    url = "https://delfeno.herokuapp.com/@ha2zakura"
+    url = "https://nomb.herokuapp.com/@ha2zakura"
     weight = 30
