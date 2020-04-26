@@ -97,7 +97,7 @@ Herokuのダッシュボードの**Settings**に行き,
 **Config Vars** に`DEFAULT_YML`という名前で登録する.
 
 あとは, `package.json`で以下のように
-`node`, `npm`, `yarn`を設定して,
+`node` `npm` `yarn`のバージョンを設定する.
 
 ```json
 {
