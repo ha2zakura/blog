@@ -9,7 +9,7 @@ toc : true
 
 久々に分散型SNSを調べていたら,
 [Misskey](https://github.com/syuilo/misskey)なるプラットフォームを見付けた.
-個人用に使う目的でHerokuに建ててみたのでその記録.
+Twitterとは別に個人用に使う目的でHerokuに建ててみた.
 <!--more-->
 
 ## 手順
@@ -134,3 +134,18 @@ git push
 この記事にある通り,
 課金が怖い場合は[UptimeRobot](https://uptimerobot.com/)で
 `GET`を叩きまくればよい.
+
+## 作ったもの
+
+[@ha2zakura@sns.nombi.info](https://sns.nombi.info/@ha2zakura)
+
+調子乗ってドメインを買った(このブログのドメインもこっそり変えた).
+このインスタンスで新しい人を募集する気はない.
+自分専用にするため, というより
+Herokuの無料枠で耐えるためである...
+
+自分でインスタンスを建てると,
+負荷も容量も自分次第,
+使い方も自分次第.
+技術趣味の名刺として
+個人用インスタンスが流行らないだろうか.
