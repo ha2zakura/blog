@@ -1,5 +1,5 @@
 ---
-title: "Heroku + Misskeyで個人用SNSを建てる"
+title: "Misskey + Herokuで個人用SNSを建てる"
 date: 2020-04-25T20:37:06+09:00
 tags: [
   "computer"
