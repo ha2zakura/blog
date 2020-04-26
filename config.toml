@@ -1,4 +1,4 @@
-baseURL = "https://www.nombi.info/"
+baseURL = "https://nombi.info/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 title = "NOMBIRIdoryoku"
@@ -61,5 +61,5 @@ canonifyurls = true
 
   [[menu.main]]
     name = "Contact"
-    url = "https://nomb.herokuapp.com/@ha2zakura"
+    url = "contact/"
     weight = 30
