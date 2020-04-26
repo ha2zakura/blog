@@ -14,19 +14,19 @@ toc : true
 
 ## 手順
 
-[既にherokuで動かした人](https://syui.cf/blog/post/2019/04/04/misskey/)がいるが,
+[既にHerokuで動かした人](https://syui.cf/blog/post/2019/04/04/misskey/)がいるが,
 1年前頃の記事で現在はデータベースに
 `mongodb`ではなく`postgresql`が使われている.
-どちらかというと同じ筆者が[Dolphinを動かしている記事](https://syui.cf/blog/post/2019/11/16/dolphin/)が参考になる.
+どちらかというと同じ人の[Dolphinを動かしている記事](https://syui.cf/blog/post/2019/11/16/dolphin/)が参考になる.
 
-直接 Heroku にデプロイしてもいいが,
-ここでは GitHub でリポジトリからデプロイするようにする.
+直接Herokuにデプロイしてもいいが,
+ここではGitHubでリポジトリからデプロイするようにする.
 
 ### 準備
 
-まず GitHub で Fork してくる.
-
+まずGitHubで
 [syuilo/misskey](https://github.com/syuilo/misskey)
+をForkする.
 
 そして`git clone`. `develop`ブランチでは動かなかったので
 `master`のみを引っ張ってくる.
@@ -36,7 +36,7 @@ git clone -b master git@github.com:(yourname)/misskey.git
 cd misskey
 ```
 
-次に Heroku にアプリケーションを作成.
+次にHerokuにアプリケーションを作成.
 
 ```bash
 heroku create (appname)
@@ -55,7 +55,7 @@ GitHubに`git push`するだけでHerokuに反映される.
 
 ### 環境設定
 
-Misskey ではデータベースなどのURLを
+MisskeyではデータベースなどのURLを
 `.config/default.yml`に書く必要があるが,
 セキュリティのために`default.yml`の内容を全て環境変数として登録してしまう.
 
@@ -96,7 +96,7 @@ clusterLimit: 1
 Herokuのダッシュボードの**Settings**に行き,
 **Config Vars** に`DEFAULT_YML`という名前で登録する.
 
-あとは, `package.json` で以下のように
+あとは, `package.json`で以下のように
 `node`, `npm`, `yarn`を設定して,
 
 ```json
@@ -121,10 +121,16 @@ Misskeyを起動させている.
 あとはこれを`master`ブランチに`git push`すれば
 `https://(appname).herokuapp.com/`にMisskeyが起動する.
 
+```bash
+git add .
+git commit -m "first commit"
+git push
+```
+
 ## 24時間稼動させ続ける工夫
 
 [Herokuの無料dynoをスリープさせないで24時間稼働させる4つの方法 - Casual Developers Note](https://casualdevelopers.com/tech-tips/how-to-prevent-idling-of-free-dyno-on-heroku/)
 
 この記事にある通り,
-課金が怖い場合は [UptimeRobot](https://uptimerobot.com/) で
+課金が怖い場合は[UptimeRobot](https://uptimerobot.com/)で
 `GET`を叩きまくればよい.
