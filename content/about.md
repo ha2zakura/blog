@@ -25,7 +25,8 @@ Since it is written as a memorandum for myself, there are many difficult-to-unde
 I would be grateful if you could get some ideas from my posts.
 
 Since I'm writing in Japanese, Google Translate should help read entries. 
-However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/TsL_26) or by [ActivityPub](https://nomb.herokuapp.com/@ha2zakura).
+<!-- However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/TsL_26) or by [ActivityPub](https://nomb.herokuapp.com/@ha2zakura). -->
+However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/TsL_26).
 
 ### Disclaimer
 
