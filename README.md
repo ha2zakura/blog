@@ -1,5 +1,5 @@
 # ha2zakura.github.io
-https://ha2zakura.github.io/
+https://www.nombi.info/
 
 This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of ha2zakura. 
 Since it is written as a memorandum for myself, there are many difficult-to-understand contents.
