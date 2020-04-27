@@ -135,7 +135,7 @@ git push
 課金が怖い場合は[UptimeRobot](https://uptimerobot.com/)で
 `GET`を叩きまくればよい.
 
-## 作ったもの
+<!-- ## 作ったもの
 
 [@ha2zakura@sns.nombi.info](https://sns.nombi.info/@ha2zakura)
 
@@ -148,4 +148,4 @@ Herokuの無料枠で耐えるためである...
 負荷も容量も自分次第,
 使い方も自分次第.
 技術趣味の名刺として
-個人用インスタンスが流行らないだろうか.
+個人用インスタンスが流行らないだろうか. -->
