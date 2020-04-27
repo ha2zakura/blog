@@ -145,8 +145,17 @@ git push
 [@ha2@social.nombi.info](https://social.nombi.info/@ha2)
 
 そこで, 現在は軽量版の[Dolphin](https://github.com/syuilo/dolphin)を使っている.
-Misskeyの派生であるため,
-上と同じ方法で建てられる.
+Misskeyの派生であるため, 上と同じ方法で建てられる.
+ただし, `.config/default.yml`に以下を追加する必要がある.
+Misskeyでインスタンス設定画面から行っていたものと同じである.
+
+```yml
+name: '(your dolphin name)'
+maintainerName: '(yourname)'
+drive:
+  storage: 'fs'
+```
+
 いつまでもつか試験も兼ねて,
 しばらくは運用したいと思う.
 
