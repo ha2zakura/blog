@@ -357,6 +357,8 @@ echo mat
 ```nim
 import math, random, sugar
 
+# Matrixのproc等は省略
+
 const
   dim_in = 1            # 入力は1次元
   dim_out = 1           # 出力は1次元
