@@ -72,7 +72,7 @@ $$
 
 誤差関数は以下.
 ただし, $n$ を訓練データ数とし,
-$\\{x_k, y_k\\}$ $(k \in \mathbb{N}, 0 \leqq k \leqq n-1)$ は
+$\\{x_k, y_k\\}$ $(k \in \mathbb{Z}, 0 \leqq k \leqq n-1)$ は
 訓練データである.
 
 $$
