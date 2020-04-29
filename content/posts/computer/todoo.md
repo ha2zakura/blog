@@ -15,7 +15,7 @@ toc : true
 
 ## 作ったもの
 
-[TODOO - https://ha2zakura.github.io/todoo/](https://ha2zakura.github.io/todoo/)
+[TODOO - todoo.nombi.info](https://todoo.nombi.info/)
 
 {{< figure src="/img/posts/computer/todoo-1.png" title="スクリーンショット" >}}
 
