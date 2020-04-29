@@ -36,6 +36,8 @@ $\KaTeX{}$ が書けるようになったことに調子乗っていたら,
 本記事は長くなった.
 目次の代わりを貼っておく.
 
+最終的な[ソースコードはこれ](https://gist.github.com/ha2zakura/dc7972a9b9fae1c53a02d4bfa41cb441).
+
 ## 理論の概説
 
 Wikipediaの内容を踏襲しつつ,
