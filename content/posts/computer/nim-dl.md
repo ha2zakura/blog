@@ -185,16 +185,27 @@ export PATH=$PATH:$HOME/Nim/bin
 # echo "export PATH=$PATH:$HOME/Nim/bin" >> ~/.bashrc
 ```
 
+# Hello, world!
+
+`hello.nim`で以下を保存.
+
+```nim
+echo "Hello, world!"
+```
+
 `.nim`のコンパイル・実行は,
 
 ```bash
-nim c -r example.nim
+nim c -r hello.nim
+#-> Hello, world!
+ls
+#-> hello.nim hello
 ```
 
 コンパイルのみを行う場合は,
 
 ```bash
-nim c -d:release example.nim
+nim c -d:release hello.nim
 ```
 
 ## 実装の準備
