@@ -78,7 +78,7 @@ $$
 
 誤差関数は以下.
 ただし, $n$ を訓練データ数とし,
-$\\{x_k, y_k\\}$ $(k \in \mathbb{Z}, 0 \leqq k \leqq n-1)$ は
+$\\{x_k, y_k\\}$ $(k \in \mathbb{Z}, 0 \leq k \leq n-1)$ は
 訓練データである.
 
 $$
@@ -351,7 +351,7 @@ proc t[T, I, J](a: Matrix[T, I, J]): Matrix[T, J, I] =
 ### 乱数の行列
 
 パラメータの初期化に必要.
-与えられた行列を乱数(`min` $\leqq x \leqq$ `max`)にして返す.
+与えられた行列を乱数(`min` $\leq x \leq$ `max`)にして返す.
 
 ```nim
 import random
