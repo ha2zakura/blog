@@ -17,7 +17,7 @@ toc : true
 
 ## 変換アダプタもどき
 
-{{< figure src="/img/posts/electronics/ymz294-spi-2.jpg" title="変換アダプタ" >}}
+{{< figure src="/img/posts/electronics/ymz294-spi-2.png" title="変換アダプタ" >}}
 
 SPI化には, [シフトレジスタ(74HC595)](http://akizukidenshi.com/catalog/g/gI-08605/)を用いた. 
 理由は, [前に使ったことがあるから]({{< ref "/content/posts/pic16f84a/matrix.md" >}})かね. 
