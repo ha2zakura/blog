@@ -185,7 +185,7 @@ export PATH=$PATH:$HOME/Nim/bin
 # echo "export PATH=$PATH:$HOME/Nim/bin" >> ~/.bashrc
 ```
 
-# Hello, world!
+### Hello, world!
 
 `hello.nim`で以下を保存.
 
