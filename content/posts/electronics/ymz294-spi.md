@@ -20,13 +20,13 @@ toc : true
 {{< figure src="/img/posts/electronics/ymz294-spi-2.png" title="変換アダプタ" >}}
 
 SPI化には, [シフトレジスタ(74HC595)](http://akizukidenshi.com/catalog/g/gI-08605/)を用いた. 
-理由は, [前に使ったことがあるから]({{< ref "/content/posts/pic16f84a/matrix.md" >}})かね. 
+理由は, [前に使ったことがあるから]({{< ref "/content/posts/pic16f84a/matrix.md" >}}). 
 そのまま8ビットバスとSPIマスタの間につなげば使える, と思ったのが, 
 どうも書き込みの際の/WR/CSや/A0の扱いが74HC595だけでは上手くいきそうになかったので, 
 [PIC12F683](http://akizukidenshi.com/catalog/g/gI-00801/)で制御した. 
 74HC595がラッチされるのを検知して, /WR/CSをHIGH, LOWする. 
 PIC12F683の[ソースコード](https://gist.github.com/ha2zakura/943d75f813021092b6f4207b43e41da1). 
-A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御できれば楽だったんけどね...  
+A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御できれば楽だったんだけどね...  
 
 {{< figure src="/img/posts/electronics/ymz294-spi-3.png" title="回路図" >}}
 
