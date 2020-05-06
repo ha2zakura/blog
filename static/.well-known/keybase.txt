@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/ha2zakura
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nombi.info
+  * I am ha2zakura (https://keybase.io/ha2zakura) on keybase.
+  * I have a public key ASAKZbnXT_dNZZOvIHEogmfHz3eml1huWFTR7a2nRwcPJwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120577f5e3f560265a1b7e49b01f39e954ede1ab0a4359b4633ebc92a48cbdb62e10a",
+      "host": "keybase.io",
+      "kid": "01200a65b9d74ff74d6593af2071288267c7cf77a697586e5854d1edada747070f270a",
+      "uid": "c04457ae7a3063cfaa2a805c085e3f19",
+      "username": "ha2zakura"
+    },
+    "merkle_root": {
+      "ctime": 1588738791,
+      "hash": "264fceb1c6d7f0b65488285df1fad6f25a0003311e3c13545edbe3a4c6bcc53f95b3dafcf0a52965745a0e7afde1151197833880e9a16750b7ccbaf8f611d47b",
+      "hash_meta": "2145828dfc20140219a22f739cbef9602651699471a864f0494209ca51a23136",
+      "seqno": 16174827
+    },
+    "service": {
+      "entropy": "b719fiwvu04uFWqzS/Sags8B",
+      "hostname": "nombi.info",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.4.2"
+  },
+  "ctime": 1588738807,
+  "expire_in": 504576000,
+  "prev": "e8316cd152a6859f2637b386283abeed82f00587684df8cb1b74cf518682b7a5",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgCmW510/3TWWTryBxKIJnx893ppdYblhU0e2tp0cHDycKp3BheWxvYWTESpcCCsQg6DFs0VKmhZ8mN7OGKDq+7YLwBYdoTfjLG3TPUYaCt6XEIECT+qlJxUei/JjoD0v02QPaM6aG74zzqiNrwLqNP8QYAgHCo3NpZ8RA1SAq9n+Wh933yZLy/ppOkcaaHD8Wj/WcjLtCIKIAfAsCQHwATKfaCqFCmyrPSKRnfGJYYbaIGthva0HqjC00AKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKnkcR/t+eBcSyaOOjABQrC4ntI3KKz018rdQTR51zVGo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ha2zakura
+
+==================================================================
