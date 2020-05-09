@@ -42,6 +42,7 @@ ANSI Cで書かれているので,
 ```bash
 $ git clone https://github.com/ha2zakura/xv6-riscv
 $ cd xv6-riscv
+$ docker-compose build
 $ docker-compose run xv6
 # lots of output
 init: starting sh
