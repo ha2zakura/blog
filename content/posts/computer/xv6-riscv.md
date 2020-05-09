@@ -18,7 +18,7 @@ tags:
 > **xv6 is a re-implementation of Dennis Ritchie's and Ken Thompson's Unix
 Version 6 (v6).**
 >
-> [README - mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)
+> [README - mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public/blob/master/README)
 
 簡単に言えば,
 MITの教育用超軽量Unix.
