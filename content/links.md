@@ -7,7 +7,7 @@ toc : true
 ## Works
 
 - [todoo](https://todoo.nombi.info/) : 進捗を量で見るTODOリスト - [Post](https://nombi.info/posts/computer/todoo/) [Github](https://github.com/ha2zakura/todoo)
-- [android-skk](https://github.com/ha2zakura/android-skk) : 多言語改変版 SKK for Android - [Post](https://nombi.info/posts/computer/android-skk/) [Github](https://github.com/ha2zakura/android-skk)
+- [android-skk](https://github.com/ha2zakura/android-skk/releases) : 多言語改変版 SKK for Android - [Post](https://nombi.info/posts/computer/android-skk/) [Github](https://github.com/ha2zakura/android-skk)
 
 ## Contact
 
