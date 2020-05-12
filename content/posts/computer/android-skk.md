@@ -295,8 +295,8 @@ Termux等で使い易くすることも考えて,
 
 ## インストール
 
-[GitHub Actions](https://github.com/ha2zakura/android-skk/actions)
-最新ワークフローのArtifactsよりZIPファイルでダウンロードできる.  
+[Release](https://github.com/ha2zakura/android-skk/releases)
+
 Google Playストアで配信する予定はない.
 
 ### 対応端末
