@@ -16,12 +16,12 @@ GitとDockerを使ってHerokuライクに環境構築する.
 
 ### 目次
 
-1. [構成](http://localhost:1313/posts/computer/pi-docker/#%E6%A7%8B%E6%88%90)
-1. [Raspbianの構築](http://localhost:1313/posts/computer/pi-docker/#raspbian%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [DockerとDocer Composeの構築](http://localhost:1313/posts/computer/pi-docker/#docker%E3%81%A8docer-compose%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [Gitサーバーの構築](http://localhost:1313/posts/computer/pi-docker/#git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [Hello, world](http://localhost:1313/posts/computer/pi-docker/#hello-world)
-1. [参考](http://localhost:1313/posts/computer/pi-docker/#%E5%8F%82%E8%80%83)
+1. [構成](#%E6%A7%8B%E6%88%90)
+1. [Raspbianの構築](#raspbian%E3%81%AE%E6%A7%8B%E7%AF%89)
+1. [DockerとDocer Composeの構築](#docker%E3%81%A8docer-compose%E3%81%AE%E6%A7%8B%E7%AF%89)
+1. [Gitサーバーの構築](#git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
+1. [Hello, world](#hello-world)
+1. [参考](#%E5%8F%82%E8%80%83)
 
 半分備忘録なので,
 素の状態から構築する手順を載せる.
