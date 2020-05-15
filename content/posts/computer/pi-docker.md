@@ -21,6 +21,7 @@ GitとDockerを使ってHerokuライクに環境構築する.
 1. [DockerとDocer Composeの構築](#docker%E3%81%A8docer-compose%E3%81%AE%E6%A7%8B%E7%AF%89)
 1. [Gitサーバーの構築](#git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
 1. [Hello, world!](#hello-world)
+1. [pihub (レポジトリ管理ツール)](#pihub-%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%AB)
 1. [参考](#%E5%8F%82%E8%80%83)
 
 半分備忘録なので,
@@ -262,7 +263,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 Nimでレポジトリ管理ツールを作ってみた.
 何をしているかは下のソースか
-[このブログのコミットログから](https://github.com/ha2zakura/ha2zakura.github.io/commit/ec30f6548177b30244921706b1253967bf829f6e)から確認されたい.
+[この記事のログから](https://github.com/ha2zakura/ha2zakura.github.io/commit/ec30f6548177b30244921706b1253967bf829f6e?short_path=d28dc27#diff-d28dc27ca82d6ab67e56910eedfedac5)から確認されたい.
 
 GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
 
@@ -307,10 +308,10 @@ pihub create (repo_name)
 
 ```bash
 pihub list
-#-> repo1.git
-#   repo2.git
-#   repo3.git
-#   ...
+# repo1.git
+# repo2.git
+# repo3.git
+# ...
 ```
 
 #### デプロイ
