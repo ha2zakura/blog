@@ -364,7 +364,7 @@ git push pi master
 ```
 
 ビルドに結構時間がかかる.
-
+しばらくして,
 `http://(hostname).local:8080/`にアクセスすれば,
 **Hello, world!** が表示される.
 
