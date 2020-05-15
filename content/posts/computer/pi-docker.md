@@ -1,5 +1,5 @@
 ---
-title: "Raspberry Pi Zero W + Git + Dockerで環境構築"
+title: "Pi Zero W + Git + Docker で Heroku ライクなデプロイ環境を作る"
 date: 2020-05-14T13:01:47+09:00
 toc : true
 tags : [
@@ -7,42 +7,39 @@ tags : [
 ]
 ---
 
-約1年前に[Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)を買ったものの,
-環境を汚しまくって使わなくなった.
-最近, 環境をDockerで整えることにハマっているので,
-GitとDockerを使ってHerokuライクに環境構築する.
-<!--more-->
-私は潔癖症である.
+約1年前に[Raspberry Pi Zero W](https://www.raspberrypi.org/products/raspberry-pi-zero-w/)を買ったが,
+ラズパイの環境構築は小さい分, 汚れ易い.
+そこで, ローカルで開発し`git push`だけでデプロイできる
+[heroku](https://nombi.info/heroku.com)のような環境を構築した.
 
-### 目次
+## 作ったもの
 
-1. [構成](#%E6%A7%8B%E6%88%90)
-1. [Raspbianの構築](#raspbian%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [DockerとDocer Composeの構築](#docker%E3%81%A8docer-compose%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [Gitサーバーの構築](#git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [Hello, world!](#hello-world)
-1. [pihub (レポジトリ管理ツール)](#pihub-%E3%83%AC%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%AB)
-1. [参考](#%E5%8F%82%E8%80%83)
+**pihub** という管理ツールをNimで作った.
 
-半分備忘録なので,
-素の状態から構築する手順を載せる.
+GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
 
-## 構成
+イメージは, `heroku`コマンドのようなもの.
+ただし, 実行は全て`docker-compose up`で行うため,
+機能は[GitLab CI/CD](https://docs.gitlab.com/ee/ci/)の方が近い.
+(Zero以外のラズパイだったら
+[GitLab](https://about.gitlab.com/)を載せるのもアリだと思う.)
+もっとも,
+`pihub`はインフラ系の運用だけでなく
+GPIOを弄るようなハードウェア制御も想定している.
 
-開発の手順は[Heroku](https:/heroku.com)をイメージしている.
-というかHerokuでもたぶん同じような技術が用いられている.
+### 構成イメージ
 
 ```
-+-Raspberry Pi Zero W-------------------+
-| *--Remote--+    +----Production-----+ |
-| |          |pull|     +-Container-+ | |
-| |   (2)    |===>| (3) |    (4)    | | |
-| |          |    |     +-----------+ | |
-| +----/\----+    +-------------------+ |
-+------||-------------------------------+
-       ||Push
-  +--Local---+
-  |   (1)    |
++----------Raspberry Pi Zero W-----------+
+| *--Remote--+    +-----Production-----+ |
+| |          |push|     +-Container-+  | |
+| |   (2)    |===>| (3) |    (4)    |  | |
+| |          |    |     +-----------+  | |
+| +----/\----+    +--------------------+ |
++------||--------------------------------+
+       || push
+  +--Local---+    $ pihub create repo
+  |   (1)    |    で, この構成が作られる.
   +----------+
 
 (1) ローカルリポジトリ, ここで開発
@@ -51,30 +48,98 @@ GitとDockerを使ってHerokuライクに環境構築する.
 (4) デプロイ環境(コンテナ), (3)のpull後に走る
 ```
 
-## Raspbianの構築
+### 使い方
 
-Debianで構築をする.
-UbuntuやWindows, macOSでの構築は
-別途検索されたい.
+`pihub`はラズパイ上のツールであり,
+ローカルからはSSH経由で操作する.
+ただし, `alias`で登録をするとローカルでも
+同様に操作ができる.
+
+以下, ホスト名は`raspberrypi.local`とする.
+
+#### リポジトリの作成
+
+`repo_name`はリポジトリの名前.
+**末尾に`.git`を含めてはいけない.**
+
+```bash
+pihub create repo_name
+```
+
+これで`git@raspberrypi.local:repo_name.git`にリポジトリが,
+`/home/git/prod/repo_name`に本番環境ができる.
+
+#### リポジトリ一覧の表示
+
+```bash
+pihub list
+# repo_name.git
+# repo_another.git
+# ...
+```
+
+#### デプロイ
+
+```bash
+git remote add pi git@raspberrypi.local:repo_name.git
+git push pi master
+```
+
+リモートに登録し, `git push`をすれば
+`docker-compose up -d`が走る.
+
+#### リポジトリの削除
+
+`create`と同様に,
+**末尾に`.git`を含めてはいけない.**
+
+```
+pihub delete repo_name
+```
+
+これで`git@raspberrypi.local:repo_name.git`と
+`/home/git/prod/repo_name`が削除される
+(注: Dockerに関しては何の処理も行われないので,
+別途コンテナを削除する必要がある. いずれ改善したい.)
+
+#### 無い機能
+
+- `git push`以外で`docker-compose up`をする
+- `docker-compose stop`など停止系, 削除系
+
+## インストール
+
+必要なもの
+
+- Raspbian on Raspberry Pi Zero W
+  Zero W以外では試していない (というか持っていない).
+- git
+- docker
+- docker-compose
+
+また, `git`ユーザーを作成する.
 
 ### Raspbianのインストール
 
-Raspbianのイメージは
-[公式サイト](https://www.raspberrypi.org/downloads/raspbian/)よりできる.
-Desktop版でもいいと思うが,
-Zero WではLite版で十分と思う.
+日本語情報は既に大量にあるので,
+ここでは簡単に.
 
-SDカードへの書き込みは`dd`を使う.
+[公式サイト](https://www.raspberrypi.org/downloads/raspbian/)より
+Raspbianのイメージをダウンロードして解凍.
+Zeroなのでlite版で十分.
 
 ```bash
+# SDカードへの書き込み
 sudo dd bs=4M if=2020-02-13-raspbian-buster-lite.img of=/dev/sdb conv=fsync
 ```
 
-完了したら, SDカードの **boot** パーティションをマウントし,
-USB経由でSSH接続できるように以下の操作をする.
+(`/dev/sdb`の部分は環境に合うよう書き直す.)
+
+SDカードに書き込んだらSDカードの`boot`パーティションをマウントし,
+`boot`内で以下を実行,
+USB経由でSSH接続できるように設定する.
 
 ```bash
-# in boot/
 touch ssh # SSH有効化
 echo "dtoverlay=dwc2" >> config.txt
 vim cmdline.txt
@@ -82,75 +147,26 @@ vim cmdline.txt
 # See also http://blog.gbaman.info/?p=791
 ```
 
-SDカードをアンマウントし, Raspberry Pi Zero Wに挿入する.
-USBとPCと繋げば数分でRaspbianが起動する.
-
-### USB経由でSSH接続
-
-Raspbianが起動してから
-PCのネット設定を見ると
-**Wired connection 1** (有線接続1) が追加されているので,
-それのIPv4のMethodを **Link-Local Only** に変更し保存する.
-たしかUbuntuでも同じような操作でできた記憶がある.
-
-変更ができたら`ssh`コマンドで接続できる.
+SDカードをアンマウントしてZero Wに挿入すれば
+Raspbianが起動する.
 
 ```bash
-# On PC
 ssh pi@raspberrypi.local
 # Pass: raspberry
-
-#-> pi@raspberrypi.local:~ $
 ```
 
-先に鍵の設定をする.
-クライアント側で`ssh-keygen`で鍵を作成し,
-`ssh-copy-id`で鍵をラズパイに送信する.
+でSSH接続できるはずだが,
+自分の環境では
+ネット設定の有線接続1の IPv4 の Method を
+**Link-Local Only** に変更する必要があった.
 
-```bash
-# On PC
-# 鍵作成
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/raspi
-
-# 鍵送信
-ssh-copy-id -i ~/.ssh/raspi.pub pi@raspberrypi.local
-```
-
-`/etc/ssh/sshd_config`に`PasswordAuthentication no`を追加すれば
-鍵以外での接続を拒否できるようになるが,
-この後Git用のユーザーを追加するときに
-`ssh-copy-id`が使えなくなり面倒なので後にまわす.
-
-#### .ssh/configの設定
-
-`.ssh/config`に以下を追加すれば,
-`ssh raspi`で接続できるようになる.
-
-```
-Host raspi
-    HostName (hostname).local
-    IdentityFile ~/.ssh/raspi
-    User pi
-    IdentitiesOnly yes
-```
-
-ホスト名 (`(hostname)`) は後で再設定するが,
-変えない場合は`raspberrypi`になる.
-
-### Raspberry Piの初期設定
-
-SSHで接続.
-ホスト名と, Wi-Fiの設定をする.
+SSH接続したら,
+初期設定やら更新やらをする.
 
 ```bash
 # Password, Host, Wi-Fi などの設定
 sudo raspi-config
-```
 
-再起動する前に,
-パッケージとOS, ファームウェアのアップデートをしておく.
-
-```bash
 # Packages と OS のアップグレード
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -161,208 +177,122 @@ sudo rpi-update
 sudo reboot # 再起動
 ```
 
-## DockerとDocer Composeの構築
+適宜, SSH接続の設定などもする.
 
-### Docker
-
-Dockerをインストールし,
-`sudo`無しで実行できるようにグループにユーザーを追加する.
+### Dockerのインストール
 
 ```bash
 # Docker のインストール
 curl -sSL https://get.docker.com/ | sh
-
-# "docker" グループにユーザーを追加
-sudo usermod -aG docker pi
 ```
 
-早速`docker run hello-world`でDockerを満喫したいが,
-何も表示されなかった.
-ARM6に対応していない可能性あり?
-まあ`hello-world`が動かなくても本題には関係ない.
+### Docker Composeのインストール
 
-### Docker Compose
-
-Docker ComposeはARM版のバイナリが公式サイトには転がっていない.
-なので, `pip`よりインストールをする.
-`python3-distutils`は`pip`をインストールする際に必要.
+Armでは公式サイトの方法は使えないので,
+`pip`でインストールをする.
 
 ```bash
 # pip のインストール
-sudo apt-get install -y python3-distutils
+sudo apt-get install -y build-essential python3-distutils
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && sudo python3 get-pip.py
 
 # Docker Compose のインストール
 sudo pip install docker-compose
 ```
 
-## Gitサーバーの構築
+`python3-distutils`は`pip`のインストールに必要らしいのでいれておく.
 
-いまいち呼び方があってるかわからないが,
-Gitサーバーを構築する.
-Gitサーバーが何なのかは割愛.
-
-まず, `git`のインストール.
+### Gitのインストール
 
 ```bash
-# Git のインストール
 sudo apt install -y git
 ```
 
-### ユーザーの追加
+### Gitユーザーの作成
 
-Gitサーバーを扱う`git`ユーザーを追加する.
-Dockerを使うために`docker`グループに追加もしておく.
+`pihub`を扱うユーザーを作る.
+要するにいわゆるGitサーバー用のユーザー.
 
 ```bash
-# git ユーザーの追加
 sudo adduser git
-# Password を設定する
 
 # "docker" グループにユーザーを追加
 sudo usermod -aG docker git
 ```
 
-ついでに, SSH接続のための鍵を登録する.
-`pi`と同じ鍵で良いだろう.
+`docker`コマンドを扱うために,
+`docker`グループにユーザーを登録する.
+
+### pihubのインストール
 
 ```bash
-# On PC
-# 鍵送信
-ssh-copy-id -i ~/.ssh/raspi.pub git@(hostname).local
-```
-
-これもまた`.ssh/config`に登録しておく.
-
-```
-Host gitpi
-    HostName (hostname).local
-    User pi
-    IdentityFile ~/.ssh/raspi
-    IdentitiesOnly yes
-```
-
-あと, `git`のための公開鍵も登録しておく.
-GitHubなんかと同じ仕組みである.
-
-```bash
-# On PC
-# 鍵が無かったら作成(~/.ssh/id_rsa & ~/.ssh/id_rsa.pub)
-ssh-keygen -t rsa -b 4096 -C "email@example.com"
-
-# 鍵送信
-scp ~/.ssh/id_rsa.pub gitpi:.ssh
-```
-
-```bash
-# On git@(hostname).local
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-```
-
-## pihub (レポジトリ管理ツール)
-
-Nimでレポジトリ管理ツールを作ってみた.
-何をしているかは下のソースか
-[この記事のログから](https://github.com/ha2zakura/ha2zakura.github.io/commit/ec30f6548177b30244921706b1253967bf829f6e?short_path=d28dc27#diff-d28dc27ca82d6ab67e56910eedfedac5)から確認されたい.
-
-GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
-
-### インストール
-
-```bash
-# On git@(hostname).local
 git clone https://github.com/ha2zakura/pihub.git ~/.pihub
 cd ~/.pihub
-docker-compose up # ビルド
-# パスを通す
+docker-compose up # Dockerでビルド
+
+# PATHを通す
 echo "export PATH=$PATH:$HOME/.pihub/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-SSHから使う場合は, `alias`を登録しておくと便利.
+ビルドは`nimble install`でできるが,
+Nim環境の需要はそんなにないと思うので
+Dockerでビルドさせている.
+([balenalib/rpi-raspbian](https://hub.docker.com/r/balenalib/rpi-raspbian)
+イメージを使っている.)
+
+ちなみにこれも`pihub`で開発した.
+
+#### SSH経由で操作するためのalias
 
 ```bash
-# On PC
-echo "alias pihub='ssh gitpi /home/git/.pihub/bin/pihub'" >> ~/.bashrc
+# Local PC (Debian など)
+echo "alias pihub='ssh git@raspberrypi.local /home/git/.pihub/bin/pihub'" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### 使い方
+Windowsで登録する方法は知らない.
 
-#### 新規リポジトリ
+## Hello, World!
 
-```bash
-pihub create (repo_name)
-```
-
-こうすると`git@(hostname).local:(repo_name).git`にリポジトリが,
-`/home/git/prod/(repo_name)`に本番環境ができる.
-**名前に`.git`を含めてはいけない.**
-
-#### リポジトリ一覧
-
-```bash
-pihub list
-# repo1.git
-# repo2.git
-# repo3.git
-# ...
-```
-
-#### デプロイ
-
-```bash
-# On PC
-git remote add pi git@(hostname).local:(repo_name).git
-git push pi master
-```
-
-`git@(hostname).local:(repo_name).git`にプッシュすると,
-本番環境に自動的に反映, 実行される.
-具体的には,
-
-```bash
-docker-compose build
-docker-compose pull
-docker-compose up -d
-```
-
-が実行されるの,
-`docker-compose.yml`に然るべきことを書けば
-自動的に実行される.
-
-#### リポジトリ削除
-
-```bash
-pihub delete (repo_name)
-```
-
-**名前に`.git`を含めてはいけない.**
-
-なお, 本番環境も同時に削除されるので注意.
-
-## Hello, world!
-
-せっかくなので`nginx`を使った
-**Hello, world!** をしてみる.
-
-`alias`で登録していることを前提に進める.
+お約束. コンソールではつまらないので`nginx`を使う.
 
 GitHub - [ha2zakura/pidocker-server](https://github.com/ha2zakura/pidocker-server)
 
 ```bash
-# On PC
+# Local PC
 git clone https://github.com/ha2zakura/pidocker-server.git
 cd pidocker-server
-pihub create hello
-git remote add pi git@(host).local:hello.git
-git push pi master
+pihub create hello # リポジトリの作成
+git remote add pi git@raspberrypi.local:hello.git
+git push pi master # デプロイ 初回は時間がかかる
 ```
 
-ビルドに結構時間がかかる.
-しばらくして,
-`http://(hostname).local:8080/`にアクセスすれば,
+[http://rasberrypi.local:8080/](http://rasberrypi.local:8080/)にアクセスすると
 **Hello, world!** が表示される.
+
+## Lチカ
+
+GPIOを弄らなきゃラズパイじゃない!
+
+GitHub - [ha2zakura/pidocker-blink](https://github.com/ha2zakura/pidocker-blink)
+
+```bash
+git clone https://github.com/ha2zakura/pidocker-blink.git
+cd pidocker-blink
+pihub create blink # リポジトリの作成
+git remote add pi git@raspberrypi.local:blink.git
+git push pi master # デプロイ
+```
+
+接続はこんな感じ.
+
+![CONNECT](https://blog.alexellis.io/content/images/2016/08/Screen-Shot-2016-08-20-at-09-40-46-1.png)
+
+引用: [Get Started with Docker 1.12 on Raspberry Pi](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/)
+
+ずっとチカチカしてるとコンテナが開きっぱになるので,
+10回で停止しているようにしている.
 
 ## 参考
 
@@ -397,3 +327,9 @@ git push pi master
 ### Nginx構築
 
 - [Debian 9 (Stretch) - Web サーバ Nginx 構築（Nginx 公式リポジトリ使用）！ - mk-mode BLOG](https://www.mk-mode.com/blog/2017/09/16/debian-9-nginx-installation-by-official-apt/)
+
+### Lチカ
+
+- [Docker on Raspberry PiのインストールとLチカ - Qiita](https://qiita.com/ykshr/items/c78eb72e3ee75664a5fe)
+
+- [Get Started with Docker 1.12 on Raspberry Pi](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/)
