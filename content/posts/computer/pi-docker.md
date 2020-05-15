@@ -20,7 +20,7 @@ GitとDockerを使ってHerokuライクに環境構築する.
 1. [Raspbianの構築](#raspbian%E3%81%AE%E6%A7%8B%E7%AF%89)
 1. [DockerとDocer Composeの構築](#docker%E3%81%A8docer-compose%E3%81%AE%E6%A7%8B%E7%AF%89)
 1. [Gitサーバーの構築](#git%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%81%AE%E6%A7%8B%E7%AF%89)
-1. [Hello, world](#hello-world)
+1. [Hello, world!](#hello-world)
 1. [参考](#%E5%8F%82%E8%80%83)
 
 半分備忘録なので,
@@ -257,6 +257,116 @@ scp ~/.ssh/id_rsa.pub gitpi:.ssh
 # On git@(hostname).local
 cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
+
+## pihub (レポジトリ管理ツール)
+
+Nimでレポジトリ管理ツールを作ってみた.
+何をしているかは下のソースか
+[このブログのコミットログから](https://github.com/ha2zakura/ha2zakura.github.io/commit/ec30f6548177b30244921706b1253967bf829f6e)から確認されたい.
+
+GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
+
+### インストール
+
+```bash
+# On git@(hostname).local
+git clone https://github.com/ha2zakura/pihub.git ~/.pihub
+cd ~/.pihub
+
+# ビルド
+docker-compose build
+docker-compose pull
+docker-compose up
+
+# パスを通す
+echo "export PATH=$PATH:$HOME/.pihub/bin" >> ~/.bashrc
+source ~/.bashrc
+```
+
+SSHから使う場合は, `alias`を登録しておくと便利.
+
+```bash
+# On PC
+echo "alias pihub='ssh gitpi /home/git/.pihub/bin/pihub'" >> ~/.bashrc
+source ~/.bashrc
+```
+
+### 使い方
+
+#### 新規リポジトリ
+
+```bash
+pihub create (repo_name)
+```
+
+こうすると`git@(hostname).local:(repo_name).git`にリポジトリが,
+`/home/git/prod/(repo_name)`に本番環境ができる.
+**名前に`.git`を含めてはいけない.**
+
+#### リポジトリ一覧
+
+```bash
+pihub list
+#-> repo1.git
+#   repo2.git
+#   repo3.git
+#   ...
+```
+
+#### デプロイ
+
+```bash
+# On PC
+git remote add pi git@(hostname).local:(repo_name).git
+git push pi master
+```
+
+`git@(hostname).local:(repo_name).git`にプッシュすると,
+本番環境に自動的に反映, 実行される.
+具体的には,
+
+```bash
+docker-compose build
+docker-compose pull
+docker-compose up -d
+```
+
+が実行されるの,
+`docker-compose.yml`に然るべきことを書けば
+自動的に実行される.
+
+#### リポジトリ削除
+
+```bash
+pihub delete (repo_name)
+```
+
+**名前に`.git`を含めてはいけない.**
+
+なお, 本番環境も同時に削除されるので注意.
+
+## Hello, world!
+
+せっかくなので`nginx`を使った
+**Hello, world!** をしてみる.
+
+`alias`で登録していることを前提に進める.
+
+GitHub - [ha2zakura/pidocker-server](https://github.com/ha2zakura/pidocker-server)
+
+```bash
+# On PC
+git clone https://github.com/ha2zakura/pidocker-server.git
+cd pidocker-server
+pihub create hello
+git remote add pi git@(host).local:hello.git
+git push pi master
+```
+
+ビルドに結構時間がかかる.
+
+`http://(hostname).local:8080/`にアクセスすれば,
+**Hello, world!** が表示される.
 
 ## 参考
 
