@@ -23,7 +23,7 @@ tags : [
   1. [Dockerのインストール](#docker%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
   1. [Docker Composeのインストール](#docker-compose%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
   1. [Gitのインストール](#git%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
-  1. [Gitユーザーの作成](#git%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90)
+  1. [gitユーザーの作成](#git%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90)
   1. [pihubのインストール](#pihub%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
 1. [Hello, World!](#hello-world)
 1. [Lチカ](#l%E3%83%81%E3%82%AB)
@@ -226,7 +226,7 @@ sudo pip install docker-compose
 sudo apt install -y git
 ```
 
-### Gitユーザーの作成
+### gitユーザーの作成
 
 `pihub`を扱うユーザーを作る.
 要するにいわゆるGitサーバー用のユーザー.
@@ -314,13 +314,13 @@ git push pi master # デプロイ
 
 ## 参考
 
-### Raspbian初期設定とか
+#### Raspbian初期設定とか
 
 - [Raspberry Pi ZeroをUSBケーブル1本で遊ぶ | Japanese Raspberry Pi Users Group](https://www.raspi.jp/2016/07/pizero-usb-otg/)
 
 - [Raspberry Pi Zero – Programming over USB! (Part 2) | Andrew's blog](http://blog.gbaman.info/?p=791)
 
-### Docker on Raspberry Pi
+#### Docker on Raspberry Pi
 
 - [Raspberry PiにDockerを入れる - Qiita](https://qiita.com/hisurga/items/7aca7484ac5bfd084294)
 
@@ -328,11 +328,11 @@ git push pi master # デプロイ
 
 - [Docker comes to Raspberry Pi - Raspberry Pi](https://www.raspberrypi.org/blog/docker-comes-to-raspberry-pi/)
 
-### Docker Compose on Raspberry Pi
+#### Docker Compose on Raspberry Pi
 
 - [Install Docker and Docker-Compose on your Raspberry Pi - Jonathan Meier](https://jonathanmeier.io/install-docker-and-docker-compose-raspberry-pi/)
 
-### Gitサーバー
+#### Gitサーバー
 
 - [gitでシンプルなデプロイ環境を作る - Qiita](https://qiita.com/zaburo/items/8886be1a733aaf581045)
 
@@ -342,11 +342,11 @@ git push pi master # デプロイ
 
 - [git pushで本番環境に"自動デプロイ"できる環境を作ってみよう！ | vdeep](http://vdeep.net/git-push-deploy)
 
-### Nginx構築
+#### Nginx構築
 
 - [Debian 9 (Stretch) - Web サーバ Nginx 構築（Nginx 公式リポジトリ使用）！ - mk-mode BLOG](https://www.mk-mode.com/blog/2017/09/16/debian-9-nginx-installation-by-official-apt/)
 
-### Lチカ
+#### Lチカ
 
 - [Docker on Raspberry PiのインストールとLチカ - Qiita](https://qiita.com/ykshr/items/c78eb72e3ee75664a5fe)
 
