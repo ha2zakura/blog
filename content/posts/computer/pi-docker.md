@@ -106,6 +106,7 @@ pihub delete repo_name
 
 - `git push`以外で`docker-compose up`をする
 - `docker-compose stop`など停止系, 削除系
+- デプロイなしで, テストできたら楽しそう
 
 ## インストール
 
