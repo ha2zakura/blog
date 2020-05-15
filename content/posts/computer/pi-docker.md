@@ -1,5 +1,5 @@
 ---
-title: "Pi Zero W + Git + Docker でデプロイ環境を作る"
+title: "Pi Zero W + Git + Docker で簡単なデプロイ環境を作る"
 date: 2020-05-14T13:01:47+09:00
 toc : true
 tags : [
