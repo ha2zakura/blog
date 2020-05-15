@@ -273,12 +273,7 @@ GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
 # On git@(hostname).local
 git clone https://github.com/ha2zakura/pihub.git ~/.pihub
 cd ~/.pihub
-
-# ビルド
-docker-compose build
-docker-compose pull
-docker-compose up
-
+docker-compose up # ビルド
 # パスを通す
 echo "export PATH=$PATH:$HOME/.pihub/bin" >> ~/.bashrc
 source ~/.bashrc
