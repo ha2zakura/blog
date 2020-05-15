@@ -273,7 +273,7 @@ git push pi master # デプロイ 初回は時間がかかる
 
 ## Lチカ
 
-GPIOを弄らなきゃラズパイじゃない!
+GPIOを弄らなきゃラズパイじゃない !
 
 GitHub - [ha2zakura/pidocker-blink](https://github.com/ha2zakura/pidocker-blink)
 
@@ -287,9 +287,9 @@ git push pi master # デプロイ
 
 接続はこんな感じ.
 
-![CONNECT](https://blog.alexellis.io/content/images/2016/08/Screen-Shot-2016-08-20-at-09-40-46-1.png)
+{{< figure src="https://blog.alexellis.io/content/images/2016/08/Screen-Shot-2016-08-20-at-09-40-46-1.png" title="接続図" >}}
 
-引用: [Get Started with Docker 1.12 on Raspberry Pi](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/)
+画像の引用: [Get Started with Docker 1.12 on Raspberry Pi](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/)
 
 ずっとチカチカしてるとコンテナが開きっぱになるので,
 10回で停止しているようにしている.
