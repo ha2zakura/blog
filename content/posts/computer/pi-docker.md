@@ -243,6 +243,8 @@ sudo usermod -aG docker git
 
 ### pihubのインストール
 
+GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
+
 ```bash
 git clone https://github.com/ha2zakura/pihub.git ~/.pihub
 cd ~/.pihub
