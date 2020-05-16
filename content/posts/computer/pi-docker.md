@@ -116,8 +116,7 @@ pihub delete repo_name
 
 これで`git@raspberrypi.local:repo_name.git`と
 `/home/git/prod/repo_name`が削除される
-(注: Dockerに関しては何の処理も行われないので,
-別途コンテナを削除する必要がある. いずれ改善したい.)
+(同時に`docker-compose down --rmi all`も実行される.)
 
 #### 無い機能
 
