@@ -1,5 +1,5 @@
 ---
-title: "Pi Zero Wで最新のNim"
+title: "Raspberry Pi Zero Wで最新のNim"
 date: 2020-05-16T10:04:45+09:00
 toc : true
 tags:
