@@ -308,10 +308,10 @@ git push pi master # デプロイ
 
 {{< figure src="https://blog.alexellis.io/content/images/2016/08/Screen-Shot-2016-08-20-at-09-40-46-1.png" title="接続図" >}}
 
-画像の引用: [Get Started with Docker 1.12 on Raspberry Pi](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/)
+画像の引用元: [Get Started with Docker 1.12 on Raspberry Pi](https://blog.alexellis.io/getting-started-with-docker-on-raspberry-pi/)
 
 ずっとチカチカしてるとコンテナが開きっぱになるので,
-10回で停止しているようにしている.
+10回で停止するようにしている.
 
 ## 参考
 
