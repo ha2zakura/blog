@@ -8,14 +8,14 @@ date: 2020-04-13T05:48:26+09:00
 toc : true
 ---
 
-はてなブログをやめてHugoとGitHub Pagesに乗り換えた. 
+はてなブログをやめてHugoとGitHub Pagesに乗り換えた.
 ブログの移転はこれで4回目で, 
-Hugoが5代目になった. 
+Hugoが5代目になった.
 <!--more-->
 3回目の引越しの時と違って
 前代のはてなブログの記事をそのまま移転したので, 
 はてなブログの方は検索エンジンから除外させた
-(`noindex`, `nofollow`). 
+(`noindex`, `nofollow`).
 
 ## Hugoとは
 
@@ -23,55 +23,55 @@ Hugoが5代目になった.
 
 [The world’s fastest framework for building websites | Hugo](https://gohugo.io/)
 
-Hugoは静的サイトジェネレータの一つ. 
+Hugoは静的サイトジェネレータの一つ.
 Go言語でできているので, 
-ビルドが高速・軽快で拡張性にも富んでいる. 
+ビルドが高速・軽快で拡張性にも富んでいる.
 
 どうしてHugoを選んだかと言うと, 
-そんなに理由はない. 
+そんなに理由はない.
 「静的サイトジェネレータ」で検索して上位に出てきたから, 
-使ったことが無かったから, など. 
+使ったことが無かったから, など.
 他の候補はJekyll, React Static, Gatsbyなどがあったが, 
-Go言語という特徴が有利に働いた. 
+Go言語という特徴が有利に働いた.
 
 ### 導入
 
 日本語の文献が沢山あり困らないが, 
-[公式チュートリアル](https://gohugo.io/getting-started/quick-start/)で十分だと思う. 
+[公式チュートリアル](https://gohugo.io/getting-started/quick-start/)で十分だと思う.
 
-Ubuntuでのインストールは`snap`でできる. 
+Ubuntuでのインストールは`snap`でできる.
 
 ```bash
 snap install hugo --channel=extended
 ```
 
-サイトを作るのもすぐにできる. 
-実に手軽である. 
+サイトを作るのもすぐにできる.
+実に手軽である.
 
 ```bash
 hugo new site YourSiteName
 ```
 
-ブログ名や作者名などは`./config.toml`で設定する. 
+ブログ名や作者名などは`./config.toml`で設定する.
 詳しくは後述のテーマごとのREADME.mdを参照されたい.
 
 ### テーマ
 
-Hugoには実に豊富なテーマが用意されている. 
+Hugoには実に豊富なテーマが用意されている.
 自分でも作れるが, 
-しばらくは既存のテーマでHugoに慣れることにした. 
+しばらくは既存のテーマでHugoに慣れることにした.
 気軽にテーマを乗り換えられるのも
 Hugoの特徴
 
-[公式サイトのテーマ一覧](https://themes.gohugo.io/)からテーマを選ぶ. 
-私は[Track3/hermit](https://github.com/Track3/hermit)にした. 
-シンプルだが, 細かいところまで作りこまれている. 
-なにしろ[作者様のブログ](https://ojbk.im/)がとてもかっこいい. 
+[公式サイトのテーマ一覧](https://themes.gohugo.io/)からテーマを選ぶ.
+私は[Track3/hermit](https://github.com/Track3/hermit)にした.
+シンプルだが, 細かいところまで作りこまれている.
+なにしろ[作者様のブログ](https://ojbk.im/)がとてもかっこいい.
 東アジア系の全角文字との相性も良く, 
-自分で作るときの参考にしたい. 
+自分で作るときの参考にしたい.
 
 テーマの導入は`git submodule add`ですると, 
-後々の管理が簡単である. 
+後々の管理が簡単である.
 
 ```bash
 cd YourSiteName
@@ -89,7 +89,7 @@ theme = "hermit"
 ### ビルド
 
 `hugo`コマンドを単体で実行することで, 
-`./public`にHTML群ができる. 
+`./public`にHTML群ができる.
 ちなみに, 
 `hugo --minify`とすると生成されるファイルの改行が省略されて
 より軽量になる.
@@ -111,7 +111,7 @@ hugo server
 
 [GitHub Pages](https://pages.github.com/)
 
-Hugoで生成したサイトのホスティングにはGitHub Pagesを利用している. 
+Hugoで生成したサイトのホスティングにはGitHub Pagesを利用している.
 [タスク管理ツール]({{< ref "/content/posts/computer/todoo.md" >}})を作ったときにも使ったが,
 `git push`するだけで反映されるのは便利.
 あと, いつの間にか[GitHub Actions](https://github.com/features/actions)なるものができていた.

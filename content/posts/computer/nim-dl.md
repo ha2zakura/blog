@@ -403,7 +403,7 @@ var
   b1: Matrix[float, hidden_count, 1]
   b2: Matrix[float, dim_out, 1]
 
-# -0.5 ~ 0.5 でランダムに初期化. 
+# -0.5 ~ 0.5 でランダムに初期化.
 w1.toRandom(-0.5, 0.5)
 w2.toRandom(-0.5, 0.5)
 b1.toRandom(-0.5, 0.5)

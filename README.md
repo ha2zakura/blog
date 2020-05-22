@@ -1,11 +1,11 @@
 # ha2zakura.github.io
 https://nombi.info/
 
-This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of ha2zakura. 
+This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of ha2zakura.
 Since it is written as a memorandum for myself, there are many difficult-to-understand contents.
 I would be grateful if you could get some ideas from my posts.
 
-Since I'm writing in Japanese, Google Translate should help read entries. 
+Since I'm writing in Japanese, Google Translate should help read entries.
 However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/TsL_26).
 
 ### Disclaimer

@@ -10,7 +10,7 @@ toc : true
 ---
 
 前々から試行錯誤してたAndroidのターミナル環境作りが一段落したので, 
-そのメモ. ようやく, まともに使える&使いやすい環境を作ることができた. 
+そのメモ. ようやく, まともに使える&使いやすい環境を作ることができた.
 <!--more-->
 
 
@@ -25,14 +25,14 @@ Android上でUbuntuが動くので, 出かけ先にPCを持っていく必要が
 
 Termux - https://termux.com/
 
-まず, 大元となる端末は[Termux](https://termux.com/)を用いる. [端末エミュレータ](https://play.google.com/store/apps/details?id=jackpal.androidterm&hl=ja)でない理由は, Termuxは``pkg``が使えるから. 
+まず, 大元となる端末は[Termux](https://termux.com/)を用いる. [端末エミュレータ](https://play.google.com/store/apps/details?id=jackpal.androidterm&hl=ja)でない理由は, Termuxは``pkg``が使えるから.
 Termuxは[Google Play](https://play.google.com/store/apps/details?id=com.termux)や[F-Droid](https://f-droid.org/packages/com.termux/)よりインストールできる. (ここでF-Doridも挙げるのはHUAWEIユーザーだから...?)
 
-特に特別なことをすることなく, インストールできる. ちなみに私の環境ではErrorでGoogle Playからインストールできなかったので, F-Droidよりインストールした. 
+特に特別なことをすることなく, インストールできる. ちなみに私の環境ではErrorでGoogle Playからインストールできなかったので, F-Droidよりインストールした.
 
 ## Ubuntu仮想環境の構築
 
-Termux上にUbuntuの仮想環境を導入する. 導入には[AnLinux](https://github.com/EXALAB/AnLinux-App)を利用するが, 導入に使うのは下のコマンドのみ. アプリに付属する他の機能が必要なければ, インストールせずに下のコマンドを実行するだけでも十分. 
+Termux上にUbuntuの仮想環境を導入する. 導入には[AnLinux](https://github.com/EXALAB/AnLinux-App)を利用するが, 導入に使うのは下のコマンドのみ. アプリに付属する他の機能が必要なければ, インストールせずに下のコマンドを実行するだけでも十分.
 
 ```sh
 $ pkg install wget openssl-tool proot -y
@@ -59,23 +59,23 @@ VERSION="18.04 LTS (Bionic Beaver)"
 
 [Ubuntu 18.04 LTS (Bionic Beaver)](http://releases.ubuntu.com/18.04/). しっかりUbuntu(何度目
 
-これでUbuntuが導入できた. ひと段落. が, まだ色々と気になるところがあったので, 整えていく. 
+これでUbuntuが導入できた. ひと段落. が, まだ色々と気になるところがあったので, 整えていく.
 
 ## 諸々の設定
 
 ### Termux側の.bashrcに追加
 
-Ubuntuの起動は``start-ubuntu.sh``を実行する必要がある. が, 起動のたびにソフトキーボードでポチポチこれを入力するのは鬱陶しいので, ``.bashrc``で自動的に実行するように設定する. 
+Ubuntuの起動は``start-ubuntu.sh``を実行する必要がある. が, 起動のたびにソフトキーボードでポチポチこれを入力するのは鬱陶しいので, ``.bashrc``で自動的に実行するように設定する.
 
 ```sh
 $ echo "./start-ubuntu.sh" >> ~/.bashrc
 ```
 
-これで, Termux起動のたびにすぐにUbuntuが実行する. ちなみに, Termux bashに戻ったいときは, ``exit``で戻れる. 
+これで, Termux起動のたびにすぐにUbuntuが実行する. ちなみに, Termux bashに戻ったいときは, ``exit``で戻れる.
 
 ### 一般ユーザーの追加
 
-Ubuntuを起動すると, rootとしてログインされる. しかし, 無条件でrootになるのは少し怖いので, 一般ユーザーを追加する. 
+Ubuntuを起動すると, rootとしてログインされる. しかし, 無条件でrootになるのは少し怖いので, 一般ユーザーを追加する.
 
 ```sh
 ~# apt update
@@ -90,7 +90,7 @@ Ubuntuを起動すると, rootとしてログインされる. しかし, 無条�
 
 参考 : [ubuntu ユーザを追加して sudo 権限をつける - Qiita](https://qiita.com/white_aspara25/items/c1b9d02310b4731bfbaa)
 
-これで, 従来のUbuntuと同じように``sudo``が使えるようになる. 
+これで, 従来のUbuntuと同じように``sudo``が使えるようになる.
 なお, これで``sudo``が使えない場合は, ``visudo``で直接ユーザーを追加する. まあ, 本末転倒が...()
 
 ```sh
@@ -104,11 +104,11 @@ root ALL=(ALL:ALL) ALL
 
 参考 : [How to Fix "Username is not in the sudoers file. This incident will be reported" in Ubuntu](https://www.tecmint.com/fix-user-is-not-in-the-sudoers-file-the-incident-will-be-reported-ubuntu/)
 
-以降, 全て``sudo``を用いて設定をする. 
+以降, 全て``sudo``を用いて設定をする.
 
 ### fishのインストール
 
-``fish``をインストールする. 標準の``bash``でも十分に使えるのが, ``fish``だと強力な補完機能があり, Androidでポチポチ使うにはこちらのほうが便利. 
+``fish``をインストールする. 標準の``bash``でも十分に使えるのが, ``fish``だと強力な補完機能があり, Androidでポチポチ使うにはこちらのほうが便利.
 
 ```sh
 $ sudo apt-get install apt-file    # apt-add-repositoryを使うための準備
@@ -124,18 +124,18 @@ $ fish
 
 参考 : [自宅のubuntu-16.04マシンのシェルをfishに変更した - takapiのブログ](http://takapi86.hatenablog.com/entry/2017/05/28/124642)
 
-``fish``のインストールには数分かかる. Shellの変更は通常``chsh -s /usr/bin/fish``なのが, なぜかエラーが出た. なので, ``~/.bashrc``に追加して間接的に起動をする. 
+``fish``のインストールには数分かかる. Shellの変更は通常``chsh -s /usr/bin/fish``なのが, なぜかエラーが出た. なので, ``~/.bashrc``に追加して間接的に起動をする.
 
 ### gitのインストール・設定
 
-本命, ``git``のインストールが, 普通のUbuntuでの``git``のインストールと何ら変わりません. ラクチン. 
+本命, ``git``のインストールが, 普通のUbuntuでの``git``のインストールと何ら変わりません. ラクチン.
 
 ```sh
 > sudo apt install git
 > ssh-keygen #Password設定あり
 > cat ~/.ssh/id_rsa.pub
 ```
-表示された公開キーをコピペし, Github等のサイトのSSH keys設定に貼り付ける. 
+表示された公開キーをコピペし, Github等のサイトのSSH keys設定に貼り付ける.
 
 参考 : [GitHubの初期設定（SSH接続からリポジトリへのpushまで） - Qiita](https://qiita.com/drapon/items/441e18452b25060d61f1)
 

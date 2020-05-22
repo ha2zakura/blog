@@ -12,7 +12,7 @@ toc : true
 {{< figure src="/img/posts/esp8266/bin-clock-1.jpg" title="" >}}
 
 ESP-WROOM-02でのハードの制御の練習に, 
-二進数時計を作ってみた. 
+二進数時計を作ってみた.
 
 <!--more-->
 
@@ -20,9 +20,9 @@ ESP-WROOM-02でのハードの制御の練習に,
 前に作成した
 [マトリクスLEDのボード]({{< ref "/content/posts/pic16f84a/matrix.md" >}})は
 シフトレジスタに74HC595を使っているため, 
-Arduino IDEの`SPI.h`で簡単に制御することができる. 
+Arduino IDEの`SPI.h`で簡単に制御することができる.
 それと, Wi-Fiによって時間を[NTP](https://ja.wikipedia.org/wiki/Network_Time_Protocol)より取得し, 
-時間をそのままマトリクスLEDに直接表示させてば二進数時計の完成. 
+時間をそのままマトリクスLEDに直接表示させてば二進数時計の完成.
 
 ### ソースコード
 
@@ -100,21 +100,21 @@ void loop() {
 }
 ```
 
-ESP8266によるNTPの設定は想像以上に簡単. 
-[こちら](https://qiita.com/h_nari/items/d0374d1e1e36b9d988c0)のサイトを参考にした. 
-マトリクスLEDは`timer0`を使って3msごとに1行ずつ表示する. 
-前に[PIC16F84Aで扱ったとき]({{< ref "/content/posts/pic16f84a/matrix.md" >}})の方法と同じ. 
-`timer0`については[こちら](https://lipoyang.hatenablog.com/entry/20161205/p1)を参考にした. 
+ESP8266によるNTPの設定は想像以上に簡単.
+[こちら](https://qiita.com/h_nari/items/d0374d1e1e36b9d988c0)のサイトを参考にした.
+マトリクスLEDは`timer0`を使って3msごとに1行ずつ表示する.
+前に[PIC16F84Aで扱ったとき]({{< ref "/content/posts/pic16f84a/matrix.md" >}})の方法と同じ.
+`timer0`については[こちら](https://lipoyang.hatenablog.com/entry/20161205/p1)を参考にした.
 
 年は2020で8bitでは表示しきれないので, 
-2行に分けて16bitで表示した. 
+2行に分けて16bitで表示した.
 
 ### 動いているところ
 
-で, 動いている様子はこんな感じ. 
+で, 動いている様子はこんな感じ.
 
 {{< tweet 1231731127083122688 >}}
 
-どうも, たまに静止する. 
-割り込み処理が上手くいってないかもしれない. 
-`timer0`に関して, アセンブリ方面から攻める必要がありそう. 
+どうも, たまに静止する.
+割り込み処理が上手くいってないかもしれない.
+`timer0`に関して, アセンブリ方面から攻める必要がありそう.

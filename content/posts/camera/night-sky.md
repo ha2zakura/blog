@@ -13,8 +13,8 @@ date : "2018-11-04T08:02:30+09:00"
 
 {{< figure src="/img/posts/camera/night-sky-1.jpg" title="Fujifilm X-E1 + Nikon Ai NIKKOR 20mm f/3.5" >}}
 
-ひしゃくの形がよくわかる, 北斗七星. 東京からでもこんなに見える. 
+ひしゃくの形がよくわかる, 北斗七星. 東京からでもこんなに見える.
 
 {{< figure src="/img/posts/camera/night-sky-2.jpg" title="Fujifilm X-E1 + Nikon Ai NIKKOR 20mm f/3.5" >}}
 
-オリオン座. いつの間に11月.... 
+オリオン座. いつの間に11月....
