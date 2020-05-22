@@ -254,7 +254,7 @@ echo "export PATH=$PATH:$HOME/.pihub/bin" >> ~/.bashrc
 source ~/.bashrc
 ```
 
-ビルドは`nimble install`でできるが,
+インストールは`nimble install`でできるが,
 Nim環境の需要はそんなにないと思うので
 Dockerでビルドさせている.
 ([balenalib/rpi-raspbian](https://hub.docker.com/r/balenalib/rpi-raspbian)
