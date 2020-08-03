@@ -44,6 +44,8 @@ sudo gpasswd -a $USER vboxusers
 
 [Virtual Machines - Microsoft Edge Developer](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 
+ちょっと前までmodern.IEと呼ばれていたもの.
+Windows 10 なら90日間動作する仮想マシン.
 ここから **Vagrant**用 (`MSEdge.Win10.Vagrant.zip`) をダウンロードしてくる.
 
 ```bash
