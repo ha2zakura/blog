@@ -132,7 +132,7 @@ $$
     \right)
     \phi \left(
       \mathbf{w}^{(1)} x_k + \mathbf{b}^{(1)}
-    \right)^{(2)\mathsf{T}},
+    \right)^\mathsf{T},
   \\\\ 
   \frac{\partial E}{\partial b^{(2)}} &=
     \sum^{n-1}\_{k=0}
