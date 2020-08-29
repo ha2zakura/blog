@@ -100,7 +100,7 @@ $\mathbf{B}$ のアダマール積.
 $$
 \begin{aligned}
   \frac{\partial E}{\partial \mathbf{w}^{(1)}} &= 
-    \sum^{n-1}\_{k=0}
+    - \sum^{n-1}\_{k=0}
     \left(
       \left(
         y_k - \hat{y}_k
@@ -113,7 +113,7 @@ $$
     \right)x_k,
   \\\\ 
   \frac{\partial E}{\partial \mathbf{b}^{(1)}} &= 
-    \sum^{n-1}\_{k=0}
+    - \sum^{n-1}\_{k=0}
     \left(
       \left(
         y_k - \hat{y}_k
@@ -126,7 +126,7 @@ $$
     \right),
   \\\\ 
   \frac{\partial E}{\partial \mathbf{w}^{(2)}} &= 
-    \sum^{n-1}\_{k=0}
+    - \sum^{n-1}\_{k=0}
     \left(
       y_k - \hat{y}_k
     \right)
@@ -135,7 +135,7 @@ $$
     \right)^\mathsf{T},
   \\\\ 
   \frac{\partial E}{\partial b^{(2)}} &=
-    \sum^{n-1}\_{k=0}
+    - \sum^{n-1}\_{k=0}
     \left(
       y_k - \hat{y}_k
     \right).
