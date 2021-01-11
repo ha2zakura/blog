@@ -42,6 +42,3 @@ date : "2019-07-25T13:20:46+09:00"
 {{< figure src="/img/posts/camera/disney-sea-4.jpg" title="Fujifilm X-E1 + Nikon NIKKOR-S･C Auto 50mm f/1.4" >}}
 
 夏も, まだ始まったばかり.
-
-{{< tweet 1154037517072531462 >}}
-
