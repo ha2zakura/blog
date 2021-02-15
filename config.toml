@@ -60,6 +60,10 @@ canonifyurls = true
     weight = 20
 
   [[menu.main]]
-    name = "Links"
-    url = "links/"
-    weight = 30
+    name = "Contact"
+    url = "https://profcard.info/u/vp61dkf6nMdMf1urIV0w1MqmX273"
+
+  # [[menu.main]]
+  #   name = "Links"
+  #   url = "links/"
+  #   weight = 30
