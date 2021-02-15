@@ -142,9 +142,9 @@ git push
 日曜昼に建てて, 月曜7時の時点で8000/10000行.
 長期的な運用は非現実的である.
 
-[@ha2@social.nombi.info](https://social.nombi.info/@ha2)
+そこで, 軽量版の[Dolphin](https://github.com/syuilo/dolphin)を使っている.
+~~[@ha2@social.nombi.info](https://social.nombi.info/@ha2)~~(停止済)
 
-そこで, 現在は軽量版の[Dolphin](https://github.com/syuilo/dolphin)を使っている.
 Misskeyの派生であるため, 上と同じ方法で建てられる.
 ただし, `.config/default.yml`に以下を追加する必要がある.
 Misskeyでインスタンス設定画面から行っていたものと同じである.
@@ -156,8 +156,8 @@ drive:
   storage: 'fs'
 ```
 
-いつまでもつか試験も兼ねて,
-しばらくは運用したいと思う.
+~~いつまでもつか試験も兼ねて,
+しばらくは運用したいと思う.~~
 
 自分でインスタンスを建てると,
 負荷も容量も自分次第,
