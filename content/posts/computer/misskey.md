@@ -28,8 +28,8 @@ Twitterとは別に個人用に使う目的でHerokuに建ててみた.
 [syuilo/misskey](https://github.com/syuilo/misskey)
 をForkする.
 
-そして`git clone`. `develop`ブランチでは動かなかったので
-`master`のみを引っ張ってくる.
+そして`git clone`.
+`develop`ブランチでは動かなかったので `master`のみを引っ張ってくる.
 
 ```bash
 git clone -b master git@github.com:(yourname)/misskey.git
@@ -49,9 +49,9 @@ Herokuのダッシュボードに行き,
 **Deploy** タブから **Deployment method** で
 **GitHub** を選択,
 下の **App connected to GitHub** でリポジトリを検索して,
-**Automatic deploys** で`master`ブランチを選択する.
+**Automatic deploys** で `master` ブランチを選択する.
 下の **Enable Automatic Deploys** を押せば,
-GitHubに`git push`するだけでHerokuに反映される.
+GitHubに `git push` するだけでHerokuに反映される.
 
 ### 環境設定
 
@@ -92,12 +92,12 @@ clusterLimit: 1
 `default.yml`の平文を作成する.
 他の設定は`.config/example.yml`を参考にする.
 
-これを[ Unicode エスケープシーケンス変換ツール](http://www.koikikukan.com/archives/2013/07/01-012345.php)等でエスケープに変換, 
+これを [Unicode エスケープシーケンス変換ツール](http://www.koikikukan.com/archives/2013/07/01-012345.php)等でエスケープに変換, 
 Herokuのダッシュボードの**Settings**に行き,
 **Config Vars** に`DEFAULT_YML`という名前で登録する.
 
 あとは, `package.json`で以下のように
-`node` `npm` `yarn`のバージョンを設定する.
+`node`, `npm`, `yarn`のバージョンを設定する.
 
 ```json
 {
