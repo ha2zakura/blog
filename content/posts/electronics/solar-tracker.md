@@ -199,7 +199,7 @@ $$
 ![装置](../../../img/posts/electronics/solar-tracker-1.jpg)
 
 マイコンには[STM32F303K8](https://www.st.com/en/evaluation-tools/nucleo-f303k8.html)を使い,
-12ビットのADCで $1+3$ 個の照度センサ([NJL7302](https://www.njr.co.jp/electronic_device/products/NJL7302L-F3.html))の光電流を計測している.
+12ビットのADCで $3+1$ 個の照度センサ([NJL7302](https://www.njr.co.jp/electronic_device/products/NJL7302L-F3.html))の光電流を計測している.
 ソースコードは[これ](https://github.com/ha2zakura/solar-tracker).
 
 逆問題の計算部分は,
