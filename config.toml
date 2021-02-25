@@ -29,7 +29,7 @@ canonifyurls = true
   homeSubtitle = "Electronic work notes, small trip photos, etc."
 
   bgImg = "/img/posts/camera/summer-fes-3.jpg"
-  gitUrl = "https://github.com/ha2zakura/ha2zakura.github.io/commits/"
+  gitUrl = "https://github.com/ha2zakura/blog/commits/"
 
   justifyContent = false
   relatedPosts = false
