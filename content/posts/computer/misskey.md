@@ -143,7 +143,7 @@ git push
 長期的な運用は非現実的である.
 
 そこで, 軽量版の[Dolphin](https://github.com/syuilo/dolphin)を使っている.
-~~[@ha2@social.nombi.info](https://social.nombi.info/@ha2)~~(停止済)
+~~@ha2@social.nombi.info~~(停止済)
 
 Misskeyの派生であるため, 上と同じ方法で建てられる.
 ただし, `.config/default.yml`に以下を追加する必要がある.
