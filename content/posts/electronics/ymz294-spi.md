@@ -39,7 +39,7 @@ A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御�
 （[YMZ294のMIDI音源化と, YMZのピン数圧縮 | curious4dev](http://curious4dev.mydns.jp/post-1184/)）.
 似たようなこと考える人ってやっぱいる.   
 
-ま, ピアノできないんでネットで拾ってきたMIDI譜面を流し込むだけなね.   
+ま, ピアノできないからネットで拾ってきたMIDI譜面を流し込むだけなんだけど.   
 
 {{< figure src="/img/posts/electronics/ymz294-spi-4.jpg" title="Arduinoと接続" >}}
 
