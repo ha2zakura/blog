@@ -136,18 +136,18 @@ pihub delete repo_name
 
 また, `git`ユーザーを作成する.
 
-### Raspbianのインストール
+### Raspberry Pi OSのインストール
 
 日本語情報は既に大量にあるので,
 ここでは簡単に.
 
-[公式サイト](https://www.raspberrypi.org/downloads/raspbian/)より
-Raspbianのイメージをダウンロードして解凍.
+[公式サイト](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit)より
+Raspberry Pi OSのイメージをダウンロードして解凍.
 Zeroなのでlite版で十分.
 
 ```bash
 # SDカードへの書き込み
-sudo dd bs=4M if=2020-02-13-raspbian-buster-lite.img of=/dev/sdb conv=fsync
+sudo dd bs=4M if=path/to/image.img of=/dev/sdb conv=fsync
 ```
 
 (`/dev/sdb`の部分は環境に合うよう書き直す.)
