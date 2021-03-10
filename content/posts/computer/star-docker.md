@@ -38,6 +38,7 @@ docker-compose -f docker-compose.shooter.yml up
 ### すたーらいなーのプレイ
 ```bash
 git clone https://github.com/ha2zakura/star-docker.git
+cd star-docker
 docker-compose -f docker-compose.liner.yml up
 ```
 ダイアログはすたーしゅーたーに同じ.
