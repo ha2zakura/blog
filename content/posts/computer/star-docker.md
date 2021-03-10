@@ -28,6 +28,7 @@ WindowsやMacをもっているなら, 普通に起動するべし.
 ### すたーしゅーたーのプレイ
 ```bash
 git clone https://github.com/ha2zakura/star-docker.git
+cd star-docker
 docker-compose -f docker-compose.shooter.yml up
 ```
 始めに**Mono**と**Gecko**のインストールを促すダイアログが出るが,
