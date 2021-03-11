@@ -20,7 +20,7 @@ EEPROMを0番地から順に読み出して,
 AQM0802Aには, 1行目に読み出すデータのアドレス, 
 2行目の左側にデータ(16進数), 右側にデータ(文字)される.   
 
-[ソースコード](https://gist.github.com/ha2zakura/7b865db68e9d15b1d27a3270c4b1c031) (参考程度にどうぞ)  
+[ソースコード](https://gist.github.com/siubiang/7b865db68e9d15b1d27a3270c4b1c031) (参考程度にどうぞ)  
 
 配線は, PIC18F14K50ボードの回路図
 ([この記事の下の方]({{< ref "/content/posts/pic18f14k50/board.md" >}}))の, 

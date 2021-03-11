@@ -19,14 +19,14 @@ date: 2020-04-10T10:47:18+09:00
 
 ## About this blog
 
-Hey, I'm [ha2zakura(@ha2zakura)](https://twitter.com/ha2zakura).  
-This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of ha2zakura.
+Hey, I'm [siubiang(@siubiang)](https://twitter.com/siubiang).  
+This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of siubiang.
 Since it is written as a memorandum for myself, there are many difficult-to-understand contents.
 I would be grateful if you could get some ideas from my posts.
 
 Since I'm writing in Japanese, Google Translate should help read entries.
-<!-- However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/ha2zakura) or by [ActivityPub](https://sns.nombi.info/@ha2zakura). -->
-However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/ha2zakura).
+<!-- However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/siubiang) or by [ActivityPub](https://sns.nombi.info/@siubiang). -->
+However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/siubiang).
 
 ### Disclaimer
 

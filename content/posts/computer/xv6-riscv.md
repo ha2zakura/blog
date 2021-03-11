@@ -37,10 +37,10 @@ ANSI Cで書かれているので,
 
 本家をForkしてDocker関係のファイルを追加した.
 
-[ha2zakura/xv6-riscv](https://github.com/ha2zakura/xv6-riscv)
+[siubiang/xv6-riscv](https://github.com/siubiang/xv6-riscv)
 
 ```bash
-$ git clone https://github.com/ha2zakura/xv6-riscv
+$ git clone https://github.com/siubiang/xv6-riscv
 $ cd xv6-riscv
 $ docker-compose build
 $ docker-compose run xv6

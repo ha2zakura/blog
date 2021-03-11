@@ -36,7 +36,7 @@ $\KaTeX{}$ が書けるようになったことに調子乗っていたら,
 本記事は長くなった.
 目次の代わりを貼っておく.
 
-最終的な[ソースコードはこれ](https://gist.github.com/ha2zakura/dc7972a9b9fae1c53a02d4bfa41cb441).
+最終的な[ソースコードはこれ](https://gist.github.com/siubiang/dc7972a9b9fae1c53a02d4bfa41cb441).
 
 ## 理論の概説
 
@@ -462,7 +462,7 @@ for epoc in 1..1000:                # 1000 エポック
   echo error                        # エポックごとに二乗和誤差を出力
 ```
 
-ソースコード全体は[Gistに貼った](https://gist.github.com/ha2zakura/dc7972a9b9fae1c53a02d4bfa41cb441)のでそちらも参照されたい.
+ソースコード全体は[Gistに貼った](https://gist.github.com/siubiang/dc7972a9b9fae1c53a02d4bfa41cb441)のでそちらも参照されたい.
 
 ## 速度比較
 

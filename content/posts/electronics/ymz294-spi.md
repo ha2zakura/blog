@@ -25,7 +25,7 @@ SPI化には, [シフトレジスタ(74HC595)](http://akizukidenshi.com/catalog/
 どうも書き込みの際の/WR/CSや/A0の扱いが74HC595だけでは上手くいきそうになかったので, 
 [PIC12F683](http://akizukidenshi.com/catalog/g/gI-00801/)で制御した.
 74HC595がラッチされるのを検知して, /WR/CSをHIGH, LOWする.
-PIC12F683の[ソースコード](https://gist.github.com/ha2zakura/943d75f813021092b6f4207b43e41da1).
+PIC12F683の[ソースコード](https://gist.github.com/siubiang/943d75f813021092b6f4207b43e41da1).
 A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御できれば楽だったんだけどね...  
 
 {{< figure src="/img/posts/electronics/ymz294-spi-3.png" title="回路図" >}}
@@ -46,7 +46,7 @@ A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御�
 
 マスタはArduinoを使う. 理由はゴニョゴニョ...
 （いつかはPIC18F14K50でMIDIを制御したい今日この頃. ）  
-[ソースコード](https://gist.github.com/ha2zakura/003ec66c355f43848eb86c17d77cc453).
+[ソースコード](https://gist.github.com/siubiang/003ec66c355f43848eb86c17d77cc453).
 ネットのサンプルコードを組み合わせて適当に作ったので参考にもならないと思う.
 （てか書いたの数か月前だから全然覚えていない...）  
 

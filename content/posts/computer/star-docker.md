@@ -20,14 +20,14 @@ Windows版とMac版しかない.
 
 ## プレイ方法
 
-GitHub: [ha2zakura/star-docker](https://github.com/ha2zakura/star-docker)
+GitHub: [siubiang/star-docker](https://github.com/siubiang/star-docker)
 
 Linuxでの起動しか想定していない.
 WindowsやMacをもっているなら, 普通に起動するべし.
 
 ### すたーしゅーたーのプレイ
 ```bash
-git clone https://github.com/ha2zakura/star-docker.git
+git clone https://github.com/siubiang/star-docker.git
 cd star-docker
 docker-compose -f docker-compose.shooter.yml up
 ```
@@ -38,7 +38,7 @@ docker-compose -f docker-compose.shooter.yml up
 
 ### すたーらいなーのプレイ
 ```bash
-git clone https://github.com/ha2zakura/star-docker.git
+git clone https://github.com/siubiang/star-docker.git
 cd star-docker
 docker-compose -f docker-compose.liner.yml up
 ```

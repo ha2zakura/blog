@@ -33,7 +33,7 @@ tags : [
 
 **pihub** という管理ツールをNimで作った.
 
-GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
+GitHub - [siubiang/pihub](https://github.com/siubiang/pihub)
 
 イメージは, `heroku`コマンドのようなもの.
 ただし, 実行は全て`docker-compose up`で行うため,
@@ -242,10 +242,10 @@ sudo usermod -aG docker git
 
 ### pihubのインストール
 
-GitHub - [ha2zakura/pihub](https://github.com/ha2zakura/pihub)
+GitHub - [siubiang/pihub](https://github.com/siubiang/pihub)
 
 ```bash
-git clone https://github.com/ha2zakura/pihub.git ~/.pihub
+git clone https://github.com/siubiang/pihub.git ~/.pihub
 cd ~/.pihub
 docker-compose up # Dockerでビルド
 
@@ -276,11 +276,11 @@ Windowsで登録する方法は知らない.
 
 お約束. コンソールではつまらないので`nginx`を使う.
 
-GitHub - [ha2zakura/pidocker-server](https://github.com/ha2zakura/pidocker-server)
+GitHub - [siubiang/pidocker-server](https://github.com/siubiang/pidocker-server)
 
 ```bash
 # Local PC
-git clone https://github.com/ha2zakura/pidocker-server.git
+git clone https://github.com/siubiang/pidocker-server.git
 cd pidocker-server
 pihub create hello # リポジトリの作成
 git remote add pi git@raspberrypi.local:hello.git
@@ -294,10 +294,10 @@ git push pi master # デプロイ 初回は時間がかかる
 
 GPIOを弄らなきゃラズパイじゃない !
 
-GitHub - [ha2zakura/pidocker-blink](https://github.com/ha2zakura/pidocker-blink)
+GitHub - [siubiang/pidocker-blink](https://github.com/siubiang/pidocker-blink)
 
 ```bash
-git clone https://github.com/ha2zakura/pidocker-blink.git
+git clone https://github.com/siubiang/pidocker-blink.git
 cd pidocker-blink
 pihub create blink # リポジトリの作成
 git remote add pi git@raspberrypi.local:blink.git

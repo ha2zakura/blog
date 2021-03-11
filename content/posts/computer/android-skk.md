@@ -11,7 +11,7 @@ toc : true
 [海月玲二氏のSKK for Android](http://ray-mizuki.la.coocan.jp/software/skk_jp.html) を,
 多言語で入力できるように改変した.
 
-GitHub - [ha2zakura/android-skk](https://github.com/ha2zakura/android-skk)
+GitHub - [siubiang/android-skk](https://github.com/siubiang/android-skk)
 
 ## SKKとは
 
@@ -62,7 +62,7 @@ Bluetoothキーボードだと日本語⇔英字の切り替えが上手くで�
 
 ## 改変内容
 
-[リポジトリのREADME](https://github.com/ha2zakura/android-skk/blob/master/README.md)にも書いたのでそちらも参照されたい.
+[リポジトリのREADME](https://github.com/siubiang/android-skk/blob/master/README.md)にも書いたのでそちらも参照されたい.
 
 ### 日本語入力
 
@@ -295,7 +295,7 @@ Termux等で使い易くすることも考えて,
 
 ## インストール
 
-[Release](https://github.com/ha2zakura/android-skk/releases)
+[Release](https://github.com/siubiang/android-skk/releases)
 
 Google Playストアで配信する予定はない.
 

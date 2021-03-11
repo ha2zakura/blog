@@ -31,4 +31,4 @@ date : "2018-03-21T15:05:29+09:00"
 
 {{< tweet 976336217829552128 >}}
 
-ソースコードは[こちら](https://gist.github.com/ha2zakura/fda8e0cb926c7603b90fe39fcf1147e4). main1.asmがトップ画像の表示で, main2.asmがダイヤみたいなやつ, main3.asmがアニメーション. 参考までに.   
+ソースコードは[こちら](https://gist.github.com/siubiang/fda8e0cb926c7603b90fe39fcf1147e4). main1.asmがトップ画像の表示で, main2.asmがダイヤみたいなやつ, main3.asmがアニメーション. 参考までに.   

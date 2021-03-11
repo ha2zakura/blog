@@ -35,8 +35,6 @@ YMZ294の時よりは簡単に使えた.
 ※可変抵抗はコントラスト調整用.   
 
 ### ソースコード  
-[16F84A+SD1602H](https://gist.github.com/ha2zakura/8ed5ebd4295027b7969c8a1ca49f7cfc)
+[16F84A+SD1602H](https://gist.github.com/siubiang/8ed5ebd4295027b7969c8a1ca49f7cfc)
 
 {{< figure src="/img/posts/pic16f84a/char-lcd-2.jpg" title="Hello, world!" >}}
-
-

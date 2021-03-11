@@ -200,13 +200,13 @@ $$
 
 マイコンには[STM32F303K8](https://www.st.com/en/evaluation-tools/nucleo-f303k8.html)を使い,
 12ビットのADCで $3+1$ 個の照度センサ([NJL7302](https://www.njr.co.jp/electronic_device/products/NJL7302L-F3.html))の光電流を計測している.
-ソースコードは[これ](https://github.com/ha2zakura/solar-tracker).
+ソースコードは[これ](https://github.com/siubiang/solar-tracker).
 
 逆問題の計算部分は,
 1. まず $\mu$ と $\sigma$ を計算.
 
 ```cpp
-// 以下, https://github.com/ha2zakura/solar-tracker/blob/main/src/main.cppより抜粋
+// 以下, https://github.com/siubiang/solar-tracker/blob/main/src/main.cppより抜粋
 temp_mu = (val_ee + val_nw + val_sw) / 3;
 temp_sg = sqrt(
     (val_ee - temp_mu) * (val_ee - temp_mu) +

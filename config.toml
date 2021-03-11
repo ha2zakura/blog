@@ -12,7 +12,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 canonifyurls = true
 
 [author]
-  name = "ha2zakura"
+  name = "siubiang"
 
 [blackfriday]
   hrefTargetBlank = true
@@ -29,7 +29,7 @@ canonifyurls = true
   homeSubtitle = "Electronic work notes, small trip photos, etc."
 
   bgImg = "/img/posts/camera/summer-fes-3.jpg"
-  gitUrl = "https://github.com/ha2zakura/blog/commits/"
+  gitUrl = "https://github.com/siubiang/blog/commits/"
 
   justifyContent = false
   relatedPosts = false
@@ -37,15 +37,15 @@ canonifyurls = true
 
   # [[params.social]]
   #   name = "twitter"
-  #   url = "https://twitter.com/ha2zakura"
+  #   url = "https://twitter.com/siubiang"
 
   # [[params.social]]
   #   name = "instagram"
-  #   url = "https://instagram.com/ha2zakura"
+  #   url = "https://instagram.com/siubiang"
 
   # [[params.social]]
   #   name = "github"
-  #   url = "https://github.com/ha2zakura"
+  #   url = "https://github.com/siubiang"
 
 [menu]
 
