@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   server:
-    image: klakegg/hugo:0.74.3
+    image: klakegg/hugo:ext
     command: server
     volumes:
       - ".:/src"

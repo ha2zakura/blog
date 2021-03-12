@@ -1,69 +1,39 @@
 baseURL = "https://nombi.info/"
-languageCode = "ja"
 defaultContentLanguage = "ja"
-title = "NOMBIRIdoryoku"
-theme = "hermit"
-
-pygmentsCodefences  = true
-pygmentsUseClasses  = true
-hasCJKLanguage = true
-rssLimit = 10
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
-canonifyurls = true
-
-[author]
-  name = "siubiang"
-
-[blackfriday]
-  hrefTargetBlank = true
-
-[taxonomies]
-  tag = "tags"
-
-[params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
-
-  homeSubtitle = "Electronic work notes, small trip photos, etc."
-
-  bgImg = "/img/posts/camera/summer-fes-3.jpg"
-  gitUrl = "https://github.com/siubiang/blog/commits/"
-
-  justifyContent = false
-  relatedPosts = false
-  code_copy_button = false
-
-  # [[params.social]]
-  #   name = "twitter"
-  #   url = "https://twitter.com/siubiang"
-
-  # [[params.social]]
-  #   name = "instagram"
-  #   url = "https://instagram.com/siubiang"
-
-  # [[params.social]]
-  #   name = "github"
-  #   url = "https://github.com/siubiang"
+title = "nombi.info"
+theme = "m10c"
 
 [menu]
-
   [[menu.main]]
-    name = "Posts"
-    url = "posts/"
-    weight = 10
-
-  [[menu.main]]
+    identifier = "about"
     name = "About"
-    url = "about/"
-    weight = 20
-
+    url = "/about/"
+    weight = 1
   [[menu.main]]
-    name = "Contact"
-    url = "https://profcard.info/u/vp61dkf6nMdMf1urIV0w1MqmX273"
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
 
-  # [[menu.main]]
-  #   name = "Links"
-  #   url = "links/"
-  #   weight = 30
+[params]
+  author = "siubiang"
+  description = "Electronic work notes, small trip photos, etc."
+  menu_item_separator = " | "
+  [[params.social]]
+    icon = "twitter"
+    name = "Twitter"
+    url = "https://twitter.com/siubiang"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/siubiang"
+  [[params.social]]
+    icon = "instagram"
+    name = "Instagram"
+    url = "https://instagram.com/k_siubiang"
+  [params.style]
+    darkestColor = "#242423"
+    darkColor = "#333533"
+    lightColor = "#cfdbd5"
+    lightestColor = "#f2fdff"
+    primaryColor = "#52bfdd"
