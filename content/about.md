@@ -1,7 +1,24 @@
 ---
-title: "このブログについて"
-date: 2020-04-10T10:47:18+09:00
+title: "About this blog"
 ---
+
+Hey, I'm siubiang([@siubiang](https://twitter.com/siubiang)).  
+This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of siubiang.
+Since it is written as a memorandum for myself, there are many difficult-to-understand contents.
+I would be grateful if you could get some ideas from my posts.
+
+Since I'm writing in Japanese, Google Translate should help read entries.
+
+However, I will answer English or German questions. Contact me on [Twitter](https://twitter.com/siubiang).
+
+### Disclaimer
+
+I strive to provide as accurate information as possible, but I may not be able to guarantee all of the content on this site, as such information may be out of date.
+Also, if there is a problem with their accuracy or suitability, I may change or delete the information without notice.
+
+I don't take any responsibility for any actions or damages or losses incurred using the information on this site. Please note.
+
+# このブログについて
 
 このブログでは, 電子工作中に思ったことや, 出掛けた際の風景写真などを不定期に更新しています.
 自分用の備忘録として書いていますので, 分かりにくい内容も多々あると思います.
@@ -15,22 +32,3 @@ date: 2020-04-10T10:47:18+09:00
 また, それらの正確性や適切性に問題がある場合, 告知無しに情報を変更・削除する事がございます.
 
 当サイトの情報を用いて行う一切の行為, 被った損害・損失に対しては, 一切の責任を負いかねます. ご了承ください.
-
-
-## About this blog
-
-Hey, I'm [siubiang(@siubiang)](https://twitter.com/siubiang).  
-This blog updates irregularly about the electronic work and the scenery photos to improve the writing power of siubiang.
-Since it is written as a memorandum for myself, there are many difficult-to-understand contents.
-I would be grateful if you could get some ideas from my posts.
-
-Since I'm writing in Japanese, Google Translate should help read entries.
-<!-- However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/siubiang) or by [ActivityPub](https://sns.nombi.info/@siubiang). -->
-However, I will answer English (or German) questions. Contact me on [Twitter](https://twitter.com/siubiang).
-
-### Disclaimer
-
-I strive to provide as accurate information as possible, but I may not be able to guarantee all of the content on this site, as such information may be out of date.
-Also, if there is a problem with their accuracy or suitability, I may change or delete the information without notice.
-
-I don't take any responsibility for any actions or damages or losses incurred using the information on this site. Please note.
