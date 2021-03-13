@@ -39,7 +39,7 @@ A0はマスタ側で直接制御する. ホントはPIC12F683で一緒に制御�
 （[YMZ294のMIDI音源化と, YMZのピン数圧縮 | curious4dev](http://curious4dev.mydns.jp/post-1184/)）.
 似たようなこと考える人ってやっぱいる.   
 
-ま, ピアノできないからネットで拾ってきたMIDI譜面を流し込むだけなんだけど.   
+ま, ピアノできないからネットで拾ってきたMIDI譜面を流し込むだけだが.   
 
 {{< figure src="/img/posts/electronics/ymz294-spi-4.jpg" title="Arduinoと接続" >}}
 
@@ -56,13 +56,13 @@ MIDIの再生は[Domino](http://takabosoft.com/domino)で, MIDIデータの送�
 かわりに[The Hairless MIDI<->Serial Bridge](http://projectgus.github.io/hairless-midiserial/)を使う.
 先人に感謝 ! こちらはシリアル通信でMIDIが使えるため, 互換機でも使える.
 
-で, 以下が演奏してみたもの. 譜面は[かきむき様のもの](http://kakimuki.blog91.fc2.com/blog-entry-6.html)を使わせていただいてる.
+で, 以下が演奏してみたもの. 譜面は[かきむき様のもの](http://kakimuki.blog91.fc2.com/blog-entry-6.html)を使わせていただいた.
 
 [千本桜.mp3](https://www.dropbox.com/s/ingke1lf3zb9ivt/%E5%8D%83%E6%9C%AC%E6%A1%9C.mp3?dl=0)
 
 [Bad_Apple!!.mp3](https://www.dropbox.com/s/kxlt83dpht7spfb/Bad_Apple%21%21.mp3?dl=0)
 
-[Dropbox - Tell_Your_world.mp3](https://www.dropbox.com/s/6cz3p3q5474jks5/Tell_Your_world.mp3?dl=0)
+[Tell_Your_world.mp3](https://www.dropbox.com/s/6cz3p3q5474jks5/Tell_Your_world.mp3?dl=0)
 
 [前前前世.mp3](https://www.dropbox.com/s/f9la8zauqoykorf/%E5%89%8D%E5%89%8D%E5%89%8D%E4%B8%96.mp3?dl=0)
 
