@@ -2,6 +2,7 @@
 title: "すたーしゅーたー&すたーらいなーRevivalをDockerで動かす"
 tags : [
   "computer",
+  "docker",
 ]
 date: 2021-02-28T06:16:15Z
 toc : true

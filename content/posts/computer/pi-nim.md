@@ -2,8 +2,10 @@
 title: "Raspberry Pi Zero Wで最新のNim"
 date: 2020-05-16T10:04:45+09:00
 toc : true
-tags:
-  - computer
+tags : [
+  "computer",
+  "docker",
+]
 ---
 
 Raspberry Pi Zero W上に[Nim](https://nim-lang.org/)をインストールしようとしたら,

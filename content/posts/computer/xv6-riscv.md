@@ -2,8 +2,10 @@
 title: "xv6-riscvをDockerでビルド"
 date: 2020-05-09T14:39:56+09:00
 toc : true
-tags:
-  - computer
+tags : [
+  "computer",
+  "docker",
+]
 ---
 
 最近,
