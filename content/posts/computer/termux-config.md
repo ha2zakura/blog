@@ -23,27 +23,27 @@ Termux上で実行する場合. なので, UoTを構築している場合はい�
 
 ```sh
 # クライアント (WSLなど)
-$ ssh-keygen -f ~/.ssh/id_termux # 鍵の作成. (Enterを連打)
-$ cat ~/.ssh/id_termux.pub
+ssh-keygen -f ~/.ssh/id_termux # 鍵の作成. (Enterを連打)
+cat ~/.ssh/id_termux.pub
 # 公開鍵をコピー→LINEなどでスマホに送信
-$ echo "alias ssh-termux='ssh -p 8022 -i ~/.ssh/id_termux'" >> ~/.bashrc # コマンド短縮ｙ
+echo "alias ssh-termux='ssh -p 8022 -i ~/.ssh/id_termux'" >> ~/.bashrc # コマンド短縮ｙ
 ```
 
 ```sh
 # サーバー (Termux)
-$ pkg install -y openssh # SSHのインストール
-$ vi ~/.ssh/authorized_keys
+pkg install -y openssh # SSHのインストール
+vi ~/.ssh/authorized_keys
 # 公開鍵をペースト
-$ chmod 600 ~/.ssh/authorized_keys
-$ chmod 700 ~/.ssh
-$ ip -4 a
+chmod 600 ~/.ssh/authorized_keys
+chmod 700 ~/.ssh
+ip -4 a
 # IPアドレスをメモ
-$ sshd # SSHサーバー起動
+sshd # SSHサーバー起動
 ```
 
 ```sh
 # クライアント (WSLなど)
-$ ssh-termux xxx.xxx.xx.xxx #メモしたIPアドレス
+ssh-termux xxx.xxx.xx.xxx #メモしたIPアドレス
 ```
 
 UoT上でSSHサーバーを起動する場合は, ``ubuntu ssh サーバー``で調べたらたぶんすぐでてくる.
@@ -51,7 +51,7 @@ UoT上でSSHサーバーを起動する場合は, ``ubuntu ssh サーバー``で
 ## ストレージの同期
 
 ```sh
-$ termux-setup-storage # 権限の認証をするので, 本体でやった方がよさげ
+termux-setup-storage # 権限の認証をするので, 本体でやった方がよさげ
 ```
 
 実行すると, ``~/storage``ができる. 色々入ってるが, ``~/storage/shared`` (SDカード) で十分足りる.

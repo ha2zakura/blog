@@ -40,10 +40,10 @@ ANSI Cで書かれているので,
 [siubiang/xv6-riscv](https://github.com/siubiang/xv6-riscv)
 
 ```bash
-$ git clone https://github.com/siubiang/xv6-riscv
-$ cd xv6-riscv
-$ docker-compose build
-$ docker-compose run xv6
+git clone https://github.com/siubiang/xv6-riscv
+cd xv6-riscv
+docker-compose build
+docker-compose run xv6
 # lots of output
 init: starting sh
 $
@@ -100,7 +100,7 @@ services:
 `make qemu-gdb`でデバッグ環境ができるらしいが,
 
 ```bash
-$ make qemu-gdb
+make qemu-gdb
 *** Now run 'gdb' in another window.
 ```
 

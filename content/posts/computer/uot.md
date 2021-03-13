@@ -35,15 +35,15 @@ Termuxは[Google Play](https://play.google.com/store/apps/details?id=com.termux)
 Termux上にUbuntuの仮想環境を導入する. 導入には[AnLinux](https://github.com/EXALAB/AnLinux-App)を利用するが, 導入に使うのは下のコマンドのみ. アプリに付属する他の機能が必要なければ, インストールせずに下のコマンドを実行するだけでも十分.
 
 ```sh
-$ pkg install wget openssl-tool proot -y
-$ hash -r
-$ wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh
-$ bash ubuntu.sh
+pkg install wget openssl-tool proot -y
+hash -r
+wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh
+bash ubuntu.sh
 ```
 しばらくすると, 上のコマンドを実行したディレクトリに, ``start-ubuntu.sh``ができる. このシェルスクリプトを実行すると...
 
 ```sh
-$ ./start-ubuntu.sh
+./start-ubuntu.sh
 root@localhost:~# 
 ```
 
@@ -68,7 +68,7 @@ VERSION="18.04 LTS (Bionic Beaver)"
 Ubuntuの起動は``start-ubuntu.sh``を実行する必要がある. が, 起動のたびにソフトキーボードでポチポチこれを入力するのは鬱陶しいので, ``.bashrc``で自動的に実行するように設定する.
 
 ```sh
-$ echo "./start-ubuntu.sh" >> ~/.bashrc
+echo "./start-ubuntu.sh" >> ~/.bashrc
 ```
 
 これで, Termux起動のたびにすぐにUbuntuが実行する. ちなみに, Termux bashに戻ったいときは, ``exit``で戻れる.
@@ -111,14 +111,14 @@ root ALL=(ALL:ALL) ALL
 ``fish``をインストールする. 標準の``bash``でも十分に使えるのが, ``fish``だと強力な補完機能があり, Androidでポチポチ使うにはこちらのほうが便利.
 
 ```sh
-$ sudo apt-get install apt-file    # apt-add-repositoryを使うための準備
-$ sudo apt-file update
-$ sudo apt-get install software-properties-common
-$ sudo apt-add-repository ppa:fish-shell/release-2
-$ sudo apt-get update
-$ sudo apt-get install fish    # fishのインストール
-$ echo "fish" >> ~/.bashrc    #自動的にfishを起動
-$ fish
+sudo apt-get install apt-file    # apt-add-repositoryを使うための準備
+sudo apt-file update
+sudo apt-get install software-properties-common
+sudo apt-add-repository ppa:fish-shell/release-2
+sudo apt-get update
+sudo apt-get install fish    # fishのインストール
+echo "fish" >> ~/.bashrc    #自動的にfishを起動
+fish
 ~>
 ```
 
