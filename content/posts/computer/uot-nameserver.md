@@ -24,7 +24,7 @@ toc : true
 
 切り替えるサーバはUNIVERSITY OF TOYAMA with Ubuntu Japanese LoCoの[http://jp.archive.ubuntu.com/]. [Ubuntu Japanese Local Community Team](https://lists.ubuntu.com/mailman/listinfo/ubuntu-jp)の[このメーリングリストのアーカイブ](https://lists.ubuntu.com/archives/ubuntu-jp/2009-August/002059.html)を参考に, ``/etc/apt/sources.list``を書き直した.
 
-```sh
+```bash
 sudo vim /etc/apt/sources.list
 
 ## http://ports.ubuntu.com/ubuntu-ports/を指定してあった部分を以下に書き換え

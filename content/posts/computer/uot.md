@@ -34,7 +34,7 @@ Termuxは[Google Play](https://play.google.com/store/apps/details?id=com.termux)
 
 Termux上にUbuntuの仮想環境を導入する. 導入には[AnLinux](https://github.com/EXALAB/AnLinux-App)を利用するが, 導入に使うのは下のコマンドのみ. アプリに付属する他の機能が必要なければ, インストールせずに下のコマンドを実行するだけでも十分.
 
-```sh
+```bash
 pkg install wget openssl-tool proot -y
 hash -r
 wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh
@@ -42,7 +42,7 @@ bash ubuntu.sh
 ```
 しばらくすると, 上のコマンドを実行したディレクトリに, ``start-ubuntu.sh``ができる. このシェルスクリプトを実行すると...
 
-```sh
+```bash
 ./start-ubuntu.sh
 root@localhost:~# 
 ```
@@ -50,7 +50,7 @@ root@localhost:~#
 Ubuntuが起動した! root化していないAndroid上でUbuntuが動いている.   
 ちなみに, バージョンは, 
 
-```sh
+```bash
 root@localhost:~# cat /etc/os-release
 NAME="Ubuntu"
 VERSION="18.04 LTS (Bionic Beaver)"
@@ -67,7 +67,7 @@ VERSION="18.04 LTS (Bionic Beaver)"
 
 Ubuntuの起動は``start-ubuntu.sh``を実行する必要がある. が, 起動のたびにソフトキーボードでポチポチこれを入力するのは鬱陶しいので, ``.bashrc``で自動的に実行するように設定する.
 
-```sh
+```bash
 echo "./start-ubuntu.sh" >> ~/.bashrc
 ```
 
@@ -77,7 +77,7 @@ echo "./start-ubuntu.sh" >> ~/.bashrc
 
 Ubuntuを起動すると, rootとしてログインされる. しかし, 無条件でrootになるのは少し怖いので, 一般ユーザーを追加する.
 
-```sh
+```bash
 ~# apt update
 ~# apt dist-upgrade
 ~# apt install sudo    # sudoのインストール
@@ -93,7 +93,7 @@ Ubuntuを起動すると, rootとしてログインされる. しかし, 無条�
 これで, 従来のUbuntuと同じように``sudo``が使えるようになる.
 なお, これで``sudo``が使えない場合は, ``visudo``で直接ユーザーを追加する. まあ, 本末転倒が...()
 
-```sh
+```bash
 ~# apt install vim    # visudoにはvimなどが必要
 ~# visudo
 ...
@@ -110,7 +110,7 @@ root ALL=(ALL:ALL) ALL
 
 ``fish``をインストールする. 標準の``bash``でも十分に使えるのが, ``fish``だと強力な補完機能があり, Androidでポチポチ使うにはこちらのほうが便利.
 
-```sh
+```bash
 sudo apt-get install apt-file    # apt-add-repositoryを使うための準備
 sudo apt-file update
 sudo apt-get install software-properties-common
@@ -130,7 +130,7 @@ fish
 
 本命, ``git``のインストールが, 普通のUbuntuでの``git``のインストールと何ら変わりません. ラクチン.
 
-```sh
+```bash
 > sudo apt install git
 > ssh-keygen #Password設定あり
 > cat ~/.ssh/id_rsa.pub
@@ -149,6 +149,6 @@ Androidからサイト開いて貼り付けるのがやりにくいので, 私�
 
 #### Ubuntuのインストール (終了後, 自動的に起動)
 
-```sh
+```bash
 pkg install wget openssl-tool proot -y && hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh && bash ubuntu.sh && echo "./start-ubuntu.sh" >> ~/.bashrc && ./start-ubuntu.sh
 ```

@@ -21,7 +21,7 @@ toc : true
 
 Termux上で実行する場合. なので, UoTを構築している場合はいったん``exit``で終了.
 
-```sh
+```bash
 # クライアント (WSLなど)
 ssh-keygen -f ~/.ssh/id_termux # 鍵の作成. (Enterを連打)
 cat ~/.ssh/id_termux.pub
@@ -29,7 +29,7 @@ cat ~/.ssh/id_termux.pub
 echo "alias ssh-termux='ssh -p 8022 -i ~/.ssh/id_termux'" >> ~/.bashrc # コマンド短縮ｙ
 ```
 
-```sh
+```bash
 # サーバー (Termux)
 pkg install -y openssh # SSHのインストール
 vi ~/.ssh/authorized_keys
@@ -41,7 +41,7 @@ ip -4 a
 sshd # SSHサーバー起動
 ```
 
-```sh
+```bash
 # クライアント (WSLなど)
 ssh-termux xxx.xxx.xx.xxx #メモしたIPアドレス
 ```
@@ -50,7 +50,7 @@ UoT上でSSHサーバーを起動する場合は, ``ubuntu ssh サーバー``で
 
 ## ストレージの同期
 
-```sh
+```bash
 termux-setup-storage # 権限の認証をするので, 本体でやった方がよさげ
 ```
 
