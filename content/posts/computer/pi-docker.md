@@ -111,7 +111,7 @@ git push pi master
 `create`と同様に,
 **末尾に`.git`を含めてはいけない.**
 
-```
+```bash
 pihub delete repo_name
 ```
 

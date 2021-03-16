@@ -96,7 +96,7 @@ theme = "hermit"
 
 また, 
 
-```
+```bash
 hugo server
 ```
 
